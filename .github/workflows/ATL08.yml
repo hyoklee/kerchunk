@@ -1,0 +1,26 @@
+name: Tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [38, 39, 310]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup conda
+        uses: mamba-org/provision-with-micromamba@main
+        with:
+          environment-file: ci/environment-py${{matrix.python-version}}.yml
+      - name: Install kerchunk
+        shell: bash -l {0}
+        run: |
+          pip install -e kerchunk
+      - name: Test with python
+        shell: bash -l {0}
+        run: |
+          python ATL08.py
