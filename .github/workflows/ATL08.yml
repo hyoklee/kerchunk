@@ -26,3 +26,7 @@ jobs:
           ls -lh ./data/ATL08*
           python ATL08.py
           ls -lh ATL08.json
+          which nc-config
+          nc-confg --has-nczarr
+          ncdump -h ATL08.json
+          
