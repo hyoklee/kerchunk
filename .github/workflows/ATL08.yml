@@ -15,8 +15,9 @@ jobs:
       - name: Install kerchunk
         shell: bash -l {0}
         run: |
-          pip install -e kerchunk
+          pip install kerchunk
       - name: Test with python
         shell: bash -l {0}
         run: |
+          which python
           python ATL08.py
