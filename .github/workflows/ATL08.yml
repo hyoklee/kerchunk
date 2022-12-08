@@ -20,4 +20,5 @@ jobs:
         shell: bash -l {0}
         run: |
           which python
+          ls .
           python ATL08.py
