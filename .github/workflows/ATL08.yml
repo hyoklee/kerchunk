@@ -21,6 +21,8 @@ jobs:
       - name: Test with python
         shell: bash -l {0}
         run: |
+          uname -a
           which python
-          ls ./data/
+          ls -lh ./data/ATL08*
           python ATL08.py
+          ls -lh ATL08.json
