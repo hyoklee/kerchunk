@@ -29,5 +29,4 @@ jobs:
           which nc-config
           nc-config --has-nczarr
           echo $PWD
-          ncdump "file://$PWD/ATL08.json#mode=nczarr"
-          
+          ncdump "file://$PWD/ATL08.zarr#mode=nczarr"
