@@ -4,7 +4,6 @@ on: [push, pull_request]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -29,5 +28,6 @@ jobs:
           ls -lh ATL08.json
           which nc-config
           nc-config --has-nczarr
-          ncdump -h ATL08.json
+          echo $PWD
+          ncdump "file:///$PWD/ATL08.json#mode=nczarr"
           
