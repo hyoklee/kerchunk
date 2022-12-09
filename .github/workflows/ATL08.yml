@@ -23,8 +23,8 @@ jobs:
         run: |
           uname -a
           which python
-          ls -lh ./data/ATL08*
-          h5ls -l ./data/ATL08*
+          ls -lh ./data/ATL08*.h5
+          h5ls -l ./data/ATL08*.h5
           python ATL08.py
           ls -lh ATL08.json
           which nc-config

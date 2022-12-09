@@ -1,0 +1,27 @@
+name: Hyrax
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  ubuntu-build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Install Packages
+        run: sudo apt-get --yes install libxml2-dev uuid-dev libcurl4-openssl-dev libcppunit-dev libfl-dev gcovr
+
+      - name: Build Hyrax
+        run: |
+          echo "PATH: $PATH"
+          git clone https://github.com/OPENDAP/hyrax
+          cd hyrax
+          source spath.sh
+          ./hyrax_clone.sh
+          sudo ./hyrax_build.sh
+          ls /usr/local/bin
+          ls $prefix/bin
