@@ -10,18 +10,15 @@ on:
 jobs:
   ubuntu-build:
     runs-on: ubuntu-latest
-    
     steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
       - name: Install Packages
         run: sudo apt-get --yes install libxml2-dev uuid-dev libcurl4-openssl-dev libcppunit-dev libfl-dev gcovr
-
       - name: Build Hyrax
         run: |
-          echo "PATH: $PATH"
-          git clone https://github.com/OPENDAP/hyrax
-          cd hyrax
-          ./spath.sh
-          ./hyrax_clone.sh
-          ./hyrax_build.sh
+          ./ci.sh
+          pwd
           ls
-          ls build/bin
+          
