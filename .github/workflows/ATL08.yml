@@ -16,7 +16,7 @@ jobs:
       - name: Install kerchunk
         shell: bash -l {0}
         run: |
-          pip install kerchunk
+          pip install git+https://github.com/fsspec/kerchunk
           pip install ipfsspec
       - name: Test with python
         shell: bash -l {0}
