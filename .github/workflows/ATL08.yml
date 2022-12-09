@@ -18,6 +18,7 @@ jobs:
         shell: bash -l {0}
         run: |
           pip install kerchunk
+          pip install ipfsspec
       - name: Test with python
         shell: bash -l {0}
         run: |
