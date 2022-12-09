@@ -22,6 +22,6 @@ jobs:
           cd hyrax
           source spath.sh
           ./hyrax_clone.sh
-          sudo ./hyrax_build.sh
-          ls /usr/local/bin
+          ./hyrax_build.sh
+          ls
           ls $prefix/bin

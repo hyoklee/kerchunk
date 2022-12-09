@@ -63,4 +63,4 @@ jobs:
           ./configure --prefix=$prefix --with-dependencies=$prefix/deps --enable-developer
           make --jobs=$jobs
           make install
-                 ls $prefix/bin
+          ls $prefix/bin
