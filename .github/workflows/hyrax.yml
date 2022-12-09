@@ -20,7 +20,7 @@ jobs:
           echo "PATH: $PATH"
           git clone https://github.com/OPENDAP/hyrax
           cd hyrax
-          source spath.sh
+          ./spath.sh
           ./hyrax_clone.sh
           ./hyrax_build.sh
           ls
