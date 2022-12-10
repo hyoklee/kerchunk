@@ -15,7 +15,7 @@ jobs:
         with:
           lfs: true
       - name: Install Packages
-        run: sudo apt-get --yes install libxml2-dev uuid-dev libcurl4-openssl-dev libcppunit-dev libfl-dev gcovr
+        run: sudo apt-get --yes install libxml2-dev uuid-dev libcurl4-openssl-dev libcppunit-dev libfl-dev gcovr libtirpc-common libtirpc-dev libtirpc3
       - name: Build Hyrax
         run: |
           ./ci.sh
