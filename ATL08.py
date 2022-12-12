@@ -28,5 +28,3 @@ ds = xr.open_dataset(
 )
 print(ds)
 ds.to_zarr("ATL08.zarr")
-
-

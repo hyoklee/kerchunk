@@ -1,4 +1,4 @@
-name: Hyrax
+name: Hyrax on Ubuntu-20.04
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
 
 jobs:
   ubuntu-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
         with:
