@@ -12,7 +12,12 @@ import glob
 from pydap.client import open_url
 
 for f in sorted(glob.glob('/tmp/dmrpp/*.dmrpp')):
-    url = 'http://localhost:8080/opendap/' + os.path.basename(f)
+
+    ## DAP2
+    #url = 'http://localhost:8080/opendap/' + os.path.basename(f)
+    
+    ## DAP4
+    url = 'dap4://localhost:8080/opendap/' + os.path.basename(f)
     print(url)
     dataset = open_url(url)
     print(dataset)
@@ -20,6 +25,3 @@ for f in sorted(glob.glob('/tmp/dmrpp/*.dmrpp')):
         print(i)
         d = dataset[i][:]
         print(d)
-
-
-
