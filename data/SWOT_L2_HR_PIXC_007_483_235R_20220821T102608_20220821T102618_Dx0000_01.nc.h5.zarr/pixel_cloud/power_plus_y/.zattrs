@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Power for the plus_y channel (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).",
+    "coordinates": "longitude latitude",
+    "long_name": "power for plus_y channel",
+    "units": "1",
+    "valid_max": 999999.0,
+    "valid_min": 0.0
+}

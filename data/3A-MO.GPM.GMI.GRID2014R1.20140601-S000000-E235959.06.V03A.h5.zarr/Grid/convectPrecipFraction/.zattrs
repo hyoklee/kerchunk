@@ -1,0 +1,8 @@
+{
+    "CodeMissingValue": "-9999.900391",
+    "DimensionNames": "nlon,nlat",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ]
+}

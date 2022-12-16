@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 273.1499938964844,
+    "comment": "SST obtained by collation algorithm",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "sea surface sub-skin temperature",
+    "scale_factor": 0.009999999776482582,
+    "source": "NOAA",
+    "standard_name": "sea surface sub-skin temperature",
+    "units": "kelvin",
+    "valid_max": 32767,
+    "valid_min": -32767
+}

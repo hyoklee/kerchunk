@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 0.0,
+    "comment": "Deviation from reference SST, i.e., dt_analysis = SST - reference SST",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "deviation from SST reference",
+    "scale_factor": 0.10000000149011612,
+    "source": "CMC0.1deg-CMC-L4-GLOB-v2.0",
+    "units": "kelvin",
+    "valid_max": 127,
+    "valid_min": -127
+}

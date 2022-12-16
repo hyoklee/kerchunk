@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 0.0,
+    "comment": "Fractional sea ice cover from reference SST",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "sea ice fraction",
+    "scale_factor": 0.009999999776482582,
+    "source": "CMC0.1deg-CMC-L4-GLOB-v2.0",
+    "standard_name": "sea_ice_area_fraction",
+    "units": "1",
+    "valid_max": 100,
+    "valid_min": 0
+}

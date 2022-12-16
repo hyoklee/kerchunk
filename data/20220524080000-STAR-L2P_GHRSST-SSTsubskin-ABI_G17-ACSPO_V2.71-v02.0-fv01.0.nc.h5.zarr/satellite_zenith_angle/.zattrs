@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 0.0,
+    "comment": "satellite zenith angle",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "satellite zenith angle",
+    "scale_factor": 1.0,
+    "units": "degrees",
+    "valid_max": 90,
+    "valid_min": -90
+}

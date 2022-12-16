@@ -1,0 +1,11 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Scattering weight pressure                                                                                              ",
+    "UniqueFieldDefinition": "OMI-Specific                                                                                                            ",
+    "Units": "hPa                                                                                                                     ",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_3"
+    ]
+}

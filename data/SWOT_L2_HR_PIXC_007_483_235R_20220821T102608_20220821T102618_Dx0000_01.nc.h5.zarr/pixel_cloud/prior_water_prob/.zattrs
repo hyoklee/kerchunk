@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Prior probability of water occurring.",
+    "coordinates": "longitude latitude",
+    "long_name": "prior water probability",
+    "units": "1",
+    "valid_max": 1.0,
+    "valid_min": 0.0
+}

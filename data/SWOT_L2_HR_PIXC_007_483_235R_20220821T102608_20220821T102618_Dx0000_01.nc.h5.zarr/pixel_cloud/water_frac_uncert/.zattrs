@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Uncertainty estimate of the water fraction estimate (width of noisy water frac estimate distribution).",
+    "coordinates": "longitude latitude",
+    "long_name": "water fraction uncertainty",
+    "units": "1",
+    "valid_max": 999999.0,
+    "valid_min": 0.0
+}

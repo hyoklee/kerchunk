@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 273.1499938964844,
+    "comment": "non L2P core field; brightness temperature for 10.4 um channel  ABI Ch. 13",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "brightness temperature for 10.4 um channel",
+    "scale_factor": 0.009999999776482582,
+    "source": "ABI channel 13",
+    "units": "kelvin",
+    "valid_max": 32767,
+    "valid_min": -32767
+}

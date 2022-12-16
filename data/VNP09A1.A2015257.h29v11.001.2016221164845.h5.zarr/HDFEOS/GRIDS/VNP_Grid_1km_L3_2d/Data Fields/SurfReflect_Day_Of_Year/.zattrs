@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ],
+    "long_name": "Surface_reflectance_day_of_year",
+    "units": "Julian day",
+    "valid_range": [
+        1,
+        366
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: mean",
+    "long_name": "Net long-wave radiation flux",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "surface_net_downward_longwave_flux",
+    "units": "W m-2",
+    "vmax": 38.8703498840332,
+    "vmin": -148.64964294433594
+}

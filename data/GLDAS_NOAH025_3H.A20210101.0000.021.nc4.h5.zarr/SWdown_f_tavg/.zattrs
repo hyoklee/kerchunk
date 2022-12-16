@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: mean",
+    "long_name": "Downward short-wave radiation flux",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "surface_downwelling_shortwave_flux_in_air",
+    "units": "W m-2",
+    "vmax": 994.3499755859375,
+    "vmin": 0.0
+}

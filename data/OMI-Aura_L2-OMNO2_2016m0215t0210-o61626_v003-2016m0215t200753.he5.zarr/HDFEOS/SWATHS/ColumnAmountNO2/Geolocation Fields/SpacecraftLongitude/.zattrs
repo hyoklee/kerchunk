@@ -1,0 +1,11 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Geodetic Longitude above WGS84 ellipsoid",
+    "UniqueFieldDefinition": "HIRDLS-OMI-TES-Shared",
+    "Units": "deg",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_6"
+    ]
+}

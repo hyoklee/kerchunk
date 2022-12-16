@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Geocentric pole tide height. The total of the contribution from the solid-Earth (body) pole tide height and the load pole tide height (i.e., the effect of the ocean pole tide loading of the Earth's crust).",
+    "coordinates": "longitude latitude",
+    "long_name": "geocentric pole tide height",
+    "source": "Wahr (1985) and Desai et al. (2015)",
+    "units": "m",
+    "valid_max": 0.20000000298023224,
+    "valid_min": -0.20000000298023224
+}

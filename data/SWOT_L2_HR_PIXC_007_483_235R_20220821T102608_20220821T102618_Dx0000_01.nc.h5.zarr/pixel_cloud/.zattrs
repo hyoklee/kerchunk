@@ -1,0 +1,6 @@
+{
+    "description": "cloud of geolocated interferogram pixels",
+    "interferogram_size_azimuth": 2924,
+    "interferogram_size_range": 4575,
+    "looks_to_efflooks": 1.75
+}

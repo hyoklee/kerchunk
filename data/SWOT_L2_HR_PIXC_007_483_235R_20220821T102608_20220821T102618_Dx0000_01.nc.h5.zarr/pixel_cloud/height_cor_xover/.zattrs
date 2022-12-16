@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Height correction from KaRIn crossover calibration. The correction is applied before geolocation but reported as an equivalent height correction.",
+    "coordinates": "longitude latitude",
+    "long_name": "height correction from KaRIn crossovers",
+    "units": "m",
+    "valid_max": 10.0,
+    "valid_min": -10.0
+}

@@ -1,0 +1,19 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 273.1499938964844,
+    "comment": "SST obtained by regression with buoy measurements, sensitive to skin SST. Further information at (Petrenko et al., JGR, 2014; doi:10.1002/2013JD020637)",
+    "coordinates": "lon lat",
+    "coverage_content_type": "physicalMeasurement",
+    "grid_mapping": "crs",
+    "long_name": "sea surface sub-skin temperature",
+    "scale_factor": 0.009999999776482582,
+    "source": "NOAA",
+    "standard_name": "sea_surface_subskin_temperature",
+    "units": "kelvin",
+    "valid_max": 32767,
+    "valid_min": -200
+}

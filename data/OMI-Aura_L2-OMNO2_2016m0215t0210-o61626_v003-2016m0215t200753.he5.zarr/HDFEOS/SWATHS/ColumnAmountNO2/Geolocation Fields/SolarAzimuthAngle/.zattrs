@@ -1,0 +1,12 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Solar azimuth angle at WGS84 ellipsoid for center co-ordinate of the ground pixel, defined East-of-North",
+    "UniqueFieldDefinition": "OMI-TES-Shared",
+    "Units": "deg",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_6",
+        "phony_dim_7"
+    ]
+}

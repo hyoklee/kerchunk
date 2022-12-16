@@ -1,0 +1,794 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "CFAC": 20425339,
+            "COFF": 2712.499755859375,
+            "Coefficient_for_Sd": 1737135756.914831,
+            "CollationAbnormalGranules": 0,
+            "CollationMissingGranules": 0,
+            "CollationVersion": "2.0.0",
+            "Conventions": "CF-1.7",
+            "Dist_Virt_Sat": 42164.16,
+            "Earth_Radius_Equator": 6378.137,
+            "Earth_Radius_Polar": 6356.752314140001,
+            "LFAC": 20425339,
+            "LOFF": 2712.499755859375,
+            "Metadata_Conventions": "Unidata Dataset Discovery v1.0",
+            "Nadir_latitude": 0.0,
+            "Nadir_longitude": -137.0,
+            "Req2_info": 1.0067394967755916,
+            "Req_info": 0.00669438002301188,
+            "Rpol_info": 0.9933056199769882,
+            "SSP_latitude": 0.0,
+            "SSP_longitude": -137.1999969482422,
+            "Sub_Lon": -137.0,
+            "Sun_Pos": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "acknowledgment": "Please acknowledge the use of these data with the following statement: These data were provided by Group for High Resolution Sea Surface Temperature (GHRSST) and the National Oceanic and Atmospheric Administration (NOAA).",
+            "cdm_data_type": "swath",
+            "comment": "This file contains sea surface temperature data on the original geostationary projection grid. For details on how to generate latitude/longitude values from the grid metadata, please see the current CF-1.7 document (http://cfconventions.org/Data/cf-conventions/cf-conventions-1.7/cf-conventions.html#_geostationary_projection).",
+            "creator_email": "Alex.Ignatov@noaa.gov",
+            "creator_name": "Alex Ignatov",
+            "creator_url": "http://www.star.nesdis.noaa.gov",
+            "date_created": "20220524T094825Z",
+            "destripe": "no",
+            "easternmost_longitude": -55.801151275634766,
+            "file_quality_level": 3,
+            "gds_version_id": "02.0",
+            "geospatial_lat_resolution": 0.017999999225139618,
+            "geospatial_lat_units": "degrees_north",
+            "geospatial_lon_resolution": 0.017999999225139618,
+            "geospatial_lon_units": "degrees_east",
+            "history": "Created by Advanced Clear-Sky Processor for Oceans (ACSPO)-ABI at NOAA/NESDIS/STAR.",
+            "id": "ABI_G17-STAR-L2P-v2.71",
+            "institution": "NOAA/NESDIS/STAR",
+            "keywords": "Oceans > Ocean Temperature > Sea Surface Temperature",
+            "keywords_vocabulary": "NASA Global Change Master Directory (GCMD) Science Keywords",
+            "license": "GHRSST protocol describes data use as free and open",
+            "metadata_link": "https://podaac.jpl.nasa.gov/ws/metadata/dataset/?format=iso&shortName=ABI_G17-STAR-L2P-v2.71",
+            "naming_authority": "org.ghrsst",
+            "netcdf_version_id": "4.6.3 of Apr  2 2019 11:58:26 $",
+            "northernmost_latitude": 81.1468505859375,
+            "platform": "GOES-17",
+            "processing_level": "L2P",
+            "product_version": "2.71",
+            "project": "Group for High Resolution Sea Surface Temperature",
+            "publisher_email": "ghrsst-po@nceo.ac.uk",
+            "publisher_name": "The GHRSST Project Office",
+            "publisher_url": "http://www.ghrsst.org",
+            "references": "Data convention: GHRSST Data Specification (GDS) v2.0. Algorithms: ACSPO-ABI (NOAA/NESDIS/STAR)",
+            "sensor": "ABI",
+            "source": "OR_ABI-L1b-RadF,CMC0.1deg-CMC-L4-GLOB-v2.0,NOAA-NCEP-GFS",
+            "southernmost_latitude": -81.1488265991211,
+            "spatial_resolution": "2 km at nadir",
+            "sst_luts": "LUT_ABI_G17_L2C_DEPTH_DAYNIGHT_V01.00_20181002.txt",
+            "standard_name_vocabulary": "CF Standard Name Table (v26, 08 November 2013)",
+            "start_time": "20220524T080031Z",
+            "stop_time": "20220524T080939Z",
+            "summary": "Sea surface temperature retrievals produced by NOAA/NESDIS/STAR from the ABI sensor.",
+            "time_coverage_end": "20220524T080939Z",
+            "time_coverage_start": "20220524T080031Z",
+            "title": "ABI L2P SST",
+            "uuid": "48af534b-3f4d-44e3-aa82-c2c8b6d1d3d5",
+            "westernmost_longitude": 141.8048858642578
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "brightness_temperature_08um6/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": -32768,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "brightness_temperature_08um6/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 273.1499938964844,
+            "comment": "non L2P core field; brightness temperature for 8.6 um channel  ABI Ch. 11",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "brightness temperature for 8.6 um channel",
+            "scale_factor": 0.009999999776482582,
+            "source": "ABI channel 11",
+            "units": "kelvin",
+            "valid_max": 32767,
+            "valid_min": -32767
+        },
+        "brightness_temperature_10um4/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": -32768,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "brightness_temperature_10um4/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 273.1499938964844,
+            "comment": "non L2P core field; brightness temperature for 10.4 um channel  ABI Ch. 13",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "brightness temperature for 10.4 um channel",
+            "scale_factor": 0.009999999776482582,
+            "source": "ABI channel 13",
+            "units": "kelvin",
+            "valid_max": 32767,
+            "valid_min": -32767
+        },
+        "brightness_temperature_11um2/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": -32768,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "brightness_temperature_11um2/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 273.1499938964844,
+            "comment": "non L2P core field; brightness temperature for 11.2 um channel  ABI Ch. 14",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "brightness temperature for 11.2 um channel",
+            "scale_factor": 0.009999999776482582,
+            "source": "ABI channel 14",
+            "units": "kelvin",
+            "valid_max": 32767,
+            "valid_min": -32767
+        },
+        "brightness_temperature_12um3/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": -32768,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "brightness_temperature_12um3/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 273.1499938964844,
+            "comment": "non L2P core field; brightness temperature for 12.3 um channel  ABI Ch. 15",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "brightness temperature for 12.3 um channel",
+            "scale_factor": 0.009999999776482582,
+            "source": "ABI channel 15",
+            "units": "kelvin",
+            "valid_max": 32767,
+            "valid_min": -32767
+        },
+        "dt_analysis/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "dt_analysis/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 0.0,
+            "comment": "Deviation from reference SST, i.e., dt_analysis = SST - reference SST",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "deviation from SST reference",
+            "scale_factor": 0.10000000149011612,
+            "source": "CMC0.1deg-CMC-L4-GLOB-v2.0",
+            "units": "kelvin",
+            "valid_max": 127,
+            "valid_min": -127
+        },
+        "geostationary/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "geostationary/.zattrs": {
+            "_ARRAY_DIMENSIONS": [],
+            "false_easting": 0.0,
+            "false_northing": 0.0,
+            "geographic_crs_name": "WGS 84",
+            "grid_mapping_name": "geostationary",
+            "horizontal_datum_name": "WGS_1984",
+            "inverse_flattening": 298.257223563,
+            "latitude_of_projection_origin": 0.0,
+            "longitude_of_projection_origin": -137.0,
+            "perspective_point_height": 35786023.0,
+            "prime_meridian_name": "Greenwich",
+            "reference_ellipsoid_name": "WGS 84",
+            "semi_major_axis": 6378137.0,
+            "semi_minor_axis": 6356752.314245,
+            "sweep_angle_axis": "x"
+        },
+        "l2p_flags/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "l2p_flags/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "comment": "L2P common flags in bits 1-6 and data provider flags (from ACSPO mask) in bits 9-16: bit01 (0=IR: 1=microwave); bit02 (0=ocean; 1=land); bit03 (0=no ice; 1=ice); bits04-07 (reserved,set to 0); bit08 (0=anti-solar; 1=solar); bit09 (0=radiance valid; 1=invalid); bit10 (0=night; 1=day); bit11 (0=ocean; 1=land); bit12 (0=good quality data; 1=degraded quality data due to \"twilight\" region); bit13 (0=no glint; 1=glint); bit14 (0=no snow/ice; 1=snow/ice); bits15-16 (00=clear; 01=probably clear; 10=cloudy; 11=clear-sky mask undefined)",
+            "coordinates": "nj ni",
+            "flag_masks": [
+                1,
+                2,
+                4,
+                128,
+                256,
+                512,
+                1024,
+                2048,
+                4096,
+                8192,
+                16384,
+                -32768,
+                -16384
+            ],
+            "flag_meanings": "microwave land ice solar invalid day land twilight glint ice probably_clear cloudy mask_undefined",
+            "grid_mapping": "geostationary",
+            "long_name": "L2P flags",
+            "valid_max": 32767,
+            "valid_min": -32768
+        },
+        "ni/.zarray": {
+            "chunks": [
+                5424
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "ni/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "ni"
+            ],
+            "axis": "X",
+            "long_name": "x coordinate of projection",
+            "standard_name": "projection_x_coordinate",
+            "units": "radians",
+            "valid_max": 0.15184400975704193,
+            "valid_min": -0.15184397995471954
+        },
+        "nj/.zarray": {
+            "chunks": [
+                5424
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "nj/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "nj"
+            ],
+            "axis": "Y",
+            "long_name": "y coordinate of projection",
+            "standard_name": "projection_y_coordinate",
+            "units": "radians",
+            "valid_max": 0.15184397995471954,
+            "valid_min": -0.15184400975704193
+        },
+        "quality_level/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "quality_level/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "comment": "SST quality levels: 5 corresponds to \"clear-sky\" pixels and is recommended for operational applications and validation.",
+            "coordinates": "nj ni",
+            "flag_meanings": "no_data bad_data not_used not_used not_used best_quality",
+            "flag_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "grid_mapping": "geostationary",
+            "long_name": "quality level of SST pixel",
+            "valid_max": 5,
+            "valid_min": 0
+        },
+        "satellite_zenith_angle/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "satellite_zenith_angle/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 0.0,
+            "comment": "satellite zenith angle",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "satellite zenith angle",
+            "scale_factor": 1.0,
+            "units": "degrees",
+            "valid_max": 90,
+            "valid_min": -90
+        },
+        "sea_ice_fraction/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "sea_ice_fraction/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 0.0,
+            "comment": "Fractional sea ice cover from reference SST",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "sea ice fraction",
+            "scale_factor": 0.009999999776482582,
+            "source": "CMC0.1deg-CMC-L4-GLOB-v2.0",
+            "standard_name": "sea_ice_area_fraction",
+            "units": "1",
+            "valid_max": 100,
+            "valid_min": 0
+        },
+        "sea_surface_temperature/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": -32768,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "sea_surface_temperature/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 273.1499938964844,
+            "comment": "SST obtained by collation algorithm",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "sea surface sub-skin temperature",
+            "scale_factor": 0.009999999776482582,
+            "source": "NOAA",
+            "standard_name": "sea surface sub-skin temperature",
+            "units": "kelvin",
+            "valid_max": 32767,
+            "valid_min": -32767
+        },
+        "sses_bias/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "sses_bias/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 0.0,
+            "comment": "Bias is derived against Piecewise Regression SST produced by local regressions with buoys. Subtracting sses_bias from sea_surface_temperature producess more accurate SST at the depth of buoys  Further information at (Petrenko et al., JTECH, 2016; doi:10.1175/JTECH-D-15-0166.1)",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "SSES bias estimate",
+            "scale_factor": 0.01600000075995922,
+            "units": "kelvin",
+            "valid_max": 127,
+            "valid_min": -127
+        },
+        "sses_standard_deviation/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "sses_standard_deviation/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 1.0,
+            "comment": "Standard deviation of sea_surface_temperature from SST measured by drifting buoys. Further information at (Petrenko et al., JTECH, 2016; doi:10.1175/JTECH-D-15-0166.1)",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "SSES standard deviation",
+            "scale_factor": 0.009999999776482582,
+            "units": "kelvin",
+            "valid_max": 127,
+            "valid_min": -127
+        },
+        "sst_dtime/.zarray": {
+            "chunks": [
+                1,
+                678,
+                678
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": -32768,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "sst_dtime/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 0.0,
+            "comment": "time plus sst_dtime gives seconds since 1981-01-01 00:00:00 UTC",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "long_name": "time difference from reference time",
+            "scale_factor": 0.25,
+            "units": "seconds",
+            "valid_max": 32767,
+            "valid_min": -32767
+        },
+        "time/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time"
+            ],
+            "axis": "T",
+            "calendar": "Gregorian",
+            "comment": "Seconds since 1981-01-01 00:00:00",
+            "long_name": "reference time of sst file",
+            "standard_name": "time",
+            "units": "seconds since 1981-01-01"
+        },
+        "wind_speed/.zarray": {
+            "chunks": [
+                1,
+                678,
+                1356
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": -128,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1,
+                5424,
+                5424
+            ],
+            "zarr_format": 2
+        },
+        "wind_speed/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "time",
+                "nj",
+                "ni"
+            ],
+            "add_offset": 0.0,
+            "comment": "Typically represents surface winds (10 meters above the sea surface)",
+            "coordinates": "nj ni",
+            "grid_mapping": "geostationary",
+            "height": "10 m",
+            "long_name": "wind speed",
+            "scale_factor": 0.15000000596046448,
+            "source": "Wind speed from NCEP GFS data",
+            "standard_name": "wind_speed",
+            "units": "m s-1",
+            "valid_max": 127,
+            "valid_min": -127
+        }
+    },
+    "zarr_consolidated_format": 1
+}

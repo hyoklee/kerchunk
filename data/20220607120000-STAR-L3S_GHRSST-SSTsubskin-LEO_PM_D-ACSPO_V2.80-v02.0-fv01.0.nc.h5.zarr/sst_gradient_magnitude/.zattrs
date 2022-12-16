@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "comment": "Gradient magnitude calculated from SST field in all grids with valid SST",
+    "coordinates": "lon lat",
+    "grid_mapping": "crs",
+    "long_name": "SST gradient magnitude value",
+    "scale_factor": 0.0010000000474974513,
+    "units": "kelvin/km",
+    "valid_max": 32767,
+    "valid_min": -32767
+}

@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 1.0,
+    "comment": "Standard deviation of sea_surface_temperature from SST measured by drifting buoys. Further information at (Petrenko et al., JTECH, 2016; doi:10.1175/JTECH-D-15-0166.1)",
+    "coordinates": "lon lat",
+    "coverage_content_type": "qualityInformation",
+    "grid_mapping": "crs",
+    "long_name": "SSES standard deviation",
+    "scale_factor": 0.009999999776482582,
+    "units": "kelvin",
+    "valid_max": 127,
+    "valid_min": -127
+}

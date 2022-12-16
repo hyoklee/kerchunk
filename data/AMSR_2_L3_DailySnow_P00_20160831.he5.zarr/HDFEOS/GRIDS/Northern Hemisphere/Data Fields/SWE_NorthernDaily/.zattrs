@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ],
+    "format": "f3.0",
+    "long_name": "Daily snow water equivalent (SWE)",
+    "scale_factor": 2.0,
+    "units": "mm"
+}

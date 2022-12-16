@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Normalized radar cross section (sigma0) in real, linear units (not decibels). The value may be negative due to noise subtraction.",
+    "coordinates": "longitude latitude",
+    "long_name": "sigma0",
+    "units": "1",
+    "valid_max": 999999.0,
+    "valid_min": -999999.0
+}

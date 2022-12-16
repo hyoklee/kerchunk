@@ -1,0 +1,8 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "bnds"
+    ],
+    "calendar": "proleptic_gregorian",
+    "units": "minutes since 2000-01-01T03:00:00"
+}

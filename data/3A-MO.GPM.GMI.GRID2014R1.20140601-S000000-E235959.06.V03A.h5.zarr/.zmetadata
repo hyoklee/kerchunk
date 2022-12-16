@@ -1,0 +1,673 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "FileHeader": "DOI=10.5067/GPM/GMI/MONTH/3A;\nAlgorithmID=3GPROF;\nAlgorithmVersion=GRID2014R1;\nFileName=3A-MO.GPM.GMI.GRID2014R1.20140601-S000000-E235959.06.V03A.HDF5;\nSatelliteName=GPM;\nInstrumentName=GMI;\nGenerationDateTime=2014-07-02T23:16:24.000Z;\nStartGranuleDateTime=2014-06-01T00:00:00.000Z;\nStopGranuleDateTime=2014-06-30T23:59:59.999Z;\nGranuleNumber=;\nNumberOfSwaths=0;\nNumberOfGrids=1;\nGranuleStart=;\nTimeInterval=MONTH;\nProcessingSystem=PPS;\nProductVersion=V03A;\nEmptyGranule=NOT_EMPTY;\nMissingData=;\n",
+            "FileInfo": "DataFormatVersion=am;\nTKCodeBuildVersion=1;\nMetadataVersion=am;\nFormatPackage=HDF5-1.8.9;\nBlueprintFilename=GPM.V1.3GPROF.blueprint.xml;\nBlueprintVersion=BV_34;\nTKIOVersion=3.60.2;\nMetadataStyle=PVL;\nEndianType=LITTLE_ENDIAN;\n"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "Grid/.zattrs": {
+            "GridHeader": "BinMethod=ARITHMETIC_MEAN;\nRegistration=CENTER;\nLatitudeResolution=0.25;\nLongitudeResolution=0.25;\nNorthBoundingCoordinate=90;\nSouthBoundingCoordinate=-90;\nEastBoundingCoordinate=180;\nWestBoundingCoordinate=-180;\nOrigin=SOUTHWEST;\n"
+        },
+        "Grid/.zgroup": {
+            "zarr_format": 2
+        },
+        "Grid/cloudWater/.zarray": {
+            "chunks": [
+                4,
+                360,
+                180
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                28,
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/cloudWater/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlayer,nlon,nlat",
+            "Units": "g/m^3",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/cloudWaterPath/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/cloudWaterPath/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "kg/m^2",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/convectPrecipFraction/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/convectPrecipFraction/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/fractionQuality0/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/fractionQuality0/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "percent",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/fractionQuality1/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/fractionQuality1/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "percent",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/fractionQuality2/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/fractionQuality2/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "percent",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/iceWater/.zarray": {
+            "chunks": [
+                4,
+                360,
+                180
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                28,
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/iceWater/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlayer,nlon,nlat",
+            "Units": "g/m^3",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/iceWaterPath/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/iceWaterPath/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "kg/m^2",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/latentHeat/.zarray": {
+            "chunks": [
+                4,
+                360,
+                180
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                28,
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/latentHeat/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlayer,nlon,nlat",
+            "Units": "C/hr",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/liquidPrecipFraction/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/liquidPrecipFraction/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/mixedWater/.zarray": {
+            "chunks": [
+                4,
+                360,
+                180
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                28,
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/mixedWater/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlayer,nlon,nlat",
+            "Units": "g/m^3",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/mixedWaterPath/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/mixedWaterPath/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "kg/m^2",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/npixPrecipitation/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/npixPrecipitation/.zattrs": {
+            "CodeMissingValue": "-9999",
+            "DimensionNames": "nlon,nlat",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/npixTotal/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/npixTotal/.zattrs": {
+            "CodeMissingValue": "-9999",
+            "DimensionNames": "nlon,nlat",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/rainWater/.zarray": {
+            "chunks": [
+                4,
+                360,
+                180
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                28,
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/rainWater/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlayer,nlon,nlat",
+            "Units": "g/m^3",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/rainWaterPath/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/rainWaterPath/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "kg/m^2",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/surfacePrecipitation/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": "NaN",
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/surfacePrecipitation/.zattrs": {
+            "CodeMissingValue": "-9999.900391",
+            "DimensionNames": "nlon,nlat",
+            "Units": "mm/hr",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "Grid/surfaceTypeIndex/.zarray": {
+            "chunks": [
+                360,
+                360
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1440,
+                720
+            ],
+            "zarr_format": 2
+        },
+        "Grid/surfaceTypeIndex/.zattrs": {
+            "CodeMissingValue": "-9999",
+            "DimensionNames": "nlon,nlat",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "InputAlgorithmVersions/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "InputAlgorithmVersions/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_3"
+            ]
+        },
+        "InputFileNames/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "InputFileNames/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_3"
+            ]
+        },
+        "InputGenerationDateTimes/.zarray": {
+            "chunks": [
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|O",
+            "fill_value": null,
+            "filters": [
+                {
+                    "id": "vlen-utf8"
+                }
+            ],
+            "order": "C",
+            "shape": [
+                1
+            ],
+            "zarr_format": 2
+        },
+        "InputGenerationDateTimes/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_3"
+            ]
+        }
+    },
+    "zarr_consolidated_format": 1
+}

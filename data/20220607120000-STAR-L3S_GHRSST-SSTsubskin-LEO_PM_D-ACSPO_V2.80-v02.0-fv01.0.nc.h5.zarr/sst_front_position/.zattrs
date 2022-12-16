@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "comment": "Binary indicator of SST front position in the valid SST clear-sky domain: 1 - SST front present, 0 - no front present",
+    "coordinates": "lon lat",
+    "grid_mapping": "crs",
+    "long_name": "Binary SST front position indicator",
+    "valid_max": 1,
+    "valid_min": 0
+}

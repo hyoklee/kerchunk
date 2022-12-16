@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_tvps"
+    ],
+    "comment": "Geodetic latitude of the KMSF origin with respect to the reference ellipsoid.",
+    "long_name": "latitude (positive N, negative S) of the spacecraft",
+    "standard_name": "latitude",
+    "units": "degrees_north",
+    "valid_max": 80.0,
+    "valid_min": -80.0
+}

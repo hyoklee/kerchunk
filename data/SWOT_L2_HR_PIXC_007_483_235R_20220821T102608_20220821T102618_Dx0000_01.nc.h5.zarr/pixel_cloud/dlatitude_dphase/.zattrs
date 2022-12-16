@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Sensitivity of the latitude estimate to the interferogram phase.",
+    "coordinates": "longitude latitude",
+    "long_name": "sensitivity of latitude estimate to interferogram phase",
+    "units": "degrees/radian",
+    "valid_max": 999999.0,
+    "valid_min": -999999.0
+}

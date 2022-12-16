@@ -1,0 +1,8 @@
+{
+    "_ARRAY_DIMENSIONS": [],
+    "grid_mapping_name": "latitude_longitude",
+    "horizontal_datum_name": "World Geodetic System 1984",
+    "long_name": "coordinate reference system",
+    "prime_meridian_name": "Greenwich",
+    "reference_ellipsoid_name": "WGS84"
+}

@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ],
+    "add_offset": 0.0,
+    "add_offset_err": 0.0,
+    "calibrated_nt": 5,
+    "long_name": "Surface_reflectance_for_band_M10",
+    "scale_factor": 0.0001,
+    "scale_factor_err": 0.0,
+    "units": "reflectance",
+    "valid_range": [
+        -100,
+        16000
+    ]
+}

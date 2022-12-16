@@ -1,0 +1,12 @@
+{
+    "MissingValue": -32767,
+    "Offset": 0.0,
+    "ScaleFactor": 0.001,
+    "Title": "Effective cloud fraction",
+    "UniqueFieldDefinition": "OMI-Specific",
+    "Units": "NoUnits",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ]
+}

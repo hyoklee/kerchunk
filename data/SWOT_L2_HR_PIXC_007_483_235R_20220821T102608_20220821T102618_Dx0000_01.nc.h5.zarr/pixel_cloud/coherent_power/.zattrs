@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Power computed by combining the plus_y and minus_y channels coherently by co-aligning the phases (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).",
+    "coordinates": "longitude latitude",
+    "long_name": "coherent power combination of minus_y and plus_y channels",
+    "units": "1",
+    "valid_max": 999999.0,
+    "valid_min": 0.0
+}

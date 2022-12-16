@@ -1,0 +1,29 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "comment": "L2P common flags in bits 1-6 and data provider flags (from ACSPO mask) in bits 9-16: bit01 (0=IR: 1=microwave); bit02 (0=ocean; 1=land); bit03 (0=no ice; 1=ice); bits04-07 (reserved,set to 0); bit08 (0=anti-solar; 1=solar); bit09 (0=radiance valid; 1=invalid); bit10 (0=night; 1=day); bit11 (0=ocean; 1=land); bit12 (0=good quality data; 1=degraded quality data due to \"twilight\" region); bit13 (0=no glint; 1=glint); bit14 (0=no snow/ice; 1=snow/ice); bits15-16 (00=clear; 01=probably clear; 10=cloudy; 11=clear-sky mask undefined)",
+    "coordinates": "nj ni",
+    "flag_masks": [
+        1,
+        2,
+        4,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192,
+        16384,
+        -32768,
+        -16384
+    ],
+    "flag_meanings": "microwave land ice solar invalid day land twilight glint ice probably_clear cloudy mask_undefined",
+    "grid_mapping": "geostationary",
+    "long_name": "L2P flags",
+    "valid_max": 32767,
+    "valid_min": -32768
+}

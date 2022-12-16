@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "ds_geosegments"
+    ],
+    "description": "Dimension scale for geosegments within land segments.",
+    "flag_meanings": "geosegments1 geosegments2 geosegments3 geosegments4 geosegments5",
+    "flag_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "long_name": "Geosegments",
+    "units": "1",
+    "valid_max": 5,
+    "valid_min": 1
+}

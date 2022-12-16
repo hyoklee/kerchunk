@@ -1,0 +1,12 @@
+{
+    "MissingValue": -32767,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Effective cloud pressure precision",
+    "UniqueFieldDefinition": "OMI-Specific",
+    "Units": "hPa",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ]
+}

@@ -1,0 +1,674 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "AlgorithmType": "OPS",
+            "DataResolution": "Moderate",
+            "DayNumbers": "262",
+            "EndTime": "2015-09-22 00:00:00",
+            "GRingLatitude": [
+                -30.060828,
+                -19.942433,
+                -19.883099,
+                -30.0
+            ],
+            "GRingLongitude": [
+                126.62759,
+                116.68638,
+                127.6743,
+                138.56406
+            ],
+            "HorizontalTileNumber": "29",
+            "InputPointer": "/MODAPSlp1/archive/f5580/running/VNP_L10mc/26821592/VNP09GA.A2015262.h29v11.001.2016112235056.h5",
+            "LSIPS_AlgorithmVersion": "NPP_PR09A 1.0.2",
+            "LocalGranuleID": "VNP09A1.A2015257.h29v11.001.2016221164845.h5",
+            "LongName": "VIIRS/NPP Surface Reflectance 8-Day L3 Global 1km SIN Grid",
+            "PGENumber": "521",
+            "PGEVersion": "1.0.3",
+            "PGE_EndTime": "2015-09-22 00:00:00.000",
+            "PGE_StartTime": "2015-09-14 00:00:00.000",
+            "PlatformShortName": "NPP",
+            "ProcessVersion": "001",
+            "ProcessingCenter": "MODAPS, NASA GSFC",
+            "ProcessingEnvironment": "Linux minion5580 2.6.18-410.el5 #1 SMP Wed May 11 06:00:14 EDT 2016 x86_64 x86_64 x86_64 GNU/Linux",
+            "Product_authority": "http://dx.doi.org",
+            "Product_doi": "10.5067/VIIRS/VNP09A1.001",
+            "ProductionTime": "2016-08-08 16:48:45.000",
+            "RangeBeginningDate": "2015-09-14",
+            "RangeBeginningTime": "00:00:00.000",
+            "RangeEndingDate": "2015-09-22",
+            "RangeEndingTime": "00:00:00.000",
+            "SatelliteInstrument": "NPP_OPS",
+            "SensorShortname": "VIIRS",
+            "ShortName": "VNP09A1",
+            "StartTime": "2015-09-14 00:00:00",
+            "TileID": "51029011",
+            "VerticalTileNumber": "11"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/.zattrs": {
+            "HDFEOSVersion": "HDFEOS_5.1.13"
+        },
+        "HDFEOS INFORMATION/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/StructMetadata.0/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<U3202",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/StructMetadata.0/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "HDFEOS/.zattrs": {},
+        "HDFEOS/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/ADDITIONAL/.zattrs": {},
+        "HDFEOS/ADDITIONAL/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/ADDITIONAL/FILE_ATTRIBUTES/.zattrs": {},
+        "HDFEOS/ADDITIONAL/FILE_ATTRIBUTES/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/.zattrs": {
+            "PercentCloud": 8.157571792602539,
+            "PercentLand": 98.38358306884766,
+            "PercentWater": 1.6164169311523438,
+            "QAPercentGoodQuality": 100.0,
+            "QAPercentNotProduced": 0.0034722830168902874,
+            "QAPercentOtherQuality": 0.0
+        },
+        "HDFEOS/GRIDS/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/.zattrs": {},
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/.zattrs": {},
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/RelativeAzimuth/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/RelativeAzimuth/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Relative_azimuth",
+            "scale_factor": 0.01,
+            "scale_factor_err": 0.0,
+            "units": "degree",
+            "valid_range": [
+                -18000,
+                18000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SensorZenith/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SensorZenith/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "View_zenith",
+            "scale_factor": 0.01,
+            "scale_factor_err": 0.0,
+            "units": "degree",
+            "valid_range": [
+                0,
+                18000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SolarZenith/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SolarZenith/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Solar_zenith",
+            "scale_factor": 0.01,
+            "scale_factor_err": 0.0,
+            "units": "degree",
+            "valid_range": [
+                0,
+                18000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_Day_Of_Year/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<u2",
+            "fill_value": 65535,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_Day_Of_Year/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "long_name": "Surface_reflectance_day_of_year",
+            "units": "Julian day",
+            "valid_range": [
+                1,
+                366
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M1/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M1/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M1",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M10/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M10/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M10",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M11/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M11/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M11",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M2/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M2/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M2",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M3/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M3/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M3",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M4/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M4/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M4",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M5/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M5/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M5",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M7/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M7/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M7",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M8/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i2",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M8/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "add_offset": 0.0,
+            "add_offset_err": 0.0,
+            "calibrated_nt": 5,
+            "long_name": "Surface_reflectance_for_band_M8",
+            "scale_factor": 0.0001,
+            "scale_factor_err": 0.0,
+            "units": "reflectance",
+            "valid_range": [
+                -100,
+                16000
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_QC/.zarray": {
+            "chunks": [
+                300,
+                300
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<u4",
+            "fill_value": 1073741824,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_QC/.zattrs": {
+            "QA bitmap index": "\n\tBits are listed from the MSB (bit 31) to the LSB (bit 0):\n\tBit    Description\n\t31     adjacency correction performed; \n\t       1 -- yes\n\t       0 -- no\n\t30     atmospheric correction performed; \n\t       1 -- yes\n\t       0 -- no\n\t26-29  band 7 data quality four bit range;\n\t       0000 -- highest quality\n\t       0111 -- noisy detector\n\t       1000 -- dead detector, data interpolated in L1B\n\t       1001 -- solar zenith >= 86 degrees\n\t       1010 -- solar zenith >= 85 and < 86 degrees\n\t       1011 -- missing input\n\t       1100 -- internal constant used in place of climatological data \n\t               for at least one atmospheric constant\n\t       1101 -- correction out of bounds pixel constrained to extreme \n\t               allowable value\n\t       1110 -- L1B data faulty\n\t       1111 -- not processed due to deep ocean or clouds\n\t22-25  band 6 data quality four bit range;\n\t       SAME AS ABOVE\n\t18-21  band 5 data quality four bit range;\n\t       SAME AS ABOVE\n\t14-17  band 4 data quality four bit range;\n\t       SAME AS ABOVE\n\t10-13  band 3 data quality four bit range;\n\t       SAME AS ABOVE\n\t6-9    band 2 data quality four bit range;\n\t       SAME AS ABOVE\n\t2-5    band 1 data quality four bit range;\n\t       SAME AS ABOVE\n\t0-1    MODLAND QA bits; \n\t       corrected product produced at\n\t       00 -- ideal quality all bands \n\t       01 -- less than ideal quality some or all bands\n\t       corrected product not produced due to\n\t       10 -- cloud effects all bands \n\t       11 -- other reasons some or all bands may be fill value\n\t       [Note that a value of (11) overrides a value of (01)].\n",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "long_name": "Surface_reflectance_500m_quality_control_flags",
+            "units": "bit field",
+            "valid_range": [
+                0,
+                4294966531
+            ]
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_State/.zarray": {
+            "chunks": [
+                300,
+                600
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<u2",
+            "fill_value": 65535,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                1200,
+                1200
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_State/.zattrs": {
+            "QA bitmap index": "\n\tBits are listed from the MSB (bit 15) to the LSB (bit 0):\n\tBit    Description\n\t15     internal snow algorithm flag; \n\t       1 -- yes\n\t       0 -- no\n\t14     BRDF correction performed;\n\t       1 -- yes\n\t       0 -- no\n\t13     Pixel is adjacent to cloud;\n\t       1 -- yes\n\t       0 -- no\n\t12     MOD35 snow/ice flag;\n\t       1 -- yes\n\t       0 -- no\n\t11     internal fire algorithm flag;\n\t       1 -- fire\n\t       0 -- no fire\n\t10    internal cloud algorithm flag;\n\t       1 -- cloud\n\t       0 -- no cloud\n\t8-9    cirrus detected;\n\t       00 -- none\n\t       01 -- small\n\t       10 -- average\n\t       11 -- high\n\t6-7    aerosol quantity;\n\t       00 -- climatology\n\t       01 -- low\n\t       10 -- average\n\t       11 -- high\n\t3-5    land/water flag;\n\t       000 -- shallow ocean\n\t       001 -- land\n\t       010 -- ocean coastlines and lake shorelines\n\t       011 -- shallow inland water\n\t       100 -- ephemeral water\n\t       101 -- deep inland water\n\t       110 -- continental/moderate ocean\n\t       111 -- deep ocean\n\t2      cloud shadow;\n\t       1 -- yes\n\t       0 -- no\n\t0-1    cloud state;\n\t       00 -- clear\n\t       01 -- cloudy\n\t       10 -- mixed\n\t       11 -- not set, assumed clear\n",
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "long_name": "Surface_reflectance_500m_state_flags",
+            "units": "bit field",
+            "valid_range": [
+                0,
+                57343
+            ]
+        }
+    },
+    "zarr_consolidated_format": 1
+}

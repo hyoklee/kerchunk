@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_tvps"
+    ],
+    "comment": "KMSF velocity component in z direction in the ECEF frame.",
+    "coordinates": "longitude latitude",
+    "long_name": "z component of the spacecraft velocity in the ECEF frame",
+    "units": "m/s",
+    "valid_max": 10000.0,
+    "valid_min": -10000.0
+}

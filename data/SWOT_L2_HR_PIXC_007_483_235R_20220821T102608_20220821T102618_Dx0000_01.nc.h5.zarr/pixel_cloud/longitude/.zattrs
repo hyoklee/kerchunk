@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Longitude [-180,180) (east of the Greenwich meridian) of the pixel.",
+    "long_name": "longitude (degrees East)",
+    "standard_name": "longitude",
+    "units": "degrees_east",
+    "valid_max": 180.0,
+    "valid_min": -180.0
+}

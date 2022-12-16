@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points",
+        "complex_depth"
+    ],
+    "comment": "Complex unflattened rare interferogram.",
+    "coordinates": "longitude latitude",
+    "long_name": "rare interferogram",
+    "units": "1",
+    "valid_max": 999999.0,
+    "valid_min": -999999.0
+}

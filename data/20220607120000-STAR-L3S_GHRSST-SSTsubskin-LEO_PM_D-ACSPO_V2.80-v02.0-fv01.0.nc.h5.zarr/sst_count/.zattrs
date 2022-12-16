@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "comment": "Number of L3U pixels contributing to L3S pixel",
+    "coordinates": "lon lat",
+    "coverage_content_type": "referenceInformation",
+    "grid_mapping": "crs",
+    "long_name": "Count of input L3U SST pixels",
+    "units": "1",
+    "valid_max": 127,
+    "valid_min": 0
+}

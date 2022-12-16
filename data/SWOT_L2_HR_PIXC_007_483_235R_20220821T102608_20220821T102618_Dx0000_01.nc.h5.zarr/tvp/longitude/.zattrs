@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_tvps"
+    ],
+    "comment": "Longitude of the KMSF origin, with positive values indicating longitudes east of the Greenwich meridian.",
+    "long_name": "longitude (degrees East) of the spacecraft",
+    "standard_name": "longitude",
+    "units": "degrees_east",
+    "valid_max": 180.0,
+    "valid_min": -180.0
+}

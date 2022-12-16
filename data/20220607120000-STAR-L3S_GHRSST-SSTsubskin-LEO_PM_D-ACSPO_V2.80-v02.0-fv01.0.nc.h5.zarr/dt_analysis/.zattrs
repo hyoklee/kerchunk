@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "comment": "Deviation from reference SST, i.e., dt_analysis = SST - reference SST",
+    "coordinates": "lon lat",
+    "coverage_content_type": "qualityInformation",
+    "grid_mapping": "crs",
+    "long_name": "deviation from SST reference",
+    "scale_factor": 0.009999999776482582,
+    "source": "CMC0.1deg-CMC-L4-GLOB-v2.0",
+    "units": "kelvin",
+    "valid_max": 32767,
+    "valid_min": -32767
+}

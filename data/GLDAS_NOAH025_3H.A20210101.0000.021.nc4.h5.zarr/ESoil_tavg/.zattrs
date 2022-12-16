@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: mean",
+    "long_name": "Direct Evaporation from Bare Soil",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "evaporation_flux_from_soil",
+    "units": "W m-2",
+    "vmax": 271.1000061035156,
+    "vmin": 0.0
+}

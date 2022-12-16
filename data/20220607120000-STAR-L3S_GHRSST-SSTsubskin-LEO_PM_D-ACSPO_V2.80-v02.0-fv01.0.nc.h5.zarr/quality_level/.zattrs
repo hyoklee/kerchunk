@@ -1,0 +1,23 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "comment": "SST quality levels: 5 corresponds to \u201cclear-sky\u201d pixels and is recommended for operational applications and validation.",
+    "coordinates": "lon lat",
+    "coverage_content_type": "qualityInformation",
+    "flag_meanings": "no_data bad_data not_used not_used not_used best_quality",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "grid_mapping": "crs",
+    "long_name": "quality level of SST pixel",
+    "valid_max": 5,
+    "valid_min": 0
+}

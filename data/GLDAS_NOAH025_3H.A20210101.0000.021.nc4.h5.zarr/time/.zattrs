@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time"
+    ],
+    "begin_date": "20210101",
+    "begin_time": "000000",
+    "bounds": "time_bnds",
+    "calendar": "proleptic_gregorian",
+    "long_name": "time",
+    "time_increment": "180",
+    "units": "minutes since 2000-01-01T03:00:00"
+}

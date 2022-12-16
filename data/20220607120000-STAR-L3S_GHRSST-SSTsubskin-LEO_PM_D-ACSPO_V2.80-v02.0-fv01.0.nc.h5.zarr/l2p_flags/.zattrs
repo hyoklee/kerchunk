@@ -1,0 +1,26 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "comment": "L2P common flags in bits 1-6 and data provider flags (from ACSPO mask) in bits 9-16: bit01 (0=IR: 1=microwave); bit02 (0=ocean; 1=land); bit03 (0=no ice; 1=ice); bits04-08 (reserved,set to 0); bit09 (0=radiance valid; 1=invalid); bit10 (0=night; 1=day); bit11 (0=ocean; 1=land); bit12 not used (set to 0); bit13 (0=no glint; 1=glint); bit14 (0=no snow/ice; 1=snow/ice); bits15-16 (00=clear; 01=probably clear; 10=cloudy; 11=clear-sky mask undefined)",
+    "coordinates": "lon lat",
+    "coverage_content_type": "thematicClassification",
+    "flag_masks": [
+        1,
+        2,
+        4,
+        256,
+        512,
+        1024,
+        4096,
+        8192,
+        -16384
+    ],
+    "flag_meanings": "microwave land ice invalid day land glint ice probably_clear_or_cloudy_or_undefined",
+    "grid_mapping": "crs",
+    "long_name": "L2P flags",
+    "valid_max": 32767,
+    "valid_min": -32768
+}

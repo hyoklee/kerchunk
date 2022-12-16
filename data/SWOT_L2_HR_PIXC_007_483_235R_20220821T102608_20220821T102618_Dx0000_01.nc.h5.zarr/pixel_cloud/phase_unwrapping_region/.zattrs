@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Phase unwrapping region index.",
+    "coordinates": "longitude latitude",
+    "long_name": "phase unwrapping region index",
+    "units": "1",
+    "valid_max": 99999999,
+    "valid_min": -1
+}

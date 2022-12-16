@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: point",
+    "long_name": "Pressure",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "surface_air_pressure",
+    "units": "Pa",
+    "vmax": 104890.1171875,
+    "vmin": 47742.1171875
+}

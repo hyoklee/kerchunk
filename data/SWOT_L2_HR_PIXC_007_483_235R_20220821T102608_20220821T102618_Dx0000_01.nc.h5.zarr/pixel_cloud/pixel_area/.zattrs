@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Pixel area.",
+    "coordinates": "longitude latitude",
+    "long_name": "pixel area",
+    "units": "m^2",
+    "valid_max": 999999.0,
+    "valid_min": 0.0
+}

@@ -1,0 +1,12 @@
+{
+    "MissingValue": -32767,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Offset and count of nTimesSmallPixel wrt nTimes",
+    "UniqueFieldDefinition": "OMI-Specific",
+    "Units": "NoUnits",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_5"
+    ]
+}

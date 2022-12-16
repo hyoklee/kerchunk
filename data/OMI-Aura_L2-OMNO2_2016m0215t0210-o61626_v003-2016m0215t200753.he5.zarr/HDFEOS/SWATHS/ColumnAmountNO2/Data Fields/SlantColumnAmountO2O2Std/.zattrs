@@ -1,0 +1,12 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1e+47,
+    "Title": "Precision of the O2-O2 slant column density",
+    "UniqueFieldDefinition": "OMI-Specific",
+    "Units": "molec/cm^2",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ]
+}

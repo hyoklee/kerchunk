@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: point",
+    "long_name": "Soil moisture",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "soil_moisture_content",
+    "units": "kg m-2",
+    "vmax": 999.9996948242188,
+    "vmin": 20.04669952392578
+}

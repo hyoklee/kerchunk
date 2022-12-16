@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Solid-Earth (body) tide height. The zero-frequency permanent tide component is not included.",
+    "coordinates": "longitude latitude",
+    "long_name": "solid Earth tide height",
+    "source": "Cartwright and Taylor (1971) and Cartwright and Edden (1973)",
+    "units": "m",
+    "valid_max": 1.0,
+    "valid_min": -1.0
+}

@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [],
+    "false_easting": 0.0,
+    "false_northing": 0.0,
+    "geographic_crs_name": "WGS 84",
+    "grid_mapping_name": "geostationary",
+    "horizontal_datum_name": "WGS_1984",
+    "inverse_flattening": 298.257223563,
+    "latitude_of_projection_origin": 0.0,
+    "longitude_of_projection_origin": -137.0,
+    "perspective_point_height": 35786023.0,
+    "prime_meridian_name": "Greenwich",
+    "reference_ellipsoid_name": "WGS 84",
+    "semi_major_axis": 6378137.0,
+    "semi_minor_axis": 6356752.314245,
+    "sweep_angle_axis": "x"
+}

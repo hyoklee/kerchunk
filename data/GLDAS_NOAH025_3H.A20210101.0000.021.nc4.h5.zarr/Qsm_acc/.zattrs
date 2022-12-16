@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: sum",
+    "long_name": "Snow melt",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "surface_snow_melt_amount",
+    "units": "kg m-2",
+    "vmax": 5.3480000495910645,
+    "vmin": 0.0
+}

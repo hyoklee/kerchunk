@@ -1,0 +1,24 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "comment": "Major contributor to SST. The major contributor is defined as the platform with highest weighed l3u observation.",
+    "coordinates": "lon lat",
+    "coverage_content_type": "referenceInformation",
+    "flag_meanings": "viirs_npp viirs_n20 avhrr_ma avhrr_mb avhrr_mc modis_t modis_a",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "grid_mapping": "crs",
+    "long_name": "Source of major (highest weight) contribution to sst",
+    "valid_max": 6,
+    "valid_min": 0
+}

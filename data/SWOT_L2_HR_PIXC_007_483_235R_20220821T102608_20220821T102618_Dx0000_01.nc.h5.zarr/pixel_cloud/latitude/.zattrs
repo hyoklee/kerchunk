@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Geodetic latitude [-80,80] (degrees north of equator) of the pixel.",
+    "long_name": "latitude (positive N, negative S)",
+    "standard_name": "latitude",
+    "units": "degrees_north",
+    "valid_max": 80.0,
+    "valid_min": -80.0
+}

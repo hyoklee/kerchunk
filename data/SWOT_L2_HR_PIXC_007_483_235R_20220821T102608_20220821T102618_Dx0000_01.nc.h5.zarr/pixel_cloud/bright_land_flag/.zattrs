@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Flag indicating areas that are not typically water but are expected to be bright (e.g., urban areas, ice). Flag value 2 indicates cases where prior data indicate land, but where prior_water_prob indicates possible water.",
+    "coordinates": "longitude latitude",
+    "flag_meanings": "not_bright_land bright_land bright_land_or_water",
+    "flag_values": [
+        0,
+        1,
+        2
+    ],
+    "long_name": "bright land flag",
+    "standard_name": "status_flag",
+    "valid_max": 2,
+    "valid_min": 0
+}

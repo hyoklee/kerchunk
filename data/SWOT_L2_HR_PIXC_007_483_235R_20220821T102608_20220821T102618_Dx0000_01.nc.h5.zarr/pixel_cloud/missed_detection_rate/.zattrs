@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Probability of falsely detecting no water when there is water.",
+    "coordinates": "longitude latitude",
+    "long_name": "missed detection rate",
+    "units": "1",
+    "valid_max": 1.0,
+    "valid_min": 0.0
+}

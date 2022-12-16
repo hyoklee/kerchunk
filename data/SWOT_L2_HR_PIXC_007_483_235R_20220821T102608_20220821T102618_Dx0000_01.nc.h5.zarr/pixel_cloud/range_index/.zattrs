@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Rare interferogram range index (indexed from 0).",
+    "coordinates": "longitude latitude",
+    "long_name": "rare interferogram range index",
+    "units": "1",
+    "valid_max": 999999,
+    "valid_min": 0
+}

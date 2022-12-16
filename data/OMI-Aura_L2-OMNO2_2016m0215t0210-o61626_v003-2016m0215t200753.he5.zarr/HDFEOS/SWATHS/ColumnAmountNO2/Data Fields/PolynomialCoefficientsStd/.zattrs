@@ -1,0 +1,13 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Precision of the Polynomial Coefficients",
+    "UniqueFieldDefinition": "OMI-Specific",
+    "Units": "NoUnits",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1",
+        "phony_dim_2"
+    ]
+}

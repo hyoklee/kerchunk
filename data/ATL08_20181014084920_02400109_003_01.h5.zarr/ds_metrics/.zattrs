@@ -1,0 +1,23 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "ds_metrics"
+    ],
+    "contentType": "referenceInformation",
+    "description": "Dimension scale for metrics.",
+    "flag_meanings": "metrics1 metrics2 metrics3 metrics4 metrics5 metrics6 metrics7 metrics8 metrics9",
+    "flag_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ],
+    "long_name": "Metrics",
+    "units": "1",
+    "valid_max": 4,
+    "valid_min": 1
+}

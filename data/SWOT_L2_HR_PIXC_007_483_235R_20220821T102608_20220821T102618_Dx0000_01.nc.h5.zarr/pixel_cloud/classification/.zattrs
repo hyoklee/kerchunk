@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Flags indicating water detection results.",
+    "coordinates": "longitude latitude",
+    "flag_meanings": "land land_near_water water_near_land open_water land_near_dark_water dark_water_edge dark_water",
+    "flag_values": [
+        1,
+        2,
+        3,
+        4,
+        22,
+        23,
+        24
+    ],
+    "long_name": "classification",
+    "valid_max": 24,
+    "valid_min": 1
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Geocentric load tide height. The effect of the ocean tide loading of the Earth's crust. This value is reported for reference but is not applied to the reported height.",
+    "coordinates": "longitude latitude",
+    "institution": "LEGOS/CNES",
+    "long_name": "geocentric load tide height (FES)",
+    "source": "FES2014b (Carrere et al., 2016)",
+    "units": "m",
+    "valid_max": 0.20000000298023224,
+    "valid_min": -0.20000000298023224
+}

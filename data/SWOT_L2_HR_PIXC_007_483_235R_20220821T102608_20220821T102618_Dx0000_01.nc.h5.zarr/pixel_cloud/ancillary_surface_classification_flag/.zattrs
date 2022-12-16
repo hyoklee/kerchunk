@@ -1,0 +1,23 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "7-state surface type classification computed from a mask built with MODIS and GlobCover data.",
+    "coordinates": "longitude latitude",
+    "flag_meanings": "open_ocean land continental_water aquatic_vegetation continental_ice_snow floating_ice salted_basin",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+    ],
+    "institution": "European Space Agency",
+    "long_name": "surface classification",
+    "source": "MODIS/GlobCover",
+    "standard_name": "status_flag",
+    "valid_max": 6,
+    "valid_min": 0
+}

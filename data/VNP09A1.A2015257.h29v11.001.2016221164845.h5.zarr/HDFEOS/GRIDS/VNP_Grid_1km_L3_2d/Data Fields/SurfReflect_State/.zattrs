@@ -1,0 +1,13 @@
+{
+    "QA bitmap index": "\n\tBits are listed from the MSB (bit 15) to the LSB (bit 0):\n\tBit    Description\n\t15     internal snow algorithm flag; \n\t       1 -- yes\n\t       0 -- no\n\t14     BRDF correction performed;\n\t       1 -- yes\n\t       0 -- no\n\t13     Pixel is adjacent to cloud;\n\t       1 -- yes\n\t       0 -- no\n\t12     MOD35 snow/ice flag;\n\t       1 -- yes\n\t       0 -- no\n\t11     internal fire algorithm flag;\n\t       1 -- fire\n\t       0 -- no fire\n\t10    internal cloud algorithm flag;\n\t       1 -- cloud\n\t       0 -- no cloud\n\t8-9    cirrus detected;\n\t       00 -- none\n\t       01 -- small\n\t       10 -- average\n\t       11 -- high\n\t6-7    aerosol quantity;\n\t       00 -- climatology\n\t       01 -- low\n\t       10 -- average\n\t       11 -- high\n\t3-5    land/water flag;\n\t       000 -- shallow ocean\n\t       001 -- land\n\t       010 -- ocean coastlines and lake shorelines\n\t       011 -- shallow inland water\n\t       100 -- ephemeral water\n\t       101 -- deep inland water\n\t       110 -- continental/moderate ocean\n\t       111 -- deep ocean\n\t2      cloud shadow;\n\t       1 -- yes\n\t       0 -- no\n\t0-1    cloud state;\n\t       00 -- clear\n\t       01 -- cloudy\n\t       10 -- mixed\n\t       11 -- not set, assumed clear\n",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ],
+    "long_name": "Surface_reflectance_500m_state_flags",
+    "units": "bit field",
+    "valid_range": [
+        0,
+        57343
+    ]
+}

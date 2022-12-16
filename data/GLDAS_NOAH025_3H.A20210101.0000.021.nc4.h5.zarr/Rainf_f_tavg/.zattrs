@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: mean",
+    "long_name": "Total precipitation rate",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "precipitation_flux",
+    "units": "kg m-2 s-1",
+    "vmax": 0.003469000104814768,
+    "vmin": 0.0
+}

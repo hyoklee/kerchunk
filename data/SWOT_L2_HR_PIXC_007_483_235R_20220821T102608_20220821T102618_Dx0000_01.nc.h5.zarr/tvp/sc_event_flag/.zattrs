@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_tvps"
+    ],
+    "comment": "Spacecraft event flag",
+    "coordinates": "longitude latitude",
+    "flag_meanings": "nominal not_nominal",
+    "flag_values": [
+        0,
+        1
+    ],
+    "standard_name": "status_flag",
+    "valid_max": 1,
+    "valid_min": 0
+}

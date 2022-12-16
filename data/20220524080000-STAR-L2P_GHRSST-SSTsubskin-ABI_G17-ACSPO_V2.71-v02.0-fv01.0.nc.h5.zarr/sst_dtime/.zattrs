@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 0.0,
+    "comment": "time plus sst_dtime gives seconds since 1981-01-01 00:00:00 UTC",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "time difference from reference time",
+    "scale_factor": 0.25,
+    "units": "seconds",
+    "valid_max": 32767,
+    "valid_min": -32767
+}

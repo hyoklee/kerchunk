@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_tvps"
+    ],
+    "calendar": "gregorian",
+    "comment": "Time of measurement in seconds in the TAI time scale since 1 Jan 2000 00:00:00 TAI. This time scale contains no leap seconds. The difference (in seconds) with time in UTC is given by the attribute [time:tai_utc_difference].",
+    "coordinates": "longitude latitude",
+    "long_name": "time in TAI",
+    "standard_name": "time",
+    "units": "seconds since 2000-01-01"
+}

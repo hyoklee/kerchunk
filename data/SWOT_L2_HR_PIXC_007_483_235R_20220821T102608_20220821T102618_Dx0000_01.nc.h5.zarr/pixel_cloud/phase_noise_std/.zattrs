@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Estimate of the phase noise standard deviation.",
+    "coordinates": "longitude latitude",
+    "long_name": "phase noise standard deviation",
+    "units": "radians",
+    "valid_max": 999999.0,
+    "valid_min": -999999.0
+}

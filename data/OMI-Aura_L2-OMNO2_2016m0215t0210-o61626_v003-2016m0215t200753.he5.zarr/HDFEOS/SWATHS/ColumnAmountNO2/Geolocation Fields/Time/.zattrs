@@ -1,0 +1,11 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Time at Start of Scan (s, TAI93)",
+    "UniqueFieldDefinition": "Aura-Shared",
+    "Units": "s",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_6"
+    ]
+}

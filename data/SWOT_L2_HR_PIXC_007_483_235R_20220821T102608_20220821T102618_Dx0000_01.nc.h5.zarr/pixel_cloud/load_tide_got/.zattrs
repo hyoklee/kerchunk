@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Geocentric load tide height. The effect of the ocean tide loading of the Earth's crust. This value is reported for reference but is not applied to the reported height.",
+    "coordinates": "longitude latitude",
+    "institution": "GSFC",
+    "long_name": "geocentric load tide height (GOT)",
+    "source": "GOT4.10c (Ray, 2013)",
+    "units": "m",
+    "valid_max": 0.20000000298023224,
+    "valid_min": -0.20000000298023224
+}

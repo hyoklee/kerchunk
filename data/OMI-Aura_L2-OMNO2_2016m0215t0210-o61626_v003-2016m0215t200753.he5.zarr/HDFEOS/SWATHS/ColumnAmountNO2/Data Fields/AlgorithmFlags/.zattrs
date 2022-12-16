@@ -1,0 +1,12 @@
+{
+    "MissingValue": 65535,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Algorithm flags                                                                                                         ",
+    "UniqueFieldDefinition": "OMI-Specific",
+    "Units": "NoUnits                                                                                                                 ",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ]
+}

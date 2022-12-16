@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Noisy estimate of the fraction of the pixel that is water.",
+    "coordinates": "longitude latitude",
+    "long_name": "water fraction",
+    "units": "1",
+    "valid_max": 10000.0,
+    "valid_min": -1000.0
+}

@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "comment": "Typically represents surface winds (10 meters above the sea surface). The wind speeds reported here are a weighted average of wind speeds reported in input l3u data.",
+    "coordinates": "lon lat",
+    "coverage_content_type": "auxiliaryInformation",
+    "grid_mapping": "crs",
+    "height": "10 m",
+    "long_name": "wind speed",
+    "scale_factor": 0.15000000596046448,
+    "source": "Wind speed from MERRA-2 data",
+    "standard_name": "wind_speed",
+    "units": "m s-1",
+    "valid_max": 127,
+    "valid_min": -127
+}

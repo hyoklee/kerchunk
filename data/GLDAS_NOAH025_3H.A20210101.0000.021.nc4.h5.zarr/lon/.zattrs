@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "long_name": "longitude",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "longitude",
+    "units": "degrees_east",
+    "vmax": 179.875,
+    "vmin": -179.875
+}

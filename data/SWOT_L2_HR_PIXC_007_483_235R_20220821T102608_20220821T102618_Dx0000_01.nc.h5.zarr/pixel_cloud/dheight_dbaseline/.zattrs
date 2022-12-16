@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Sensitivity of the height estimate to the interferometric baseline.",
+    "coordinates": "longitude latitude",
+    "long_name": "sensitivity of height estimate to interferometric baseline",
+    "units": "m/m",
+    "valid_max": 999999.0,
+    "valid_min": -999999.0
+}

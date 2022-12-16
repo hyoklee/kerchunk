@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 273.1499938964844,
+    "comment": "Reference SST used for determining weights of L3U pixels to the L3S output. It is a 7x7 sliding window weighted mean of sea_surface_temperature. Weights are equal to sst_count with a maximum weight of 5. Coverage is improved compared to sea_surface_temperature, at the cost of reduced feature resolution. This is an experimental variable and is subject to change.",
+    "coordinates": "lon lat",
+    "coverage_content_type": "physicalMeasurement",
+    "grid_mapping": "crs",
+    "long_name": "l3s sea surface temperature reference",
+    "scale_factor": 0.009999999776482582,
+    "source": "NOAA",
+    "units": "kelvin",
+    "valid_max": 32767,
+    "valid_min": -32767
+}

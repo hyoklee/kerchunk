@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 0.0,
+    "comment": "Bias is derived against Piecewise Regression SST produced by local regressions with buoys. Subtracting sses_bias from sea_surface_temperature producess more accurate SST at the depth of buoys  Further information at (Petrenko et al., JTECH, 2016; doi:10.1175/JTECH-D-15-0166.1)",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "long_name": "SSES bias estimate",
+    "scale_factor": 0.01600000075995922,
+    "units": "kelvin",
+    "valid_max": 127,
+    "valid_min": -127
+}

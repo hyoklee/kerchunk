@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "lat",
+        "lon"
+    ],
+    "add_offset": 0.0,
+    "cell_methods": "time: mean",
+    "long_name": "Sensible heat net flux",
+    "missing_value": -9999.0,
+    "scale_factor": 1.0,
+    "standard_name": "surface_upward_sensible_heat_flux",
+    "units": "W m-2",
+    "vmax": 592.3402709960938,
+    "vmin": -216.27972412109375
+}

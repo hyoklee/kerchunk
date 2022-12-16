@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "nj"
+    ],
+    "axis": "Y",
+    "long_name": "y coordinate of projection",
+    "standard_name": "projection_y_coordinate",
+    "units": "radians",
+    "valid_max": 0.15184397995471954,
+    "valid_min": -0.15184400975704193
+}

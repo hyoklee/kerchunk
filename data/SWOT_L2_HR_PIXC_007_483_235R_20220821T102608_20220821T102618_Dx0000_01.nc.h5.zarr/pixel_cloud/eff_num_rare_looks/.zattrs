@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Effective number of independent looks taken to form the rare interferogram.",
+    "coordinates": "longitude latitude",
+    "long_name": "effective number of rare looks",
+    "units": "1",
+    "valid_max": 999999.0,
+    "valid_min": 0.0
+}

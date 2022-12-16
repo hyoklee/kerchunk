@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_tvps"
+    ],
+    "comment": "Index of the TVP record used to align data samples across granules.",
+    "coordinates": "longitude latitude",
+    "long_name": "record counter",
+    "units": "1",
+    "valid_max": 999999999,
+    "valid_min": 1
+}

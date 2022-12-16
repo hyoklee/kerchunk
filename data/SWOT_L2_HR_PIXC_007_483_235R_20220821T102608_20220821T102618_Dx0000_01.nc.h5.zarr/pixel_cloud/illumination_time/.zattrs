@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "calendar": "gregorian",
+    "comment": "Time of measurement in seconds in the UTC time scale since 1 Jan 2000 00:00:00 UTC. [tai_utc_difference] is the difference between TAI and UTC reference time (seconds) for the first measurement of the data set. If a leap second occurs within the data set, the attribute leap_second is set to the UTC time at which the leap second occurs.",
+    "coordinates": "longitude latitude",
+    "leap_second": "YYYY-MM-DD hh:mm:ss",
+    "long_name": "time of illumination of each pixel (UTC)",
+    "standard_name": "time",
+    "tai_utc_difference": "[Value of TAI-UTC at time of first record]",
+    "units": "seconds since 2000-01-01"
+}

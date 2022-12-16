@@ -1,0 +1,12 @@
+{
+    "MissingValue": -1.2676506002282294e+30,
+    "Offset": 0.0,
+    "ScaleFactor": 1.0,
+    "Title": "Tropospheric air mass factor                                                   ",
+    "UniqueFieldDefinition": "OMI-Specific                                                                                                            ",
+    "Units": "NoUnits",
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_0",
+        "phony_dim_1"
+    ]
+}

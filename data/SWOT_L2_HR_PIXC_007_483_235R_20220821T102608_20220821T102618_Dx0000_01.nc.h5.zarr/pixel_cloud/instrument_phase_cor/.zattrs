@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Term that incorporates all calibration corrections applied to phase before geolocation.",
+    "coordinates": "longitude latitude",
+    "long_name": "instrument phase correction",
+    "units": "radians",
+    "valid_max": 999999.0,
+    "valid_min": -999999.0
+}

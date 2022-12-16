@@ -1,0 +1,193 @@
+{
+    "metadata": {
+        ".zattrs": {},
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/.zattrs": {
+            "HDFEOSVersion": "HDFEOS_5.1.15"
+        },
+        "HDFEOS INFORMATION/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/CoreMetadata.0/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<U5160",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/CoreMetadata.0/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "HDFEOS INFORMATION/StructMetadata.0/.zarray": {
+            "chunks": [],
+            "compressor": null,
+            "dtype": "<U1843",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [],
+            "zarr_format": 2
+        },
+        "HDFEOS INFORMATION/StructMetadata.0/.zattrs": {
+            "_ARRAY_DIMENSIONS": []
+        },
+        "HDFEOS/.zattrs": {},
+        "HDFEOS/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/ADDITIONAL/.zattrs": {},
+        "HDFEOS/ADDITIONAL/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/ADDITIONAL/FILE_ATTRIBUTES/.zattrs": {},
+        "HDFEOS/ADDITIONAL/FILE_ATTRIBUTES/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/.zattrs": {},
+        "HDFEOS/GRIDS/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Northern Hemisphere/.zattrs": {},
+        "HDFEOS/GRIDS/Northern Hemisphere/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Northern Hemisphere/Data Fields/.zattrs": {},
+        "HDFEOS/GRIDS/Northern Hemisphere/Data Fields/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Northern Hemisphere/Data Fields/Flags_NorthernDaily/.zarray": {
+            "chunks": [
+                361,
+                721
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|u1",
+            "fill_value": 255,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                721,
+                721
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Northern Hemisphere/Data Fields/Flags_NorthernDaily/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ]
+        },
+        "HDFEOS/GRIDS/Northern Hemisphere/Data Fields/SWE_NorthernDaily/.zarray": {
+            "chunks": [
+                361,
+                721
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|u1",
+            "fill_value": 255,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                721,
+                721
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Northern Hemisphere/Data Fields/SWE_NorthernDaily/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_0",
+                "phony_dim_1"
+            ],
+            "format": "f3.0",
+            "long_name": "Daily snow water equivalent (SWE)",
+            "scale_factor": 2.0,
+            "units": "mm"
+        },
+        "HDFEOS/GRIDS/Southern Hemisphere/.zattrs": {},
+        "HDFEOS/GRIDS/Southern Hemisphere/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Southern Hemisphere/Data Fields/.zattrs": {},
+        "HDFEOS/GRIDS/Southern Hemisphere/Data Fields/.zgroup": {
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Southern Hemisphere/Data Fields/Flags_SouthernDaily/.zarray": {
+            "chunks": [
+                361,
+                721
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|u1",
+            "fill_value": 255,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                721,
+                721
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Southern Hemisphere/Data Fields/Flags_SouthernDaily/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_3"
+            ]
+        },
+        "HDFEOS/GRIDS/Southern Hemisphere/Data Fields/SWE_SouthernDaily/.zarray": {
+            "chunks": [
+                361,
+                721
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|u1",
+            "fill_value": 255,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                721,
+                721
+            ],
+            "zarr_format": 2
+        },
+        "HDFEOS/GRIDS/Southern Hemisphere/Data Fields/SWE_SouthernDaily/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "phony_dim_2",
+                "phony_dim_3"
+            ],
+            "format": "f3.0",
+            "long_name": "Daily snow water equivalent (SWE)",
+            "scale_factor": 2.0,
+            "units": "mm"
+        }
+    },
+    "zarr_consolidated_format": 1
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Equivalent vertical correction due to dry troposphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.",
+    "coordinates": "longitude latitude",
+    "institution": "ECMWF",
+    "long_name": "dry troposphere vertical correction",
+    "source": "European Centre for Medium-Range Weather Forecasts",
+    "units": "m",
+    "valid_max": -1.5,
+    "valid_min": -3.0
+}

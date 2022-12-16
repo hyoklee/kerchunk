@@ -1,0 +1,19 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "time",
+        "nj",
+        "ni"
+    ],
+    "add_offset": 0.0,
+    "comment": "Typically represents surface winds (10 meters above the sea surface)",
+    "coordinates": "nj ni",
+    "grid_mapping": "geostationary",
+    "height": "10 m",
+    "long_name": "wind speed",
+    "scale_factor": 0.15000000596046448,
+    "source": "Wind speed from NCEP GFS data",
+    "standard_name": "wind_speed",
+    "units": "m s-1",
+    "valid_max": 127,
+    "valid_min": -127
+}

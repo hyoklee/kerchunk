@@ -1,0 +1,2524 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "Conventions": "CF-1.7",
+            "contact": "damien.desroches[at]cnes.fr ; claire.pottier[at]cnes.fr",
+            "cycle_number": 7,
+            "ellipsoid_flattening": 0.0,
+            "ellipsoid_semi_major_axis": 6371008.771416667,
+            "geospatial_lat_max": 45.98415398441232,
+            "geospatial_lat_min": 45.26548633315432,
+            "geospatial_lon_max": -108.8058762452249,
+            "geospatial_lon_min": -109.87819728522156,
+            "history": "2021-03-02 00:49:14 : Creation",
+            "inner_first_latitude": 45.42898820094792,
+            "inner_first_longitude": -109.87819728522156,
+            "inner_last_latitude": 45.98415398441232,
+            "inner_last_longitude": -109.66245293543054,
+            "institution": "CNES",
+            "near_range": 898531.1627567085,
+            "nominal_slant_range_spacing": 0.75,
+            "outer_first_latitude": 45.26548633315432,
+            "outer_first_longitude": -109.02919728191006,
+            "outer_last_latitude": 45.8183448060343,
+            "outer_last_longitude": -108.8058762452249,
+            "pass_number": 483,
+            "platform": "SWOT",
+            "polarization": "V",
+            "processing_beamwidth": 0.000873,
+            "reference_document": "JPL D-56411 - Initial release - February 11, 2019",
+            "references": "https://github.com/CNES/swot-hydrology-toolbox",
+            "slc_along_track_resolution": 5.46875,
+            "slc_first_line_index_in_tvp": 0,
+            "slc_last_line_index_in_tvp": 2924,
+            "slc_range_resolution": "None",
+            "source": "Large scale simulator",
+            "swath_side": "R",
+            "tile_name": "483_235R",
+            "tile_number": 235,
+            "time_coverage_end": "2022-08-21 10:26:18.799435Z",
+            "time_coverage_start": "2022-08-21 10:26:08.804533Z",
+            "title": "Level 2 KaRIn High Rate Water Mask Pixel Clould Data Product",
+            "transmit_antenna": "plus_y",
+            "wavelength": 0.008385803020979,
+            "xref_input_dynamic_geophys_files": "None",
+            "xref_input_int_lr_xover_cal_file": "None",
+            "xref_input_l1b_hr_slc_file": "None",
+            "xref_input_ref_dem_file": "None",
+            "xref_input_static_geophys_files": "None",
+            "xref_input_static_karin_cal_file": "None",
+            "xref_input_water_mask_file": "/work/ALT/swot/swothr/users/cazalsc/cas_test_NA/NA.shp",
+            "xref_l2_hr_pixc_config_parameters_file": "rdf/parameter_sisimp.rdf"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "noise/.zattrs": {
+            "description": "Measured noise power for each receive echo of the plus_y and minus_y SLC channels"
+        },
+        "noise/.zgroup": {
+            "zarr_format": 2
+        },
+        "noise/noise_minus_y/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "noise/noise_minus_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_lines"
+            ],
+            "comment": "Noise power for the minus_y channel expressed in linear units (arbitrary units that give noise-equivalent sigma0 when normalized by the X factor).",
+            "long_name": "Noise estimate for the minus_y channel",
+            "units": "1",
+            "valid_max": 1.0000000200408773e+20,
+            "valid_min": 0.0
+        },
+        "noise/noise_plus_y/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "noise/noise_plus_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_lines"
+            ],
+            "comment": "Noise power for the plus_y channel expressed in linear units (arbitrary units that give noise-equivalent sigma0 when normalized by the X factor).",
+            "long_name": "Noise estimate for the plus_y channel",
+            "units": "1",
+            "valid_max": 1.0000000200408773e+20,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/.zattrs": {
+            "description": "cloud of geolocated interferogram pixels",
+            "interferogram_size_azimuth": 2924,
+            "interferogram_size_range": 4575,
+            "looks_to_efflooks": 1.75
+        },
+        "pixel_cloud/.zgroup": {
+            "zarr_format": 2
+        },
+        "pixel_cloud/ancillary_surface_classification_flag/.zarray": {
+            "chunks": [
+                97851
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|u1",
+            "fill_value": 255,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/ancillary_surface_classification_flag/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "7-state surface type classification computed from a mask built with MODIS and GlobCover data.",
+            "coordinates": "longitude latitude",
+            "flag_meanings": "open_ocean land continental_water aquatic_vegetation continental_ice_snow floating_ice salted_basin",
+            "flag_values": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "institution": "European Space Agency",
+            "long_name": "surface classification",
+            "source": "MODIS/GlobCover",
+            "standard_name": "status_flag",
+            "valid_max": 6,
+            "valid_min": 0
+        },
+        "pixel_cloud/azimuth_index/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": 2147483647,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/azimuth_index/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Rare interferogram azimuth index (indexed from 0).",
+            "coordinates": "longitude latitude",
+            "long_name": "rare interferogram azimuth index",
+            "units": "1",
+            "valid_max": 999999,
+            "valid_min": 0
+        },
+        "pixel_cloud/bright_land_flag/.zarray": {
+            "chunks": [
+                97851
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": 127,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/bright_land_flag/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Flag indicating areas that are not typically water but are expected to be bright (e.g., urban areas, ice). Flag value 2 indicates cases where prior data indicate land, but where prior_water_prob indicates possible water.",
+            "coordinates": "longitude latitude",
+            "flag_meanings": "not_bright_land bright_land bright_land_or_water",
+            "flag_values": [
+                0,
+                1,
+                2
+            ],
+            "long_name": "bright land flag",
+            "standard_name": "status_flag",
+            "valid_max": 2,
+            "valid_min": 0
+        },
+        "pixel_cloud/classification/.zarray": {
+            "chunks": [
+                97851
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": 127,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/classification/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Flags indicating water detection results.",
+            "coordinates": "longitude latitude",
+            "flag_meanings": "land land_near_water water_near_land open_water land_near_dark_water dark_water_edge dark_water",
+            "flag_values": [
+                1,
+                2,
+                3,
+                4,
+                22,
+                23,
+                24
+            ],
+            "long_name": "classification",
+            "valid_max": 24,
+            "valid_min": 1
+        },
+        "pixel_cloud/coherent_power/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/coherent_power/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Power computed by combining the plus_y and minus_y channels coherently by co-aligning the phases (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).",
+            "coordinates": "longitude latitude",
+            "long_name": "coherent power combination of minus_y and plus_y channels",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/cross_track/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/cross_track/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Approximate cross-track location of the pixel.",
+            "coordinates": "longitude latitude",
+            "long_name": "approximate cross-track location",
+            "units": "m",
+            "valid_max": 75000.0,
+            "valid_min": -75000.0
+        },
+        "pixel_cloud/darea_dheight/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/darea_dheight/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the pixel area to the reference height.",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of pixel area to reference height",
+            "units": "m^2/m",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/dheight_dbaseline/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/dheight_dbaseline/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the height estimate to the interferometric baseline.",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of height estimate to interferometric baseline",
+            "units": "m/m",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/dheight_dphase/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/dheight_dphase/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the height estimate to the interferogram phase.",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of height estimate to interferogram phase",
+            "units": "m/radian",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/dheight_drange/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/dheight_drange/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the height estimate to the range (delay).",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of height estimate to range (delay)",
+            "units": "m/m",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/dheight_droll/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/dheight_droll/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the height estimate to the spacecraft roll.",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of height estimate to spacecraft roll",
+            "units": "m/degrees",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/dlatitude_dphase/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/dlatitude_dphase/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the latitude estimate to the interferogram phase.",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of latitude estimate to interferogram phase",
+            "units": "degrees/radian",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/dlongitude_dphase/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/dlongitude_dphase/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Sensitivity of the longitude estimate to the interferogram phase.",
+            "coordinates": "longitude latitude",
+            "long_name": "sensitivity of longitude estimate to interferogram phase",
+            "units": "degrees/radian",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/eff_num_medium_looks/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/eff_num_medium_looks/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Effective number of independent looks taken in forming the medium interferogram (after adaptive averaging).",
+            "coordinates": "longitude latitude",
+            "long_name": "effective number of medium looks",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/eff_num_rare_looks/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/eff_num_rare_looks/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Effective number of independent looks taken to form the rare interferogram.",
+            "coordinates": "longitude latitude",
+            "long_name": "effective number of rare looks",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/false_detection_rate/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/false_detection_rate/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Probability of falsely detecting water when there is none.",
+            "coordinates": "longitude latitude",
+            "long_name": "false detection rate",
+            "units": "1",
+            "valid_max": 1.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/geoid/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/geoid/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Geoid height above the reference ellipsoid with a correction to refer the value to the mean tide system, i.e. includes the permanent tide (zero frequency).",
+            "coordinates": "longitude latitude",
+            "long_name": "geoid height",
+            "source": "EGM2008 (Pavlis et al., 2012)",
+            "standard_name": "geoid_height_above_reference_ellipsoid",
+            "units": "m",
+            "valid_max": 150.0,
+            "valid_min": -150.0
+        },
+        "pixel_cloud/height/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/height/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Height of the pixel above the reference ellipsoid.",
+            "coordinates": "longitude latitude",
+            "long_name": "height above reference ellipsoid",
+            "units": "m",
+            "valid_max": 15000.0,
+            "valid_min": -1500.0
+        },
+        "pixel_cloud/height_cor_xover/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/height_cor_xover/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Height correction from KaRIn crossover calibration. The correction is applied before geolocation but reported as an equivalent height correction.",
+            "coordinates": "longitude latitude",
+            "long_name": "height correction from KaRIn crossovers",
+            "units": "m",
+            "valid_max": 10.0,
+            "valid_min": -10.0
+        },
+        "pixel_cloud/illumination_time/.zarray": {
+            "chunks": [
+                24463
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/illumination_time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "calendar": "gregorian",
+            "comment": "Time of measurement in seconds in the UTC time scale since 1 Jan 2000 00:00:00 UTC. [tai_utc_difference] is the difference between TAI and UTC reference time (seconds) for the first measurement of the data set. If a leap second occurs within the data set, the attribute leap_second is set to the UTC time at which the leap second occurs.",
+            "coordinates": "longitude latitude",
+            "leap_second": "YYYY-MM-DD hh:mm:ss",
+            "long_name": "time of illumination of each pixel (UTC)",
+            "standard_name": "time",
+            "tai_utc_difference": "[Value of TAI-UTC at time of first record]",
+            "units": "seconds since 2000-01-01"
+        },
+        "pixel_cloud/illumination_time_tai/.zarray": {
+            "chunks": [
+                24463
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/illumination_time_tai/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "calendar": "gregorian",
+            "comment": "Time of measurement in seconds in the TAI time scale since 1 Jan 2000 00:00:00 TAI. This time scale contains no leap seconds. The difference (in seconds) with time in UTC is given by the attribute [illumination_time:tai_utc_difference].",
+            "coordinates": "longitude latitude",
+            "long_name": "time of illumination of each pixel (TAI)",
+            "standard_name": "time",
+            "units": "seconds since 2000-01-01"
+        },
+        "pixel_cloud/inc/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/inc/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Incidence angle.",
+            "coordinates": "longitude latitude",
+            "long_name": "incidence angle",
+            "units": "degrees",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/instrument_attitude_cor/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/instrument_attitude_cor/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Term that incorporates all calibration corrections applied to attitude before geolocation.",
+            "coordinates": "longitude latitude",
+            "long_name": "instrument attitude correction",
+            "units": "degrees",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/instrument_baseline_cor/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/instrument_baseline_cor/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Term that incorporates all calibration corrections applied to baseline before geolocation.",
+            "coordinates": "longitude latitude",
+            "long_name": "instrument baseline correction",
+            "units": "m",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/instrument_phase_cor/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/instrument_phase_cor/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Term that incorporates all calibration corrections applied to phase before geolocation.",
+            "coordinates": "longitude latitude",
+            "long_name": "instrument phase correction",
+            "units": "radians",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/instrument_range_cor/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/instrument_range_cor/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Term that incorporates all calibration corrections applied to range before geolocation.",
+            "coordinates": "longitude latitude",
+            "long_name": "instrument range correction",
+            "units": "m",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/interferogram/.zarray": {
+            "chunks": [
+                48926,
+                1
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851,
+                2
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/interferogram/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points",
+                "complex_depth"
+            ],
+            "comment": "Complex unflattened rare interferogram.",
+            "coordinates": "longitude latitude",
+            "long_name": "rare interferogram",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/iono_cor_gim_ka/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/iono_cor_gim_ka/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Equivalent vertical correction due to ionosphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.",
+            "coordinates": "longitude latitude",
+            "institution": "JPL",
+            "long_name": "ionosphere vertical correction",
+            "source": "Global Ionosphere Maps",
+            "units": "m",
+            "valid_max": 0.0,
+            "valid_min": -0.5
+        },
+        "pixel_cloud/latitude/.zarray": {
+            "chunks": [
+                24463
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/latitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Geodetic latitude [-80,80] (degrees north of equator) of the pixel.",
+            "long_name": "latitude (positive N, negative S)",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_max": 80.0,
+            "valid_min": -80.0
+        },
+        "pixel_cloud/layover_impact/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/layover_impact/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Estimate of the height error caused by layover, which may not be reliable on a pixel by pixel basis, but may be useful to augment aggregated height uncertainties.",
+            "coordinates": "longitude latitude",
+            "long_name": "layover impact",
+            "units": "m",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/load_tide_fes/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/load_tide_fes/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Geocentric load tide height. The effect of the ocean tide loading of the Earth's crust. This value is reported for reference but is not applied to the reported height.",
+            "coordinates": "longitude latitude",
+            "institution": "LEGOS/CNES",
+            "long_name": "geocentric load tide height (FES)",
+            "source": "FES2014b (Carrere et al., 2016)",
+            "units": "m",
+            "valid_max": 0.20000000298023224,
+            "valid_min": -0.20000000298023224
+        },
+        "pixel_cloud/load_tide_got/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/load_tide_got/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Geocentric load tide height. The effect of the ocean tide loading of the Earth's crust. This value is reported for reference but is not applied to the reported height.",
+            "coordinates": "longitude latitude",
+            "institution": "GSFC",
+            "long_name": "geocentric load tide height (GOT)",
+            "source": "GOT4.10c (Ray, 2013)",
+            "units": "m",
+            "valid_max": 0.20000000298023224,
+            "valid_min": -0.20000000298023224
+        },
+        "pixel_cloud/longitude/.zarray": {
+            "chunks": [
+                24463
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/longitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Longitude [-180,180) (east of the Greenwich meridian) of the pixel.",
+            "long_name": "longitude (degrees East)",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "valid_max": 180.0,
+            "valid_min": -180.0
+        },
+        "pixel_cloud/missed_detection_rate/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/missed_detection_rate/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Probability of falsely detecting no water when there is water.",
+            "coordinates": "longitude latitude",
+            "long_name": "missed detection rate",
+            "units": "1",
+            "valid_max": 1.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/model_dry_tropo_cor/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/model_dry_tropo_cor/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Equivalent vertical correction due to dry troposphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.",
+            "coordinates": "longitude latitude",
+            "institution": "ECMWF",
+            "long_name": "dry troposphere vertical correction",
+            "source": "European Centre for Medium-Range Weather Forecasts",
+            "units": "m",
+            "valid_max": -1.5,
+            "valid_min": -3.0
+        },
+        "pixel_cloud/model_wet_tropo_cor/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/model_wet_tropo_cor/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Equivalent vertical correction due to wet troposphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.",
+            "coordinates": "longitude latitude",
+            "institution": "ECMWF",
+            "long_name": "wet troposphere vertical correction",
+            "source": "European Centre for Medium-Range Weather Forecasts",
+            "units": "m",
+            "valid_max": 0.0,
+            "valid_min": -1.0
+        },
+        "pixel_cloud/phase_noise_std/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/phase_noise_std/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Estimate of the phase noise standard deviation.",
+            "coordinates": "longitude latitude",
+            "long_name": "phase noise standard deviation",
+            "units": "radians",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/phase_unwrapping_region/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": 2147483647,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/phase_unwrapping_region/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Phase unwrapping region index.",
+            "coordinates": "longitude latitude",
+            "long_name": "phase unwrapping region index",
+            "units": "1",
+            "valid_max": 99999999,
+            "valid_min": -1
+        },
+        "pixel_cloud/pixc_qual/.zarray": {
+            "chunks": [
+                97851
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": 127,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/pixc_qual/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Quality flag for pixel cloud data",
+            "coordinates": "longitude latitude",
+            "flag_meanings": "good bad",
+            "flag_values": [
+                0,
+                1
+            ],
+            "standard_name": "status_flag",
+            "valid_max": 1,
+            "valid_min": 0
+        },
+        "pixel_cloud/pixel_area/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/pixel_area/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Pixel area.",
+            "coordinates": "longitude latitude",
+            "long_name": "pixel area",
+            "units": "m^2",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/pole_tide/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/pole_tide/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Geocentric pole tide height. The total of the contribution from the solid-Earth (body) pole tide height and the load pole tide height (i.e., the effect of the ocean pole tide loading of the Earth's crust).",
+            "coordinates": "longitude latitude",
+            "long_name": "geocentric pole tide height",
+            "source": "Wahr (1985) and Desai et al. (2015)",
+            "units": "m",
+            "valid_max": 0.20000000298023224,
+            "valid_min": -0.20000000298023224
+        },
+        "pixel_cloud/power_minus_y/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/power_minus_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Power for the minus_y channel (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).",
+            "coordinates": "longitude latitude",
+            "long_name": "power for minus_y channel",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/power_plus_y/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/power_plus_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Power for the plus_y channel (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).",
+            "coordinates": "longitude latitude",
+            "long_name": "power for plus_y channel",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/prior_water_prob/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/prior_water_prob/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Prior probability of water occurring.",
+            "coordinates": "longitude latitude",
+            "long_name": "prior water probability",
+            "units": "1",
+            "valid_max": 1.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/range_index/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": 2147483647,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/range_index/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Rare interferogram range index (indexed from 0).",
+            "coordinates": "longitude latitude",
+            "long_name": "rare interferogram range index",
+            "units": "1",
+            "valid_max": 999999,
+            "valid_min": 0
+        },
+        "pixel_cloud/sig0/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/sig0/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Normalized radar cross section (sigma0) in real, linear units (not decibels). The value may be negative due to noise subtraction.",
+            "coordinates": "longitude latitude",
+            "long_name": "sigma0",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": -999999.0
+        },
+        "pixel_cloud/solid_earth_tide/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/solid_earth_tide/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Solid-Earth (body) tide height. The zero-frequency permanent tide component is not included.",
+            "coordinates": "longitude latitude",
+            "long_name": "solid Earth tide height",
+            "source": "Cartwright and Taylor (1971) and Cartwright and Edden (1973)",
+            "units": "m",
+            "valid_max": 1.0,
+            "valid_min": -1.0
+        },
+        "pixel_cloud/water_frac/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/water_frac/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Noisy estimate of the fraction of the pixel that is water.",
+            "coordinates": "longitude latitude",
+            "long_name": "water fraction",
+            "units": "1",
+            "valid_max": 10000.0,
+            "valid_min": -1000.0
+        },
+        "pixel_cloud/water_frac_uncert/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/water_frac_uncert/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "Uncertainty estimate of the water fraction estimate (width of noisy water frac estimate distribution).",
+            "coordinates": "longitude latitude",
+            "long_name": "water fraction uncertainty",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/x_factor_minus_y/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/x_factor_minus_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "X factor for the minus_y channel power in linear units (arbitrary units to normalize noise-subtracted power to sigma0).",
+            "coordinates": "longitude latitude",
+            "long_name": "X factor for minus_y channel power",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "pixel_cloud/x_factor_plus_y/.zarray": {
+            "chunks": [
+                48926
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f4",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                97851
+            ],
+            "zarr_format": 2
+        },
+        "pixel_cloud/x_factor_plus_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "points"
+            ],
+            "comment": "X factor for the plus_y channel power in linear units (arbitrary units to normalize noise-subtracted power to sigma0).",
+            "coordinates": "longitude latitude",
+            "long_name": "X factor for plus_y channel power",
+            "units": "1",
+            "valid_max": 999999.0,
+            "valid_min": 0.0
+        },
+        "tvp/.zattrs": {
+            "description": "Time varying parameters group including spacecraft attitude, position, velocity, and antenna position information"
+        },
+        "tvp/.zgroup": {
+            "zarr_format": 2
+        },
+        "tvp/altitude/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/altitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Altitude above the reference ellipsoid of the KMSF origin.",
+            "coordinates": "longitude latitude",
+            "long_name": "altitude of the spacecraft",
+            "units": "m",
+            "valid_max": 1000000.0,
+            "valid_min": 0.0
+        },
+        "tvp/latitude/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/latitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Geodetic latitude of the KMSF origin with respect to the reference ellipsoid.",
+            "long_name": "latitude (positive N, negative S) of the spacecraft",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_max": 80.0,
+            "valid_min": -80.0
+        },
+        "tvp/longitude/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/longitude/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Longitude of the KMSF origin, with positive values indicating longitudes east of the Greenwich meridian.",
+            "long_name": "longitude (degrees East) of the spacecraft",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "valid_max": 180.0,
+            "valid_min": -180.0
+        },
+        "tvp/minus_y_antenna_x/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/minus_y_antenna_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "x coordinate of the minus_y antenna phase center in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "x coordinate of the minus_y antenna phase center in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/minus_y_antenna_y/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/minus_y_antenna_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "y coordinate of the minus_y antenna phase center in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "y coordinate of the minus_y antenna phase center in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/minus_y_antenna_z/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/minus_y_antenna_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "z coordinate of the minus_y antenna phase center in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "z coordinate of the minus_y antenna phase center in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/pitch/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/pitch/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "KMSF attitude pitch angle; positive values move the KMSF +x axis up.",
+            "coordinates": "longitude latitude",
+            "long_name": "pitch of the spacecraft",
+            "units": "degrees",
+            "valid_max": 180.0,
+            "valid_min": -180.0
+        },
+        "tvp/plus_y_antenna_x/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/plus_y_antenna_x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "x coordinate of the plus_y antenna phase center in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "x coordinate of the plus_y antenna phase center in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/plus_y_antenna_y/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/plus_y_antenna_y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "y coordinate of the plus_y antenna phase center in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "y coordinate of the plus_y antenna phase center in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/plus_y_antenna_z/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/plus_y_antenna_z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "z coordinate of the plus_y antenna phase center in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "z coordinate of the plus_y antenna phase center in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/record_counter/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<i4",
+            "fill_value": 2147483647,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/record_counter/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Index of the TVP record used to align data samples across granules.",
+            "coordinates": "longitude latitude",
+            "long_name": "record counter",
+            "units": "1",
+            "valid_max": 999999999,
+            "valid_min": 1
+        },
+        "tvp/roll/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/roll/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "KMSF attitude roll angle; positive values move the +y antenna down.",
+            "coordinates": "longitude latitude",
+            "long_name": "roll of the spacecraft",
+            "units": "degrees",
+            "valid_max": 180.0,
+            "valid_min": -180.0
+        },
+        "tvp/sc_event_flag/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": 127,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/sc_event_flag/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Spacecraft event flag",
+            "coordinates": "longitude latitude",
+            "flag_meanings": "nominal not_nominal",
+            "flag_values": [
+                0,
+                1
+            ],
+            "standard_name": "status_flag",
+            "valid_max": 1,
+            "valid_min": 0
+        },
+        "tvp/time/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/time/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "calendar": "gregorian",
+            "comment": "Time of measurement in seconds in the UTC time scale since 1 Jan 2000 00:00:00 UTC. [tai_utc_difference] is the difference between TAI and UTC reference time (seconds) for the first measurement of the data set. If a leap second occurs within the data set, the attribute leap_second is set to the UTC time at which the leap second occurs.",
+            "coordinates": "longitude latitude",
+            "leap_second": "YYYY-MM-DD hh:mm:ss",
+            "long_name": "time in UTC",
+            "standard_name": "time",
+            "tai_utc_difference": "[Value of TAI-UTC at time of first record]",
+            "units": "seconds since 2000-01-01"
+        },
+        "tvp/time_tai/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/time_tai/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "calendar": "gregorian",
+            "comment": "Time of measurement in seconds in the TAI time scale since 1 Jan 2000 00:00:00 TAI. This time scale contains no leap seconds. The difference (in seconds) with time in UTC is given by the attribute [time:tai_utc_difference].",
+            "coordinates": "longitude latitude",
+            "long_name": "time in TAI",
+            "standard_name": "time",
+            "units": "seconds since 2000-01-01"
+        },
+        "tvp/tvp_qual/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "|i1",
+            "fill_value": 127,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/tvp_qual/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Quality flag for TVP data",
+            "coordinates": "longitude latitude",
+            "flag_meanings": "good bad",
+            "flag_values": [
+                0,
+                1
+            ],
+            "standard_name": "status_flag",
+            "valid_max": 1,
+            "valid_min": 0
+        },
+        "tvp/velocity_heading/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/velocity_heading/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "Angle with respect to true north of the horizontal component of the spacecraft Earth-relative velocity vector. A value of 90 deg indicates that the spacecraft velocity vector pointed due east. Values between 0 and 90 deg indicate that the velocity vector has a northward component, and values between 90 and 180 deg indicate that the velocity vector has a southward component.",
+            "coordinates": "longitude latitude",
+            "long_name": "heading of the spacecraft Earth-relative velocity vector",
+            "units": "degrees",
+            "valid_max": 360.0,
+            "valid_min": 0.0
+        },
+        "tvp/vx/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/vx/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "KMSF velocity component in x direction in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "x component of the spacecraft velocity in the ECEF frame",
+            "units": "m/s",
+            "valid_max": 10000.0,
+            "valid_min": -10000.0
+        },
+        "tvp/vy/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/vy/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "KMSF velocity component in y direction in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "y component of the spacecraft velocity in the ECEF frame",
+            "units": "m/s",
+            "valid_max": 10000.0,
+            "valid_min": -10000.0
+        },
+        "tvp/vz/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/vz/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "KMSF velocity component in z direction in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "z component of the spacecraft velocity in the ECEF frame",
+            "units": "m/s",
+            "valid_max": 10000.0,
+            "valid_min": -10000.0
+        },
+        "tvp/x/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/x/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "x coordinate of the KMSF origin in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "x coordinate of the spacecraft in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/y/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/y/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "y coordinate of the KMSF origin in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "y coordinate of the spacecraft in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        },
+        "tvp/yaw/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/yaw/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "KMSF attitude yaw angle relative to the nadir track. The yaw angle is a right-handed rotation about the nadir (downward) direction. A yaw value of 0 deg indicates that the KMSF +x axis is aligned with the horizontal component of the Earth-relative velocity vector. A yaw value of 180 deg indicates that the spacecraft is in a yaw-flipped state, with the KMSF -x axis aligned with the horizontal component of the Earth-relative velocity vector.",
+            "coordinates": "longitude latitude",
+            "long_name": "yaw of the spacecraft",
+            "units": "degrees",
+            "valid_max": 180.0,
+            "valid_min": -180.0
+        },
+        "tvp/z/.zarray": {
+            "chunks": [
+                2924
+            ],
+            "compressor": {
+                "blocksize": 0,
+                "clevel": 5,
+                "cname": "lz4",
+                "id": "blosc",
+                "shuffle": 1
+            },
+            "dtype": "<f8",
+            "fill_value": 9.969209968386869e+36,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                2924
+            ],
+            "zarr_format": 2
+        },
+        "tvp/z/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "num_tvps"
+            ],
+            "comment": "z coordinate of the KMSF origin in the ECEF frame.",
+            "coordinates": "longitude latitude",
+            "long_name": "z coordinate of the spacecraft in the ECEF frame",
+            "units": "m",
+            "valid_max": 10000000.0,
+            "valid_min": -10000000.0
+        }
+    },
+    "zarr_consolidated_format": 1
+}

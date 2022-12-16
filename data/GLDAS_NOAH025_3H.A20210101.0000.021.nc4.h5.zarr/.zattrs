@@ -1,0 +1,18 @@
+{
+    "DX": 0.25,
+    "DY": 0.25,
+    "MAP_PROJECTION": "EQUIDISTANT CYLINDRICAL",
+    "SOUTH_WEST_CORNER_LAT": -59.875,
+    "SOUTH_WEST_CORNER_LON": -179.875,
+    "acc definition:": "past 3-hour accumulation",
+    "comment": "website: https://ldas.gsfc.nasa.gov/gldas, https://lis.gsfc.nasa.gov/",
+    "conventions": "CF-1.6",
+    "history": "created on date: 2021-04-23T12:02:15.080",
+    "inst definition:": "instantaneous",
+    "institution": "NASA GSFC",
+    "missing_value": -9999.0,
+    "references": "Rodell_etal_BAMS_2004, Kumar_etal_EMS_2006, Peters-Lidard_etal_ISSE_2007",
+    "source": "Noah_v3.6 forced with GDAS-AGRMET-GPCPv13rA1_202101",
+    "tavg definition:": "past 3-hour average",
+    "title": "GLDAS2.1 LIS land surface model output"
+}

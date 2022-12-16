@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "num_lines"
+    ],
+    "comment": "Noise power for the minus_y channel expressed in linear units (arbitrary units that give noise-equivalent sigma0 when normalized by the X factor).",
+    "long_name": "Noise estimate for the minus_y channel",
+    "units": "1",
+    "valid_max": 1.0000000200408773e+20,
+    "valid_min": 0.0
+}

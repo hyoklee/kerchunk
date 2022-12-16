@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "points"
+    ],
+    "comment": "Quality flag for pixel cloud data",
+    "coordinates": "longitude latitude",
+    "flag_meanings": "good bad",
+    "flag_values": [
+        0,
+        1
+    ],
+    "standard_name": "status_flag",
+    "valid_max": 1,
+    "valid_min": 0
+}
