@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Segment in number of signal photons for filtering sparse canopy cover. (Default = 500)",
+    "fullnamepath": "/ancillary_data/land/canopy_seg",
+    "long_name": "segment size in canopy filter",
+    "origname": "canopy_seg",
+    "source": "ATBD section 4.11 step 6",
+    "units": "1"
+}

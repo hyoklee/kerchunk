@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "UTC (in CCSDS-A format) of the first data point within the granule.",
+    "fullnamepath": "/ancillary_data/data_start_utc",
+    "long_name": "Start UTC Time of Granule (CCSDS-A, Actual)",
+    "origname": "data_start_utc",
+    "source": "Derived",
+    "units": "1"
+}

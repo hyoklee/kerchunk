@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls entrance to the outlier filter subroutine. (Default = 1)",
+    "fullnamepath": "/ancillary_data/land/outlier_filter_switch",
+    "long_name": "outlier_filter switch",
+    "origname": "outlier_filter_switch",
+    "source": "ATBD section 4.6",
+    "units": "1"
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum number of input photons from ATL03 to process. (default=1)",
+    "fullnamepath": "/ancillary_data/land/min_nphs",
+    "long_name": "Minimum input photons",
+    "origname": "min_nphs",
+    "source": "Operations",
+    "units": "1"
+}

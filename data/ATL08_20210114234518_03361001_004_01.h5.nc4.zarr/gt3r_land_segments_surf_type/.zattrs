@@ -1,0 +1,21 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time",
+        "ds_surf_type"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Flags describing which surface types this interval is associated with. 0=not type, 1=is type. Order of array is land, ocean, sea ice, land ice, inland water.",
+    "flag_meanings": "not_type is_type",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3r/land_segments/surf_type",
+    "long_name": "surface type",
+    "origname": "surf_type",
+    "source": "ATL03 ATBD, Section 4",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": 0
+}

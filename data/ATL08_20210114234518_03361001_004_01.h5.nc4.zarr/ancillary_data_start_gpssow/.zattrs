@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "GPS seconds-of-week of the first data point in the granule.",
+    "fullnamepath": "/ancillary_data/start_gpssow",
+    "long_name": "Start GPS SOW of Granule (Actual)",
+    "origname": "start_gpssow",
+    "source": "Derived",
+    "units": "seconds"
+}

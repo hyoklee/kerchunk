@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "The reference ground track (RGT) is the track on the earth at which a specified unit vector within the observatory is pointed. Under nominal operating conditions, there will be no data collected along the RGT, as the RGT is spanned by GT3 and GT4.  During slews or off-pointing, it is possible that ground tracks may intersect the RGT. The ICESat-2 mission has 1387 RGTs.",
+    "fullnamepath": "/gt2l/land_segments/rgt",
+    "long_name": "reference ground track",
+    "origname": "rgt",
+    "source": "Operations",
+    "units": "1",
+    "valid_max": 1387,
+    "valid_min": 1
+}

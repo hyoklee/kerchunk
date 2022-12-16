@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude gt2r_land_segments_longitude",
+    "description": "The urban flag indicates that a segment is likely located over an urban area.",
+    "flag_meanings": "not_urban urban",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt2r/land_segments/urban_flag",
+    "long_name": "segment urban flag",
+    "origname": "urban_flag",
+    "source": "Land ATBD section 2.4.17",
+    "units": "1"
+}

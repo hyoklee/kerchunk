@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Index (1-based) within the photon-rate data (/land_segments/photons) of the first photon within this each land segment.",
+    "fullnamepath": "/gt1l/land_segments/ph_ndx_beg",
+    "long_name": "photon index begin",
+    "origname": "ph_ndx_beg",
+    "source": "Derived",
+    "units": "1"
+}

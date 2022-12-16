@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Standard Deviation of all photons classified as canopy photons within the segment to provide inference of canopy openness.",
+    "fullnamepath": "/gt3r/land_segments/canopy/canopy_openness",
+    "long_name": "canopy openness",
+    "origname": "canopy_openness",
+    "source": "Land ATBD section 4.12",
+    "units": "1"
+}

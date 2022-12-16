@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls filtering based on DEM. (Default = 1)",
+    "fullnamepath": "/ancillary_data/land/dem_filter_switch",
+    "long_name": "dem_filter switch",
+    "origname": "dem_filter_switch",
+    "source": "ATBD section 4.5 step 5",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Number of photons within each land segment.",
+    "fullnamepath": "/gt3l/land_segments/n_seg_ph",
+    "long_name": "number of photons",
+    "origname": "n_seg_ph",
+    "source": "Derived",
+    "units": "1"
+}

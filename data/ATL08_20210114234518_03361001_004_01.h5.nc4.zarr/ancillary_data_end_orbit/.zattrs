@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The ending orbit number associated with the data contained within this granule. The orbit number increments each time the spacecraft completes a full orbit of the Earth.",
+    "fullnamepath": "/ancillary_data/end_orbit",
+    "long_name": "Ending Orbit Number",
+    "origname": "end_orbit",
+    "source": "Derived",
+    "units": "1"
+}

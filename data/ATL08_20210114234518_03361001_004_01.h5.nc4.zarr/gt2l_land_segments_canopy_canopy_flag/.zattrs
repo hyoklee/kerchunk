@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Flag indicating that canopy was detected using the Landsat Tree Cover Continuous Fields data product. If percent of canopy cover along the L-km segment is greater than 5%, then canopy is assumed to be present; else, no canopy is assumed present.",
+    "flag_meanings": "no_canopy_present canopy_present",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt2l/land_segments/canopy/canopy_flag",
+    "long_name": "canopy flag",
+    "origname": "canopy_flag",
+    "source": "Land ATBD section 2.2.22",
+    "units": "1"
+}

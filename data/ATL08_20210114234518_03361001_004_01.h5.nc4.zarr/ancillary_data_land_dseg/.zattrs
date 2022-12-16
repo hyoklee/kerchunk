@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "DRAGANN segment length in 20m geolocated segments along ground track. (Default=170)",
+    "fullnamepath": "/ancillary_data/land/dseg",
+    "long_name": "DRAGANN segment size",
+    "origname": "dseg",
+    "source": "ATBD section 4.2.1 step 1",
+    "units": "1"
+}

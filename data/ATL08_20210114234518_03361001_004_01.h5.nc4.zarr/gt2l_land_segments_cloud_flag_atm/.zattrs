@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Cloud confidence flag from ATL09 that indicates the number of cloud or aerosol layers identified in each 25Hz atmospheric profile. If the flag is greater than 0, aerosols or clouds could be present. Valid range is 0 - 10.",
+    "fullnamepath": "/gt2l/land_segments/cloud_flag_atm",
+    "long_name": "cloud flag atm",
+    "origname": "cloud_flag_atm",
+    "source": "ATL09",
+    "units": "1",
+    "valid_max": 10,
+    "valid_min": 0
+}

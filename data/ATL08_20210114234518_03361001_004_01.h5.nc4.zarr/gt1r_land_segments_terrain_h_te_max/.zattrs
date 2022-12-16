@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "The maximum of the photon heights above the WGS84 Ellipsoid, classified as terrain within the segment.",
+    "fullnamepath": "/gt1r/land_segments/terrain/h_te_max",
+    "long_name": "maximum terrain height",
+    "origname": "h_te_max",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

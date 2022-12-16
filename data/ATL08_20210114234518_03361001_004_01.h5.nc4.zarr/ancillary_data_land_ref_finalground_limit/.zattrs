@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Reference finalground limit used to reclassify signal as noise. (default = 150.0)",
+    "fullnamepath": "/ancillary_data/land/ref_finalground_limit",
+    "long_name": "finalground threshold",
+    "origname": "ref_finalground_limit",
+    "source": "ATBD section 4.13 step 2",
+    "units": "meters"
+}

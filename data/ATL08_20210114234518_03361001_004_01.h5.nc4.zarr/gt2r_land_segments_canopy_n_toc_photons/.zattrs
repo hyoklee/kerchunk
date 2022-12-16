@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude gt2r_land_segments_longitude",
+    "description": "The number of photons classified as top of canopy within the segment.",
+    "fullnamepath": "/gt2r/land_segments/canopy/n_toc_photons",
+    "long_name": "number top of canopy photons",
+    "origname": "n_toc_photons",
+    "source": "Land ATBD section 4.12",
+    "units": "1"
+}

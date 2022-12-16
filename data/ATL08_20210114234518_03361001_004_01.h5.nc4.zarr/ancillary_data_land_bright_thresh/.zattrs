@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Threshold to set brightness_flag, average ground photons per shot. (Default = 3.0)",
+    "fullnamepath": "/ancillary_data/land/bright_thresh",
+    "long_name": "brightness flag average ph per shot",
+    "origname": "bright_thresh",
+    "source": "ATBD section 2.4.21",
+    "units": "1"
+}

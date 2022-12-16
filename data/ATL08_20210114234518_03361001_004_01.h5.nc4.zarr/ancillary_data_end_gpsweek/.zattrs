@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "GPS week number of the last data point in the granule.",
+    "fullnamepath": "/ancillary_data/end_gpsweek",
+    "long_name": "Ending GPSWeek of Granule (Actual)",
+    "origname": "end_gpsweek",
+    "source": "Derived",
+    "units": "weeks from 1980-01-06"
+}

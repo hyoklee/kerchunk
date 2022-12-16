@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "The distance (km) that the last ATL08 processing segment in a file is either extended or overlapped with the previous ATL08 processing segment.",
+    "fullnamepath": "/gt1l/land_segments/last_seg_extend",
+    "long_name": "last segment extended",
+    "origname": "last_seg_extend",
+    "source": "Land ATBD 13March2019, Section 2.4.20",
+    "standard_name": "last_seg_extend",
+    "units": "kilometers"
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Solar elevation threshold for determining night time conditions. (Default =0.0)",
+    "fullnamepath": "/ancillary_data/land/night_thresh",
+    "long_name": "Threshold for night",
+    "origname": "night_thresh",
+    "source": "ATBD section 2.4.9",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "modelResult",
+    "description": "ATL08 region(s) encompassed by ATL03 granule being processed",
+    "fullnamepath": "/ancillary_data/land/atl08_region",
+    "long_name": "atl08 region",
+    "origname": "atl08_region",
+    "source": "Land ATBD 29March2019, Table 2.4",
+    "standard_name": "atl08_region",
+    "units": "1"
+}

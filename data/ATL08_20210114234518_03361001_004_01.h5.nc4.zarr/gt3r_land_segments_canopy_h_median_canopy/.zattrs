@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "The median of individual relative canopy heights within segment. Relative canopy heights have been computed by differencing the canopy photon height from the estimated terrain surface. This parameter should be equivalent to RH50 reported in the literature.",
+    "fullnamepath": "/gt3r/land_segments/canopy/h_median_canopy",
+    "long_name": "median canopy height",
+    "origname": "h_median_canopy",
+    "source": "Land ATBD section 2.2.8",
+    "units": "meters"
+}

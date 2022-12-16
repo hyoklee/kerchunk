@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Flag indicating more than ph_removal_percent_limit (default 50.0) removed from land segment due to failing QA tests",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt2l/land_segments/ph_removal_flag",
+    "long_name": "ph removal flag",
+    "origname": "ph_removal_flag",
+    "source": "ATBD section 4.13",
+    "units": "1"
+}

@@ -1,0 +1,23 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Indicates source of the DEM height. Values: 0=None, 1=Arctic, 2=Global, 3=MSS, 4=Antarctic.",
+    "flag_meanings": "none arctic global mss antarctic",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "fullnamepath": "/gt3l/land_segments/dem_flag",
+    "long_name": "dem source flag",
+    "origname": "dem_flag",
+    "source": "Atmosphere ATBD",
+    "units": "1",
+    "valid_max": 4,
+    "valid_min": 0
+}

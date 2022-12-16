@@ -1,0 +1,21 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Canopy relative height confidence flag based on percentage of ground and canopy photons within a segment: 0 (<5% canopy), 1 (>5% canopy, <5% ground), 2 (>5% canopy, >5% ground).",
+    "flag_meanings": "<5%_canopy >=5%_canopy_<5%_ground >=5%_canopy_>=5%_ground",
+    "flag_values": [
+        0,
+        1,
+        2
+    ],
+    "fullnamepath": "/gt1l/land_segments/canopy/canopy_rh_conf",
+    "long_name": "canopy relative height confidence",
+    "origname": "canopy_rh_conf",
+    "source": "Land/Veg ATBD 13March2019, Section 2.2.21",
+    "units": "1",
+    "valid_max": 2,
+    "valid_min": 0
+}

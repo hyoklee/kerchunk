@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Water mask(i.e. flag) indicating inland water as referenced from the Global Raster Water Mask(ANC33) at 250 m spatial resolution.",
+    "flag_meanings": "no_water water",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3r/land_segments/segment_watermask",
+    "long_name": "segment watermask",
+    "origname": "segment_watermask",
+    "source": "ATBD section 2.4.15",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": 0
+}

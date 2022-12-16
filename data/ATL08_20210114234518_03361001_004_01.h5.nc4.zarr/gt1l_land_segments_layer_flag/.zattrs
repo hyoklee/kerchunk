@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "This flag is a combination of multiple flags (cloud_flag_atm, cloud_flag_asr, and bsnow_con) and takes daytime/nighttime into consideration. A value of 1 means clouds or blowing snow are likely present. A value of 0 indicates the likely absence of clouds or blowing snow.",
+    "flag_meanings": "likely_clear likely_cloudy",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt1l/land_segments/layer_flag",
+    "long_name": "consolidated cloud flag",
+    "origname": "layer_flag",
+    "source": "ATL09",
+    "units": "1"
+}

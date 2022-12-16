@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_signal_photons_delta_time"
+    ],
+    "contentType": "physicalMeasurement",
+    "coordinates": "gt3r_signal_photons_delta_time",
+    "description": "Height of photons above interpolated land surface",
+    "fullnamepath": "/gt3r/signal_photons/ph_h",
+    "long_name": "relative photon height",
+    "origname": "ph_h",
+    "source": "land/veg ATBD, 15May2020, Section 2.3.4",
+    "standard_name": "height",
+    "units": "meters"
+}

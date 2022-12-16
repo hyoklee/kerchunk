@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_signal_photons_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt3l_signal_photons_delta_time",
+    "description": "Flag indicating the labeling of DRAGANN noise filtering for a given photon.",
+    "flag_meanings": "noise signal",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3l/signal_photons/d_flag",
+    "long_name": "dragann flag",
+    "origname": "d_flag",
+    "source": "Land ATBD section 2.3.5",
+    "units": "1"
+}

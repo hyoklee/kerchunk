@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Standard deviation of the relative heights of all photons classified as top of canopy within the segment",
+    "fullnamepath": "/gt3l/land_segments/canopy/toc_roughness",
+    "long_name": "top of canopy roughness",
+    "origname": "toc_roughness",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

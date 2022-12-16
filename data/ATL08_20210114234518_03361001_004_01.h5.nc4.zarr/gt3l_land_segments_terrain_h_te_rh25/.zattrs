@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "The terrain elevation from the 25% height. The classified ground photons are sorted into a cumulative distribution and the height associated with the 25% height for that segment is reported.",
+    "fullnamepath": "/gt3l/land_segments/terrain/h_te_rh25",
+    "long_name": "Terrain height 25% percentile",
+    "origname": "h_te_rh25",
+    "source": "Land/veg ATBD, September 2020",
+    "units": "meters"
+}

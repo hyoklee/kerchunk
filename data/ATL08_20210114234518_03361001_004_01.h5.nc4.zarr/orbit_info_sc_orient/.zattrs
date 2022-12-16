@@ -1,0 +1,21 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "orbit_info_sc_orient_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "orbit_info_sc_orient_time",
+    "description": "This parameter tracks the spacecraft orientation between forward, backward and transitional flight modes. ICESat-2 is considered to be flying forward when the weak beams are leading the strong beams; and backward when the strong beams are leading the weak beams. ICESat-2 is considered to be in transition while it is maneuvering between the two orientations. Science quality is potentially degraded while in transition mode.",
+    "flag_meanings": "backward forward transition",
+    "flag_values": [
+        0,
+        1,
+        2
+    ],
+    "fullnamepath": "/orbit_info/sc_orient",
+    "long_name": "Spacecraft Orientation",
+    "origname": "sc_orient",
+    "source": "POD/PPD",
+    "units": "1",
+    "valid_max": 2,
+    "valid_min": 0
+}

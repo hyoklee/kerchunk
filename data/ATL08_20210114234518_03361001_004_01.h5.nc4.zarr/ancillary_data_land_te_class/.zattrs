@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Terrain classification flag value. (Default = 1)",
+    "fullnamepath": "/ancillary_data/land/te_class",
+    "long_name": "Terrain class value",
+    "origname": "te_class",
+    "source": "ATBD section 4.12 step 1",
+    "units": "1"
+}

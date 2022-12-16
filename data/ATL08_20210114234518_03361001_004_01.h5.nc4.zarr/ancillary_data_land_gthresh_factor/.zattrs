@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls threshold for Gaussian Elimination. (Default = 0.1)",
+    "fullnamepath": "/ancillary_data/land/gthresh_factor",
+    "long_name": "threshold for Gaussian Elimination",
+    "origname": "gthresh_factor",
+    "source": "ATBD sGaussian Rejection section of Appendix A",
+    "units": "1"
+}

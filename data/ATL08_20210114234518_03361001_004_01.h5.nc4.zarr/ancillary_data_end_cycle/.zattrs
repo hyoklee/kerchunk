@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The ending cycle number associated with the data contained within this granule. The cycle number is the counter of the number of 91-day repeat cycles completed by the mission.",
+    "fullnamepath": "/ancillary_data/end_cycle",
+    "long_name": "Ending Cycle",
+    "origname": "end_cycle",
+    "source": "Derived",
+    "units": "1",
+    "valid_max": 99,
+    "valid_min": 0
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude gt2r_land_segments_longitude",
+    "description": "The mean of the photon heights above the WGS84 Ellipsoid, classified as terrain within the segment.",
+    "fullnamepath": "/gt2r/land_segments/terrain/h_te_mean",
+    "long_name": "mean terrain height",
+    "origname": "h_te_mean",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "Flag indicating the data were acquired in night conditions: 0=day, 1=night.  Flag is derived from solar elevation at the geolocated segment.  IF solar elevation is above threshold it is day, if not then it is night.  Threshold is set in atlas_l3a_const_mod.",
+    "flag_meanings": "day night",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt1r/land_segments/night_flag",
+    "long_name": "night flag",
+    "origname": "night_flag",
+    "source": "Land ATBD section 2.4.8",
+    "units": "1"
+}

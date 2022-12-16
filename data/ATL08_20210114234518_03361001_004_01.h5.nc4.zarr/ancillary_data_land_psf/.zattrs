@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Parameter controlling identification of photons around an interpolated surface. (Default = 0.5)",
+    "fullnamepath": "/ancillary_data/land/psf",
+    "long_name": "Point Spread Function",
+    "origname": "psf",
+    "source": "ATBD section 4.7 step 12",
+    "units": "meters"
+}

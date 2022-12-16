@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Terrain flag quality check to indicate a deviation above a threshold from the reference DEM height reported on the product.",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt1l/land_segments/terrain_flg",
+    "long_name": "terrain flag",
+    "origname": "terrain_flg",
+    "source": "Land ATBD section 2.4.8",
+    "units": "1"
+}

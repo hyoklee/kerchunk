@@ -1,0 +1,19 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "qualityInformation",
+    "description": "Flag indicating granule quality. 0=granule passes automatic QA. 1=granule fails automatic QA.",
+    "flag_meanings": "PASS FAIL",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/quality_assessment/qa_granule_pass_fail",
+    "long_name": "Granule Pass Flag",
+    "origname": "qa_granule_pass_fail",
+    "source": "Operations",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": 0
+}

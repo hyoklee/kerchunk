@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Requested start time (in UTC CCSDS-A) of this granule.",
+    "fullnamepath": "/ancillary_data/granule_start_utc",
+    "long_name": "Start UTC Time of Granule (CCSDS-A, Requested)",
+    "origname": "granule_start_utc",
+    "source": "Derived",
+    "units": "1"
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum percentage of terrain photons to compute statistics upon. (Default =0.05)",
+    "fullnamepath": "/ancillary_data/land/gnd_stat_thresh",
+    "long_name": "Threshold for terrain statistics",
+    "origname": "gnd_stat_thresh",
+    "source": "ATBD section 4.13 step 2",
+    "units": "1"
+}

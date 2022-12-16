@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum number of photons to compute statistics upon. (Default =50)",
+    "fullnamepath": "/ancillary_data/land/stat_thresh",
+    "long_name": "Threshold for land statistics",
+    "origname": "stat_thresh",
+    "source": "ATBD section 2 intro paragraph",
+    "units": "1"
+}

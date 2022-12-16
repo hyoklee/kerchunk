@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Off nadir pointing angle (in radians) of the satellite to increase spatial sampling in the non-polar regions. ATLAS_PA =90degs-beam_coelev.",
+    "fullnamepath": "/gt2l/land_segments/atlas_pa",
+    "long_name": "atlas pointing angle",
+    "origname": "atlas_pa",
+    "source": "ATL03",
+    "units": "radians"
+}

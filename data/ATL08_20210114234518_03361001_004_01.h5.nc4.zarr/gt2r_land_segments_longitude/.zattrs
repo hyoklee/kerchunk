@@ -1,0 +1,16 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude",
+    "description": "Longitude of the center-most signal photon within each segment.",
+    "fullnamepath": "/gt2r/land_segments/longitude",
+    "long_name": "longitude",
+    "origname": "longitude",
+    "source": "Land ATBD section 2.4",
+    "standard_name": "longitude",
+    "units": "degrees",
+    "valid_max": 180.0,
+    "valid_min": -180.0
+}

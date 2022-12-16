@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Difference between h_te_median and ref_DEM",
+    "fullnamepath": "/gt2l/land_segments/h_dif_ref",
+    "long_name": "h dif from reference",
+    "origname": "h_dif_ref",
+    "source": "Land ATBD section 2.4",
+    "units": "meters"
+}

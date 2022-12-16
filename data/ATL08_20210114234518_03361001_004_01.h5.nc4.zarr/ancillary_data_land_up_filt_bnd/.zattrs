@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Lower bound of the filter window size function. (Default = 46)",
+    "fullnamepath": "/ancillary_data/land/up_filt_bnd",
+    "long_name": "Proportionality coefficient for controlling the bounds of the filter window size as a function of number of signal photons.",
+    "origname": "up_filt_bnd",
+    "source": "ATBD section 4.4 step 2",
+    "units": "1"
+}

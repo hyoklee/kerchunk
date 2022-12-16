@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "The standard deviation of the photon heights above the WGS84 Ellipsoid, classified as terrain within the segment.",
+    "fullnamepath": "/gt3l/land_segments/terrain/h_te_std",
+    "long_name": "segment terrain roughness",
+    "origname": "h_te_std",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

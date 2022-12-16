@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "The along-track slope of terrain, within each segment;computed by a linear fit of terrain classified photons. Slope is in units of delta height over delta along track distance.",
+    "fullnamepath": "/gt2l/land_segments/terrain/terrain_slope",
+    "long_name": "segment terrain slope",
+    "origname": "terrain_slope",
+    "source": "Land ATBD section 4.11",
+    "units": "1"
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "PGE-specific control file used to generate this granule. To re-use, replace breaks (BR) with linefeeds.",
+    "fullnamepath": "/ancillary_data/control",
+    "long_name": "Control File",
+    "origname": "control",
+    "source": "Operations",
+    "units": "1"
+}

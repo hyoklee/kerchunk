@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Step size for optimizing the amplitude variable of Gaussian function. (Default = 1.0)",
+    "fullnamepath": "/ancillary_data/land/del_amp",
+    "long_name": "Step Gaussian Amplitude optimization",
+    "origname": "del_amp",
+    "source": "ATBD section 4.2 step 7",
+    "units": "1"
+}

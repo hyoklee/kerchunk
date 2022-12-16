@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "GPS week number of the first data point in the granule.",
+    "fullnamepath": "/ancillary_data/start_gpsweek",
+    "long_name": "Start GPSWeek of Granule (Actual)",
+    "origname": "start_gpsweek",
+    "source": "Derived",
+    "units": "weeks from 1980-01-06"
+}

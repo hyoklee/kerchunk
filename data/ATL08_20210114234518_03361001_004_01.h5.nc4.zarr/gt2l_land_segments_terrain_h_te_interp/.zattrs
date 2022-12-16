@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Interpolated terrain surface height above the WGS84 Ellipsoid at the midpoint of the segment.",
+    "fullnamepath": "/gt2l/land_segments/terrain/h_te_interp",
+    "long_name": "interpolated terrain surface height",
+    "origname": "h_te_interp",
+    "source": "Land ATBD section 4.9",
+    "units": "meters"
+}

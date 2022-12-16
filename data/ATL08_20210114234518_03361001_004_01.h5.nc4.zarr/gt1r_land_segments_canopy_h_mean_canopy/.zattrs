@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "Mean of individual relative canopy heights within segment.  Relative canopy heights have been computed by differencing the canopy photon height from the estimated terrain surface.",
+    "fullnamepath": "/gt1r/land_segments/canopy/h_mean_canopy",
+    "long_name": "mean canopy height",
+    "origname": "h_mean_canopy",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

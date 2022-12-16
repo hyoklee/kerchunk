@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Percent of photons in land segment failing DEM test to set dem_removal_flag. (default = 20.0)",
+    "fullnamepath": "/ancillary_data/land/dem_removal_percent_limit",
+    "long_name": "dem_removal_flag set threshold",
+    "origname": "dem_removal_percent_limit",
+    "source": "ATBD section 2.4.11",
+    "units": "percent"
+}

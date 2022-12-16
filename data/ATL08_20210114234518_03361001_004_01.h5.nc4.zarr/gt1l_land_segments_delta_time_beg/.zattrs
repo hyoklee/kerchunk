@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "calendar": "proleptic_gregorian",
+    "contentType": "referenceInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Time of the first photon contained within the data segment, in seconds since the ATLAS SDP GPS Epoch. The ATLAS Standard Data Products (SDP) epoch offset is defined within /ancillary_data/atlas_sdp_gps_epoch as the number of GPS seconds between the GPS epoch (1980-01-06T00:00:00.000000Z UTC) and the ATLAS SDP epoch. By adding the offset contained within atlas_sdp_gps_epoch to delta time parameters, the time in gps_seconds relative to the GPS epoch can be computed.",
+    "fullnamepath": "/gt1l/land_segments/delta_time_beg",
+    "long_name": "delta time begin",
+    "origname": "delta_time_beg",
+    "source": "Derived (gps_seconds-gps_sec_offset)",
+    "units": "seconds since 2018-01-01"
+}

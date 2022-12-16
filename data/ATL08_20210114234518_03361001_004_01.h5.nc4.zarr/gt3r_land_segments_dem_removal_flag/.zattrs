@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Flag indicating more than dem_removal_percent_limit (default 20.0) removed from land segment due to failing DEM-QA tests",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3r/land_segments/dem_removal_flag",
+    "long_name": "dem removal flag",
+    "origname": "dem_removal_flag",
+    "source": "ATBD section 2.4.11",
+    "units": "1"
+}

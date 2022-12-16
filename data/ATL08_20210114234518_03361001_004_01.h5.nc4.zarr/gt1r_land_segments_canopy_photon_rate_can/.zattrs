@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "Calculated photon rate of canopy photons within each 100m segment",
+    "fullnamepath": "/gt1r/land_segments/canopy/photon_rate_can",
+    "long_name": "Canopy photon rate",
+    "origname": "photon_rate_can",
+    "source": "Land/Veg ATBD July 2020",
+    "units": "s^-1",
+    "valid_min": 0.0
+}

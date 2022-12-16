@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "The quadratic mean height of individual classified relative canopy photon heights above the estimated terrain surface.",
+    "fullnamepath": "/gt1r/land_segments/canopy/h_canopy_quad",
+    "long_name": "canopy quadratic mean",
+    "origname": "h_canopy_quad",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

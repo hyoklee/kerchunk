@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Azimuth(in radians) of the unit pointing vector for the reference photon in the local ENU frame in radians.  The angle is measured from north and positive towards East.",
+    "fullnamepath": "/gt3r/land_segments/beam_azimuth",
+    "long_name": "beam azimuth",
+    "origname": "beam_azimuth",
+    "source": "ATL03",
+    "units": "radians"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "98% height of all the individual canopy relative heights for the segment above the estimated terrain surface. Relative canopy heights have been computed by differencing the canopy photon height from the estimated terrain surface.",
+    "fullnamepath": "/gt3r/land_segments/canopy/h_canopy",
+    "long_name": "height canopy",
+    "origname": "h_canopy",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

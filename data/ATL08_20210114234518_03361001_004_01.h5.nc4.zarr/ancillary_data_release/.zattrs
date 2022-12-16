@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Release number of the granule. The release number is incremented when the software or ancillary data used to create the granule has been changed.",
+    "fullnamepath": "/ancillary_data/release",
+    "long_name": "Release Number",
+    "origname": "release",
+    "source": "Operations",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_signal_photons_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt2r_signal_photons_delta_time",
+    "description": "Segment ID of photons tracing back to specific 20m segment_id on ATL03.  The unique identifier for tracing each ATL08 signal photon to the photon on ATL03 is the segment_id, orbit, and classed_pc_indx. The unique identifier for tracing each ATL08 signal photon to the corresponding photon record on ATL03 is the segment_id, orbit, cycle, and classed_pc_indx. Orbit and cycle intervals for the granule are found in the /ancillary_data. The timestamp of each orbit transition is found in the /orbit_info group.",
+    "fullnamepath": "/gt2r/signal_photons/ph_segment_id",
+    "long_name": "segment id of photon",
+    "origname": "ph_segment_id",
+    "source": "Retained from prior a_alt_science_ph packet",
+    "units": "1"
+}

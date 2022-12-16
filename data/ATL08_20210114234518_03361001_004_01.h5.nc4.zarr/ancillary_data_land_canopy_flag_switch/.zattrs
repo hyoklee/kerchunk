@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls entrance to the canopy flag subroutine . (Default = 1)",
+    "fullnamepath": "/ancillary_data/land/canopy_flag_switch",
+    "long_name": "canopy_flag switch",
+    "origname": "canopy_flag_switch",
+    "source": "ATBD section 4.3",
+    "units": "1"
+}

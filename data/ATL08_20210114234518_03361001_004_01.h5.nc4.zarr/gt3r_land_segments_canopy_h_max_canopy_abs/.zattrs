@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Maximum of individual absolute canopy heights within segment referenced above the WGS84 ellipsoid.",
+    "fullnamepath": "/gt3r/land_segments/canopy/h_max_canopy_abs",
+    "long_name": "absolute maximum canopy height",
+    "origname": "h_max_canopy_abs",
+    "source": "Land ATBD section 2.2.11",
+    "units": "meters"
+}

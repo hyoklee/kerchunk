@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "Average percentage value of the valid (value <= 100) Landsat Tree Cover Continuous Fields product for each 100 m segment",
+    "fullnamepath": "/gt2l/land_segments/canopy/landsat_perc",
+    "long_name": "landsat percentage canopy",
+    "origname": "landsat_perc",
+    "source": "Land ATBD section 2.2.24",
+    "units": "1"
+}

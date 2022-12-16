@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Best available DEM (in priority of Arctic/Antarctic/Global/MSS) value at the geolocation point.  Height is in meters above the WGS84 Ellipsoid.",
+    "fullnamepath": "/gt3l/land_segments/dem_h",
+    "long_name": "dem height",
+    "origname": "dem_h",
+    "source": "Arctic, Antarctic, Global, MSS DEM",
+    "units": "meters"
+}

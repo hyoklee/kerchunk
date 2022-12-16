@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Maximum number of iterations for optimizing the Gaussian parameters for fitting of histogram. (Default = 10)",
+    "fullnamepath": "/ancillary_data/land/iter_max",
+    "long_name": "Maximum number of iterations for optimizing the Gaussian parameters for fitting of histogram.",
+    "origname": "iter_max",
+    "source": "ATBD section 4.2 step 7",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Geolocation segment number of the first photon in the land segment.",
+    "fullnamepath": "/gt3l/land_segments/segment_id_beg",
+    "long_name": "begin geolocation segment bin",
+    "origname": "segment_id_beg",
+    "source": "ATL03",
+    "units": "1"
+}

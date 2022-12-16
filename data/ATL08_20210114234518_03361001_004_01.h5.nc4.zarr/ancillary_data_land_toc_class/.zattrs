@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Top of canopy classification flag value. (Default = 3)",
+    "fullnamepath": "/ancillary_data/land/toc_class",
+    "long_name": "Top of canopy class value",
+    "origname": "toc_class",
+    "source": "ATBD section 4.12 step 1",
+    "units": "1"
+}

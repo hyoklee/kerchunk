@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Uncertainty of the mean terrain height for the segment. This uncertainty incorporates all systematic uncertainties(e.g. timing orbits, geolocation,etc.) as well as uncertainty from errors of identified photons.  This parameter is described in section 1, equation 1.4",
+    "fullnamepath": "/gt3r/land_segments/terrain/h_te_uncertainty",
+    "long_name": "uncertainty of h_te_mean",
+    "origname": "h_te_uncertainty",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

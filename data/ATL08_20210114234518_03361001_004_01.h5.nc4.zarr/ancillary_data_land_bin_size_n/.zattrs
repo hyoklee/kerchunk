@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Size of neighbor histogram bins in number of neighbors in DRAGANN. (Default = 1)",
+    "fullnamepath": "/ancillary_data/land/bin_size_n",
+    "long_name": "neighbor histogram bin size",
+    "origname": "bin_size_n",
+    "source": "ATBD (section 4.2 step 4)",
+    "units": "1"
+}

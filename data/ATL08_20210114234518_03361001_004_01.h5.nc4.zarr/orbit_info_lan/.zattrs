@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "orbit_info_crossing_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "orbit_info_crossing_time",
+    "description": "Longitude at the ascending node crossing.",
+    "fullnamepath": "/orbit_info/lan",
+    "long_name": "Ascending Node Longitude",
+    "origname": "lan",
+    "source": "POD/PPD",
+    "units": "degrees_east",
+    "valid_max": 180.0,
+    "valid_min": -180.0
+}

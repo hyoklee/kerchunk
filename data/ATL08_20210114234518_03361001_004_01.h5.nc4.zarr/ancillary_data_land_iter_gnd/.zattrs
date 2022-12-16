@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Iterations of smoothing of interpolated ground surface for refinement. (Default = 10)",
+    "fullnamepath": "/ancillary_data/land/iter_gnd",
+    "long_name": "Iterations of smoothing of interpolated ground surface for ground estimate.",
+    "origname": "iter_gnd",
+    "source": "ATBD section 4.10 step 1",
+    "units": "1"
+}

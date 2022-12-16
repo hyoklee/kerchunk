@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude gt2r_land_segments_longitude",
+    "description": "The best fit terrain elevation at the the mid-point location of each 100m segment. The mid-segment terrain elevation is determined by selecting the best of three fits- linear, 3rd order and 4th order polynomials - to the terrain photons and interpolating the elevation at the mid-point location of the 100 m segment. For the linear fit, a slope correction and weighting is applied to each ground photon based on the distance to the slope height at the center of the segment.",
+    "fullnamepath": "/gt2r/land_segments/terrain/h_te_best_fit",
+    "long_name": "segment terrain height best fit",
+    "origname": "h_te_best_fit",
+    "source": "Land ATBD section 2.1.15",
+    "units": "meters"
+}

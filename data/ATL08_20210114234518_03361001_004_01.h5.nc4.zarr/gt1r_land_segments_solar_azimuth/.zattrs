@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "The direction, eastwards from north, of the sun vector as seen by an observer at the laser ground spot.",
+    "fullnamepath": "/gt1r/land_segments/solar_azimuth",
+    "long_name": "solar azimuth",
+    "origname": "solar_azimuth",
+    "source": "ATL03g ATBD",
+    "units": "degrees_east"
+}

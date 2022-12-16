@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Parameter for controlling the search radius in nearest neighbor search in DRAGANN. (Default = 20)",
+    "fullnamepath": "/ancillary_data/land/p_static",
+    "long_name": "Dragann Parameter",
+    "origname": "p_static",
+    "source": "ATBD section 4.2 step 1",
+    "units": "1"
+}

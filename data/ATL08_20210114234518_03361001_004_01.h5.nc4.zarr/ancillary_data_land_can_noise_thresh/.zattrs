@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Threshold, as a number of canopy photons in the CAN_FILT_SEG, used for the reclassification of canopy signal photons. (Default = 75)",
+    "fullnamepath": "/ancillary_data/land/can_noise_thresh",
+    "long_name": "Threshold for reclassification of canopy as noise",
+    "origname": "can_noise_thresh",
+    "source": "ATBD section 4.11 step 6",
+    "units": "1"
+}

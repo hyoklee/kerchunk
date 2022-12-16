@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "DRAGANN segment buffer length in 20m geolocated segments along ground track. (Default=10)",
+    "fullnamepath": "/ancillary_data/land/dseg_buf",
+    "long_name": "DRAGANN segment buffer size",
+    "origname": "dseg_buf",
+    "source": "ATBD section 4.2.1 step 1",
+    "units": "1"
+}

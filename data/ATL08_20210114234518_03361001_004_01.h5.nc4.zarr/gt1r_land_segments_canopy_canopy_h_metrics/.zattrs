@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time",
+        "ds_metrics"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "Height metrics based on the cumulative distribution of relative canopy heights above the interpolated ground surface.  The height metrics are calculated at the following percentiles: 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95%.",
+    "fullnamepath": "/gt1r/land_segments/canopy/canopy_h_metrics",
+    "long_name": "canopy height metrics",
+    "origname": "canopy_h_metrics",
+    "source": "Land ATBD 15May2020 section 2.2.4",
+    "units": "meters"
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Long segment size in number of 20 meter segments along ground track. (Default=500)",
+    "fullnamepath": "/ancillary_data/land/lseg",
+    "long_name": "Long segment size",
+    "origname": "lseg",
+    "source": "ATBD section 4.1 step 1",
+    "units": "1"
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Top of canopy refinement square search radius. (Default = 225.0)",
+    "fullnamepath": "/ancillary_data/land/sig_rsq_search",
+    "long_name": "Square Radius of filter for canopy",
+    "origname": "sig_rsq_search",
+    "source": "ATBD section 4.8 step 6",
+    "units": "meters^2"
+}

@@ -1,0 +1,14 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude gt2r_land_segments_longitude",
+    "description": "Calculated photon rate of terrain photons within each 100m segment",
+    "fullnamepath": "/gt2r/land_segments/terrain/photon_rate_te",
+    "long_name": "Terrain photon rate",
+    "origname": "photon_rate_te",
+    "source": "July 2020 Land/Veg ATBD",
+    "units": "s^-1",
+    "valid_min": 0.0
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The approximate relief of the L-km segment uses the percentile height values, relief_htop and relief_hbot. (Default=0.05)",
+    "fullnamepath": "/ancillary_data/land/relief_hbot",
+    "long_name": "lower relief percentile",
+    "origname": "relief_hbot",
+    "source": "ATBD (section 4.5 step 6)",
+    "units": "meters"
+}

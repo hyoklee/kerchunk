@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Apparent surface reflectance",
+    "fullnamepath": "/gt3r/land_segments/asr",
+    "long_name": "apparent surface reflectance",
+    "origname": "asr",
+    "source": "ATL09",
+    "units": "1"
+}

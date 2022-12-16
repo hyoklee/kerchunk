@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Version number of this granule within the release. It is a sequential number corresponding to the number of times the granule has been reprocessed for the current release.",
+    "fullnamepath": "/ancillary_data/version",
+    "long_name": "Version",
+    "origname": "version",
+    "source": "Operations",
+    "units": "1"
+}

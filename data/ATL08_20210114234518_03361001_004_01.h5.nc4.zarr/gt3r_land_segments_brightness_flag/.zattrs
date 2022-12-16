@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Flag indicating that the ground surface is bright (e.g. snow-covered or other bright surfaces)",
+    "flag_meanings": "not_bright_surface bright_surface",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3r/land_segments/brightness_flag",
+    "long_name": "brightness flag",
+    "origname": "brightness_flag",
+    "source": "Land ATBD section 2.4.21",
+    "units": "1"
+}

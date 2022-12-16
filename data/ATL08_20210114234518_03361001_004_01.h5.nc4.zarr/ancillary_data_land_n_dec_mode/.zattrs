@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Number of decimal places to consider in mode computation. (Default =1)",
+    "fullnamepath": "/ancillary_data/land/n_dec_mode",
+    "long_name": "Mode decimal parameter",
+    "origname": "n_dec_mode",
+    "source": "ATBD needed for section 4.13 step 3(h_te_mode)",
+    "units": "1"
+}

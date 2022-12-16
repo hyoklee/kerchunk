@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2r_land_segments_delta_time gt2r_land_segments_latitude gt2r_land_segments_longitude",
+    "description": "The 98% height of all the absolute individual canopy heights referenced above the WGS84 ellipsoid.",
+    "fullnamepath": "/gt2r/land_segments/canopy/h_canopy_abs",
+    "long_name": "absolute segment canopy height",
+    "origname": "h_canopy_abs",
+    "source": "Land ATBD section 2.2.2",
+    "units": "meters"
+}

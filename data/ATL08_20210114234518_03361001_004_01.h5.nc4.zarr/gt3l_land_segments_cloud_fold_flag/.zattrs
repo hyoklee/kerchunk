@@ -1,0 +1,22 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Flag that indicates this profile likely contains cloud signal folded down from above 15 km to the last 2-3 km of the profile. See ATL09 ATBD Table 3.9 for detailed flag value meanings.",
+    "flag_meanings": "no_folding goes5_indicates profile_indicates both_indicate",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "fullnamepath": "/gt3l/land_segments/cloud_fold_flag",
+    "long_name": "cloud folding flag",
+    "origname": "cloud_fold_flag",
+    "source": "ATL09",
+    "units": "1",
+    "valid_max": 3,
+    "valid_min": 0
+}

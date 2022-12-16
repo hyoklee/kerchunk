@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Lower bound restricting the search of a ground surface in canopy cases. (Default = -4.0)",
+    "fullnamepath": "/ancillary_data/land/lw_gnd_bnd",
+    "long_name": "Lower bound restricting the search of a ground surface in canopy cases.",
+    "origname": "lw_gnd_bnd",
+    "source": "ATBD section 4.7 step 3",
+    "units": "meters"
+}

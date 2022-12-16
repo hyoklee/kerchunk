@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Percentile component of h_canopy parameter. (Default =0.95)",
+    "fullnamepath": "/ancillary_data/land/h_canopy_perc",
+    "long_name": "h_canopy percentile",
+    "origname": "h_canopy_perc",
+    "source": "ATBD section 2.2.3",
+    "units": "1"
+}

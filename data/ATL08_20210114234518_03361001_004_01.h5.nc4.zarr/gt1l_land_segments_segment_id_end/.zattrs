@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Geolocation segment number of the last photon in the land segment.",
+    "fullnamepath": "/gt1l/land_segments/segment_id_end",
+    "long_name": "end geolocation segment bin",
+    "origname": "segment_id_end",
+    "source": "ATL03",
+    "units": "1"
+}

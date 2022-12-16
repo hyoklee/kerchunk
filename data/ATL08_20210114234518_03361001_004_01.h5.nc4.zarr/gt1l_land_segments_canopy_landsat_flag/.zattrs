@@ -1,0 +1,18 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Flag indicating that more than 50% of the Landsat Continuous Cover product have values > 100 for the L-Km segment.  Canopy is assumed present along the L-km segment if landsat_flag is 1.",
+    "flag_meanings": "canopy_not_assumed_present canopy_assumed_present",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt1l/land_segments/canopy/landsat_flag",
+    "long_name": "landsat flag",
+    "origname": "landsat_flag",
+    "source": "Land ATBD section 2.2.25",
+    "units": "1"
+}

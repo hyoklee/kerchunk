@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Maximum number of input ATL09 files. (Default = 200)",
+    "fullnamepath": "/ancillary_data/land/max_atl09files",
+    "long_name": "Maximum number of input ATL09s",
+    "origname": "max_atl09files",
+    "source": "Operations",
+    "units": "1"
+}

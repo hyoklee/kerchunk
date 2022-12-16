@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "The skewness of the photon heights above the WGS84 Ellipsoid, classified as terrain within the segment.",
+    "fullnamepath": "/gt3r/land_segments/terrain/h_te_skew",
+    "long_name": "skew of terrain heights",
+    "origname": "h_te_skew",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

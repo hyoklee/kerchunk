@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Difference between h_canopy and h_median_canopy",
+    "fullnamepath": "/gt1l/land_segments/canopy/h_dif_canopy",
+    "long_name": "canopy diff to median height",
+    "origname": "h_dif_canopy",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

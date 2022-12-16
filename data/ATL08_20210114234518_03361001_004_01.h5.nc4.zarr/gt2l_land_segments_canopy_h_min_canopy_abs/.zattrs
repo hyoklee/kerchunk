@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt2l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt2l_land_segments_delta_time gt2l_land_segments_latitude gt2l_land_segments_longitude",
+    "description": "The minimum of absolute individual canopy heights within segment referenced above the WGS84 Ellipsoid.",
+    "fullnamepath": "/gt2l/land_segments/canopy/h_min_canopy_abs",
+    "long_name": "absolute minimum canopy height",
+    "origname": "h_min_canopy_abs",
+    "source": "Land ATBD section 2.2.9",
+    "units": "meters"
+}

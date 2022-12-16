@@ -1,0 +1,21 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "auxiliaryInformation",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "Flag derived from full_sat_fract on the ATL03 data product, averaged over 5 geosegments in 100m land segment",
+    "flag_meanings": "no_saturation_detected saturation_detected not_enough_valid_data",
+    "flag_values": [
+        0,
+        1,
+        -1
+    ],
+    "fullnamepath": "/gt1l/land_segments/sat_flag",
+    "long_name": "saturation flag",
+    "origname": "sat_flag",
+    "source": "ATL03, Land ATBD 15Apr2020, section 2.5.23",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": -1
+}

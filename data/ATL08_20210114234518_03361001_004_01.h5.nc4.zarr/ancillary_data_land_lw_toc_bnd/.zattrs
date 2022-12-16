@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Lower bound restricting the search of a top of canopy surface. (Default = -4.0)",
+    "fullnamepath": "/ancillary_data/land/lw_toc_bnd",
+    "long_name": "Lower bound restricting the search of a top of canopy surface.",
+    "origname": "lw_toc_bnd",
+    "source": "section 4.7 step 3 entered from section 4.8",
+    "units": "meters"
+}

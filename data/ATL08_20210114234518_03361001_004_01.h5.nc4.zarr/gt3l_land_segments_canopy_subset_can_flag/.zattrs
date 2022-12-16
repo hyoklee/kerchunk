@@ -1,0 +1,22 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time",
+        "ds_geosegments"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Quality flag indicating the canopy photons populating the 100 m segment statistics are derived from less than 100 m worth of photons and/or less than 5 20m ATL03 segments.",
+    "flag_meanings": "no_photon_data_within_geosegment no_canopy_photons_within_geosegment canopy_photons_present_within_geosegment",
+    "flag_values": [
+        -1,
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3l/land_segments/canopy/subset_can_flag",
+    "long_name": "subset canopy flag",
+    "origname": "subset_can_flag",
+    "source": "Land/Veg ATBD 15 Novemebr 2019, Section 2.2.25",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": -1
+}

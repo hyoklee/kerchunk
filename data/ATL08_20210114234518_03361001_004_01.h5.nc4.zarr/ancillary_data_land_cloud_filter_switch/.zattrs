@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls entrance to the cloud_filter subroutine. (Default = 0)",
+    "fullnamepath": "/ancillary_data/land/cloud_filter_switch",
+    "long_name": "cloud_filter switch",
+    "origname": "cloud_filter_switch",
+    "source": "ATBD section 4.1.1",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3r_land_segments_delta_time"
+    ],
+    "contentType": "qualityInformation",
+    "coordinates": "gt3r_land_segments_delta_time gt3r_land_segments_latitude gt3r_land_segments_longitude",
+    "description": "Uncertainty of the relative canopy heights for the segment. Incorporates all systematic uncertainties as well as uncertainty from errors of identified photons. See section 1 and equations 1.4 and 1.5 in the Land ATBD",
+    "fullnamepath": "/gt3r/land_segments/canopy/h_canopy_uncertainty",
+    "long_name": "segment canopy height uncertainty",
+    "origname": "h_canopy_uncertainty",
+    "source": "Land ATBD section 1.5",
+    "units": "meters"
+}

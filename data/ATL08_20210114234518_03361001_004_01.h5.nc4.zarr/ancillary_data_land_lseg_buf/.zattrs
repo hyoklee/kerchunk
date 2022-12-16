@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Overlapping long segment buffer size in 20m geosegments along ground track. (Default=10)",
+    "fullnamepath": "/ancillary_data/land/lseg_buf",
+    "long_name": "Long segment buffer size",
+    "origname": "lseg_buf",
+    "source": "ATBD section 4.1 step 2",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1l_land_segments_delta_time gt1l_land_segments_latitude gt1l_land_segments_longitude",
+    "description": "The median of individual absolute canopy heights within segment referenced above the WGS84 Ellipsoid.",
+    "fullnamepath": "/gt1l/land_segments/canopy/h_median_canopy_abs",
+    "long_name": "absolute segment median canopy height",
+    "origname": "h_median_canopy_abs",
+    "source": "Land ATBD section 2.2.6",
+    "units": "meters"
+}

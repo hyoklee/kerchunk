@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt1r_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt1r_land_segments_delta_time gt1r_land_segments_latitude gt1r_land_segments_longitude",
+    "description": "Relative maximum of individual canopy heights within segment. Relative canopy heights have been computed by differencing the canopy photon height from the estimated terrain surface. Should be equivalent to RH100 metric reported in the literature.",
+    "fullnamepath": "/gt1r/land_segments/canopy/h_max_canopy",
+    "long_name": "maximum canopy height",
+    "origname": "h_max_canopy",
+    "source": "Land ATBD section 2.2.12",
+    "units": "meters"
+}

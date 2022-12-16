@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Noise classification flag value. (Default = 0)",
+    "fullnamepath": "/ancillary_data/land/noise_class",
+    "long_name": "Noise class value",
+    "origname": "noise_class",
+    "source": "ATBD section 4.12 step 1",
+    "units": "1"
+}

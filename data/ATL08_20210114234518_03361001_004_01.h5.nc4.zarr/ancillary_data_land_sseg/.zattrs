@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Short segment length in meters. (Default = 100.0)",
+    "fullnamepath": "/ancillary_data/land/sseg",
+    "long_name": "Short Segment Length",
+    "origname": "sseg",
+    "source": "ATBD section 4.13 step 1",
+    "units": "meters"
+}

@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_signal_photons_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_signal_photons_delta_time",
+    "description": "Land Vegetation ATBD classification flag for each photon as either noise, ground, canopy, and top of canopy. 0 = noise,  1 = ground, 2 = canopy, or 3 = top of canopy.",
+    "flag_meanings": "noise ground canopy top_of_canopy",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "fullnamepath": "/gt3l/signal_photons/classed_pc_flag",
+    "long_name": "photon land atbd classification",
+    "origname": "classed_pc_flag",
+    "source": "Land ATBD section 4.10",
+    "units": "1"
+}

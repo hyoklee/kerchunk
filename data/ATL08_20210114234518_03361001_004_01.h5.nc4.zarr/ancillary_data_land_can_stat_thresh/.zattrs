@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum percentage of canopy photons to compute statistics upon. (Default =0.05)",
+    "fullnamepath": "/ancillary_data/land/can_stat_thresh",
+    "long_name": "Threshold for canopy statistics",
+    "origname": "can_stat_thresh",
+    "source": "ATBD section 4.14.1 step 1",
+    "units": "1"
+}

@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "The median of the photon heights above the WGS84 Ellipsoid, classified as terrain within the segment.",
+    "fullnamepath": "/gt3l/land_segments/terrain/h_te_median",
+    "long_name": "median terrain height",
+    "origname": "h_te_median",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

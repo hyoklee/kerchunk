@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "gt3l_land_segments_delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "gt3l_land_segments_delta_time gt3l_land_segments_latitude gt3l_land_segments_longitude",
+    "description": "Flag is set to 1 if the point spread function (computed as sigma_atlas_land) has exceeded the threshold (1 m)",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "fullnamepath": "/gt3l/land_segments/psf_flag",
+    "long_name": "point spread function flag",
+    "origname": "psf_flag",
+    "source": "Land/Veg ATBD",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": 0
+}

@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "FakeDim0"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls entrance to the DRAGANN subroutine. (Default =1)",
+    "fullnamepath": "/ancillary_data/land/dragann_switch",
+    "long_name": "DRAGANN switch",
+    "origname": "dragann_switch",
+    "source": "ATBD section 4.2",
+    "units": "1"
+}
