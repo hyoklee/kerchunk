@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dataset xmlns="http://xml.opendap.org/ns/DAP/4.0#" xmlns:dmrpp="http://xml.opendap.org/dap/dmrpp/1.0.0#" dapVersion="4.0" dmrVersion="1.0" name="AMSR_2_L3_DailySnow_P00_20160831.he5.h5" dmrpp:href="file:///usr/share/hyrax/AMSR_2_L3_DailySnow_P00_20160831.he5.h5" dmrpp:version="3.20.13-240">
+    <Attribute name="build_dmrpp_metadata" type="Container">
+        <Attribute name="build_dmrpp" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="bes" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="libdap" type="String">
+            <Value>libdap-3.20.11-74</Value>
+        </Attribute>
+        <Attribute name="configuration" type="String">
+            <Value>
+# TheBESKeys::get_as_config()
+AllowedHosts=^https?:\/\/
+BES.Catalog.catalog.FollowSymLinks=Yes
+BES.Catalog.catalog.RootDirectory=/usr/share/hyrax
+BES.Catalog.catalog.TypeMatch=dmrpp:.*\.(dmrpp)$;
+BES.Catalog.catalog.TypeMatch+=h5:.*(\.bz2|\.gz|\.Z)?$;
+BES.Data.RootDirectory=/dev/null
+BES.LogName=./bes.log
+BES.UncompressCache.dir=/tmp/hyrax_ux
+BES.UncompressCache.prefix=ux_
+BES.UncompressCache.size=500
+BES.module.cmd=/usr/lib64/bes/libdap_xml_module.so
+BES.module.dap=/usr/lib64/bes/libdap_module.so
+BES.module.dmrpp=/usr/lib64/bes/libdmrpp_module.so
+BES.module.fonc=/usr/lib64/bes/libfonc_module.so
+BES.module.h5=/usr/lib64/bes/libhdf5_module.so
+BES.module.nc=/usr/lib64/bes/libnc_module.so
+BES.modules=dap,cmd,h5,dmrpp,nc,fonc
+FONc.ClassicModel=false
+FONc.NoGlobalAttrs=true
+H5.EnableCF=false
+H5.EnableCheckNameClashing=true
+</Value>
+        </Attribute>
+        <Attribute name="invocation" type="String">
+            <Value>build_dmrpp -c /tmp/bes_conf_7LkO -f /usr/share/hyrax/AMSR_2_L3_DailySnow_P00_20160831.he5.h5 -r /tmp/dmr__ZhwoM2 -u file:///usr/share/hyrax/AMSR_2_L3_DailySnow_P00_20160831.he5.h5 -M</Value>
+        </Attribute>
+    </Attribute>
+    <Group name="HDFEOS">
+        <Group name="ADDITIONAL">
+            <Group name="FILE_ATTRIBUTES"/>
+        </Group>
+        <Group name="GRIDS">
+            <Group name="Northern_Hemisphere">
+                <Dimension name="XDim" size="721"/>
+                <Dimension name="YDim" size="721"/>
+                <Group name="Data_Fields">
+                    <Byte name="Flags_NorthernDaily">
+                        <Dim name="/HDFEOS/GRIDS/Northern_Hemisphere/YDim"/>
+                        <Dim name="/HDFEOS/GRIDS/Northern_Hemisphere/XDim"/>
+                        <Attribute name="_FillValue" type="Byte">
+                            <Value>255</Value>
+                        </Attribute>
+                        <Attribute name="fullnamepath" type="String">
+                            <Value>/HDFEOS/GRIDS/Northern Hemisphere/Data Fields/Flags_NorthernDaily</Value>
+                        </Attribute>
+                        <dmrpp:chunks fillValue="255" byteOrder="LE">
+                            <dmrpp:chunk offset="6664" nBytes="519841"/>
+                        </dmrpp:chunks>
+                    </Byte>
+                    <Byte name="SWE_NorthernDaily">
+                        <Dim name="/HDFEOS/GRIDS/Northern_Hemisphere/YDim"/>
+                        <Dim name="/HDFEOS/GRIDS/Northern_Hemisphere/XDim"/>
+                        <Attribute name="_FillValue" type="Byte">
+                            <Value>255</Value>
+                        </Attribute>
+                        <Attribute name="long_name" type="String">
+                            <Value>Daily snow water equivalent (SWE)</Value>
+                        </Attribute>
+                        <Attribute name="units" type="String">
+                            <Value>mm</Value>
+                        </Attribute>
+                        <Attribute name="format" type="String">
+                            <Value>f3.0</Value>
+                        </Attribute>
+                        <Attribute name="scale_factor" type="Float32">
+                            <Value>2.</Value>
+                        </Attribute>
+                        <Attribute name="fullnamepath" type="String">
+                            <Value>/HDFEOS/GRIDS/Northern Hemisphere/Data Fields/SWE_NorthernDaily</Value>
+                        </Attribute>
+                        <dmrpp:chunks fillValue="255" byteOrder="LE">
+                            <dmrpp:chunk offset="528553" nBytes="519841"/>
+                        </dmrpp:chunks>
+                    </Byte>
+                </Group>
+            </Group>
+            <Group name="Southern_Hemisphere">
+                <Dimension name="XDim" size="721"/>
+                <Dimension name="YDim" size="721"/>
+                <Group name="Data_Fields">
+                    <Byte name="Flags_SouthernDaily">
+                        <Dim name="/HDFEOS/GRIDS/Southern_Hemisphere/YDim"/>
+                        <Dim name="/HDFEOS/GRIDS/Southern_Hemisphere/XDim"/>
+                        <Attribute name="_FillValue" type="Byte">
+                            <Value>255</Value>
+                        </Attribute>
+                        <Attribute name="fullnamepath" type="String">
+                            <Value>/HDFEOS/GRIDS/Southern Hemisphere/Data Fields/Flags_SouthernDaily</Value>
+                        </Attribute>
+                        <dmrpp:chunks fillValue="255" byteOrder="LE">
+                            <dmrpp:chunk offset="1050442" nBytes="519841"/>
+                        </dmrpp:chunks>
+                    </Byte>
+                    <Byte name="SWE_SouthernDaily">
+                        <Dim name="/HDFEOS/GRIDS/Southern_Hemisphere/YDim"/>
+                        <Dim name="/HDFEOS/GRIDS/Southern_Hemisphere/XDim"/>
+                        <Attribute name="_FillValue" type="Byte">
+                            <Value>255</Value>
+                        </Attribute>
+                        <Attribute name="long_name" type="String">
+                            <Value>Daily snow water equivalent (SWE)</Value>
+                        </Attribute>
+                        <Attribute name="units" type="String">
+                            <Value>mm</Value>
+                        </Attribute>
+                        <Attribute name="format" type="String">
+                            <Value>f3.0</Value>
+                        </Attribute>
+                        <Attribute name="scale_factor" type="Float32">
+                            <Value>2.</Value>
+                        </Attribute>
+                        <Attribute name="fullnamepath" type="String">
+                            <Value>/HDFEOS/GRIDS/Southern Hemisphere/Data Fields/SWE_SouthernDaily</Value>
+                        </Attribute>
+                        <dmrpp:chunks fillValue="255" byteOrder="LE">
+                            <dmrpp:chunk offset="1570283" nBytes="519841"/>
+                        </dmrpp:chunks>
+                    </Byte>
+                </Group>
+            </Group>
+        </Group>
+    </Group>
+    <Group name="HDFEOS_INFORMATION">
+        <String name="CoreMetadata_0">
+            <Attribute name="fullnamepath" type="String">
+                <Value>/HDFEOS INFORMATION/CoreMetadata.0</Value>
+            </Attribute>
+            <dmrpp:chunks fillValue="unsupported-string">
+                <dmrpp:chunk offset="2092172" nBytes="65535"/>
+            </dmrpp:chunks>
+        </String>
+        <String name="StructMetadata_0">
+            <Attribute name="fullnamepath" type="String">
+                <Value>/HDFEOS INFORMATION/StructMetadata.0</Value>
+            </Attribute>
+            <dmrpp:chunks fillValue="unsupported-string">
+                <dmrpp:chunk offset="2157707" nBytes="32000"/>
+            </dmrpp:chunks>
+        </String>
+        <Attribute name="HDFEOSVersion" type="String">
+            <Value>HDFEOS_5.1.15</Value>
+        </Attribute>
+    </Group>
+</Dataset>

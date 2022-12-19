@@ -1,0 +1,1502 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dataset xmlns="http://xml.opendap.org/ns/DAP/4.0#" xmlns:dmrpp="http://xml.opendap.org/dap/dmrpp/1.0.0#" dapVersion="4.0" dmrVersion="1.0" name="20220607120000-STAR-L3S_GHRSST-SSTsubskin-LEO_PM_D-ACSPO_V2.80-v02.0-fv01.0.nc.h5" dmrpp:href="file:///usr/share/hyrax/20220607120000-STAR-L3S_GHRSST-SSTsubskin-LEO_PM_D-ACSPO_V2.80-v02.0-fv01.0.nc.h5" dmrpp:version="3.20.13-240">
+    <Dimension name="time" size="1"/>
+    <Dimension name="lat" size="9000"/>
+    <Dimension name="lon" size="18000"/>
+    <Int8 name="wind_speed">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>wind speed</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>wind_speed</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>m s-1</Value>
+        </Attribute>
+        <Attribute name="height" type="String">
+            <Value>10 m</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.150000006</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>-127</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>127</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="source" type="String">
+            <Value>Wind speed from MERRA-2 data</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Typically represents surface winds (10 meters above the sea surface). The wind speeds reported here are a weighted average of wind speeds reported in input l3u data.</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>auxiliaryInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="261490033" nBytes="277604" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="261767637" nBytes="481406" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="262249043" nBytes="508209" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="262757252" nBytes="146260" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="262903512" nBytes="1669805" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="264573317" nBytes="1005494" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="265578811" nBytes="595477" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="266174288" nBytes="1107409" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="267281697" nBytes="1794073" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="269075770" nBytes="1178547" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="270254317" nBytes="1385437" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="271639754" nBytes="1342788" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="272982542" nBytes="357708" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="273340250" nBytes="357418" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="273697668" nBytes="323682" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="274023398" nBytes="188745" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Int16 name="l3s_sst_reference">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>l3s sea surface temperature reference</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kelvin</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>-32768</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>273.1499939</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.009999999776</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int16">
+            <Value>-32767</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int16">
+            <Value>32767</Value>
+        </Attribute>
+        <Attribute name="source" type="String">
+            <Value>NOAA</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Reference SST used for determining weights of L3U pixels to the L3S output. It is a 7x7 sliding window weighted mean of sea_surface_temperature. Weights are equal to sst_count with a maximum weight of 5. Coverage is improved compared to sea_surface_temperature, at the cost of reduced feature resolution. This is an experimental variable and is subject to change.</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>physicalMeasurement</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-32768" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1800 3600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="107792200" nBytes="444423" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="108236623" nBytes="339636" chunkPositionInArray="[0,0,3600]"/>
+            <dmrpp:chunk offset="108576259" nBytes="1182347" chunkPositionInArray="[0,0,7200]"/>
+            <dmrpp:chunk offset="109758606" nBytes="387710" chunkPositionInArray="[0,0,10800]"/>
+            <dmrpp:chunk offset="110146316" nBytes="247983" chunkPositionInArray="[0,0,14400]"/>
+            <dmrpp:chunk offset="110394299" nBytes="2633283" chunkPositionInArray="[0,1800,0]"/>
+            <dmrpp:chunk offset="113027582" nBytes="2071147" chunkPositionInArray="[0,1800,3600]"/>
+            <dmrpp:chunk offset="115098729" nBytes="1655147" chunkPositionInArray="[0,1800,7200]"/>
+            <dmrpp:chunk offset="116753876" nBytes="496502" chunkPositionInArray="[0,1800,10800]"/>
+            <dmrpp:chunk offset="117250378" nBytes="1940450" chunkPositionInArray="[0,1800,14400]"/>
+            <dmrpp:chunk offset="119190828" nBytes="3871393" chunkPositionInArray="[0,3600,0]"/>
+            <dmrpp:chunk offset="123062221" nBytes="1540858" chunkPositionInArray="[0,3600,3600]"/>
+            <dmrpp:chunk offset="124603079" nBytes="1993468" chunkPositionInArray="[0,3600,7200]"/>
+            <dmrpp:chunk offset="126596547" nBytes="2465196" chunkPositionInArray="[0,3600,10800]"/>
+            <dmrpp:chunk offset="129061743" nBytes="3388764" chunkPositionInArray="[0,3600,14400]"/>
+            <dmrpp:chunk offset="132450507" nBytes="2334239" chunkPositionInArray="[0,5400,0]"/>
+            <dmrpp:chunk offset="134784746" nBytes="2542994" chunkPositionInArray="[0,5400,3600]"/>
+            <dmrpp:chunk offset="137327740" nBytes="2417750" chunkPositionInArray="[0,5400,7200]"/>
+            <dmrpp:chunk offset="139745490" nBytes="3230808" chunkPositionInArray="[0,5400,10800]"/>
+            <dmrpp:chunk offset="142976298" nBytes="2126346" chunkPositionInArray="[0,5400,14400]"/>
+            <dmrpp:chunk offset="145102644" nBytes="220586" chunkPositionInArray="[0,7200,0]"/>
+            <dmrpp:chunk offset="145323230" nBytes="736031" chunkPositionInArray="[0,7200,3600]"/>
+            <dmrpp:chunk offset="146059261" nBytes="238277" chunkPositionInArray="[0,7200,7200]"/>
+            <dmrpp:chunk offset="146297538" nBytes="226320" chunkPositionInArray="[0,7200,10800]"/>
+            <dmrpp:chunk offset="146526275" nBytes="140657" chunkPositionInArray="[0,7200,14400]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int8 name="sst_count">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Count of input L3U SST pixels</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>127</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Number of L3U pixels contributing to L3S pixel</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>referenceInformation</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>1</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="198328454" nBytes="153235" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="198481689" nBytes="297862" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="198779551" nBytes="336741" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="199116292" nBytes="105503" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="199221795" nBytes="1150667" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="200372462" nBytes="688680" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="201061142" nBytes="338457" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="201399599" nBytes="822855" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="202222454" nBytes="1327017" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="203549471" nBytes="847020" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="204396491" nBytes="901067" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="205297558" nBytes="950074" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="206247632" nBytes="254638" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="206502270" nBytes="222544" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="206724814" nBytes="241916" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="206968968" nBytes="148465" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Int8 name="sst_source">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>Source of major (highest weight) contribution to sst</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>6</Value>
+        </Attribute>
+        <Attribute name="flag_meanings" type="String">
+            <Value>viirs_npp viirs_n20 avhrr_ma avhrr_mb avhrr_mc modis_t modis_a</Value>
+        </Attribute>
+        <Attribute name="flag_values" type="Int8">
+            <Value>0</Value>
+            <Value>1</Value>
+            <Value>2</Value>
+            <Value>3</Value>
+            <Value>4</Value>
+            <Value>5</Value>
+            <Value>6</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Major contributor to SST. The major contributor is defined as the platform with highest weighed l3u observation.</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>referenceInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="207121620" nBytes="154842" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="207276462" nBytes="277167" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="207553629" nBytes="288637" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="207842266" nBytes="104301" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="207946567" nBytes="1039708" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="208986275" nBytes="688904" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="209675179" nBytes="373959" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="210049138" nBytes="823542" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="210872680" nBytes="1254228" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="212126908" nBytes="837350" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="212964258" nBytes="948450" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="213912708" nBytes="948074" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="214860782" nBytes="249553" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="215110335" nBytes="224825" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="215335160" nBytes="234681" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="215572025" nBytes="146592" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Float32 name="lon">
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>longitude</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Longitude for locating data</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degrees_east</Value>
+        </Attribute>
+        <Attribute name="axis" type="String">
+            <Value>X</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Float32">
+            <Value>-180.</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Float32">
+            <Value>180.</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>longitude</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>coordinate</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>18000</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="32841264" nBytes="5195" chunkPositionInArray="[0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Int32 name="time">
+        <Dim name="/time"/>
+        <Attribute name="long_name" type="String">
+            <Value>reference time of sst file</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>seconds since 1981-01-01 00:00:00</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>seconds since 1981-01-01 00:00:00</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>time</Value>
+        </Attribute>
+        <Attribute name="calendar" type="String">
+            <Value>Gregorian</Value>
+        </Attribute>
+        <Attribute name="axis" type="String">
+            <Value>T</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>coordinate</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="-2147483647" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="59397" nBytes="12" chunkPositionInArray="[0]"/>
+        </dmrpp:chunks>
+    </Int32>
+    <Int8 name="sses_standard_deviation">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>SSES standard deviation</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kelvin</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.009999999776</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>-127</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>127</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Standard deviation of sea_surface_temperature from SST measured by drifting buoys. Further information at (Petrenko et al., JTECH, 2016; doi:10.1175/JTECH-D-15-0166.1)</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>qualityInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="93246546" nBytes="255175" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="93501721" nBytes="466889" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="93968610" nBytes="479128" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="94447738" nBytes="166369" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="94614107" nBytes="1978456" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="96592563" nBytes="1202180" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="97794743" nBytes="697161" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="98491904" nBytes="1542758" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="100034662" nBytes="2119129" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="102153791" nBytes="1315072" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="103468863" nBytes="1578578" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="105047441" nBytes="1538376" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="106585817" nBytes="325758" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="106911575" nBytes="351789" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="107263364" nBytes="313951" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="107579363" nBytes="207653" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Int32 name="sst_dtime">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>time difference from reference time</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>seconds</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.25</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int32">
+            <Value>2147483647</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int32">
+            <Value>-2147483647</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int32">
+            <Value>-2147483648</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>time plus sst_dtime gives seconds since 1981-01-01 00:00:00 UTC</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>referenceInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-2147483648" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1500 3000</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="64620" nBytes="231106" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="295726" nBytes="65201" chunkPositionInArray="[0,0,3000]"/>
+            <dmrpp:chunk offset="360927" nBytes="487705" chunkPositionInArray="[0,0,6000]"/>
+            <dmrpp:chunk offset="848632" nBytes="1052753" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="1901385" nBytes="68076" chunkPositionInArray="[0,0,12000]"/>
+            <dmrpp:chunk offset="1969461" nBytes="65105" chunkPositionInArray="[0,0,15000]"/>
+            <dmrpp:chunk offset="2034566" nBytes="1023510" chunkPositionInArray="[0,1500,0]"/>
+            <dmrpp:chunk offset="3058076" nBytes="511240" chunkPositionInArray="[0,1500,3000]"/>
+            <dmrpp:chunk offset="3569316" nBytes="1009196" chunkPositionInArray="[0,1500,6000]"/>
+            <dmrpp:chunk offset="4578512" nBytes="715190" chunkPositionInArray="[0,1500,9000]"/>
+            <dmrpp:chunk offset="5293702" nBytes="102377" chunkPositionInArray="[0,1500,12000]"/>
+            <dmrpp:chunk offset="5396079" nBytes="714778" chunkPositionInArray="[0,1500,15000]"/>
+            <dmrpp:chunk offset="6110857" nBytes="2957091" chunkPositionInArray="[0,3000,0]"/>
+            <dmrpp:chunk offset="9067948" nBytes="1270435" chunkPositionInArray="[0,3000,3000]"/>
+            <dmrpp:chunk offset="10338383" nBytes="922841" chunkPositionInArray="[0,3000,6000]"/>
+            <dmrpp:chunk offset="11261224" nBytes="462212" chunkPositionInArray="[0,3000,9000]"/>
+            <dmrpp:chunk offset="11723436" nBytes="791692" chunkPositionInArray="[0,3000,12000]"/>
+            <dmrpp:chunk offset="12515128" nBytes="2187671" chunkPositionInArray="[0,3000,15000]"/>
+            <dmrpp:chunk offset="14702799" nBytes="2854979" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="17557778" nBytes="1552057" chunkPositionInArray="[0,4500,3000]"/>
+            <dmrpp:chunk offset="19109835" nBytes="1299478" chunkPositionInArray="[0,4500,6000]"/>
+            <dmrpp:chunk offset="20409313" nBytes="1304253" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="21713566" nBytes="1933783" chunkPositionInArray="[0,4500,12000]"/>
+            <dmrpp:chunk offset="23647349" nBytes="1534817" chunkPositionInArray="[0,4500,15000]"/>
+            <dmrpp:chunk offset="25182166" nBytes="903686" chunkPositionInArray="[0,6000,0]"/>
+            <dmrpp:chunk offset="26085852" nBytes="1577936" chunkPositionInArray="[0,6000,3000]"/>
+            <dmrpp:chunk offset="27663788" nBytes="1144361" chunkPositionInArray="[0,6000,6000]"/>
+            <dmrpp:chunk offset="28808149" nBytes="1271429" chunkPositionInArray="[0,6000,9000]"/>
+            <dmrpp:chunk offset="30079578" nBytes="1201710" chunkPositionInArray="[0,6000,12000]"/>
+            <dmrpp:chunk offset="31281288" nBytes="1235341" chunkPositionInArray="[0,6000,15000]"/>
+            <dmrpp:chunk offset="32516629" nBytes="16574" chunkPositionInArray="[0,7500,0]"/>
+            <dmrpp:chunk offset="32533203" nBytes="160577" chunkPositionInArray="[0,7500,3000]"/>
+            <dmrpp:chunk offset="32693780" nBytes="34280" chunkPositionInArray="[0,7500,6000]"/>
+            <dmrpp:chunk offset="32730769" nBytes="49618" chunkPositionInArray="[0,7500,9000]"/>
+            <dmrpp:chunk offset="32780387" nBytes="32410" chunkPositionInArray="[0,7500,12000]"/>
+            <dmrpp:chunk offset="32812797" nBytes="16396" chunkPositionInArray="[0,7500,15000]"/>
+        </dmrpp:chunks>
+    </Int32>
+    <Int8 name="sst_front_position">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Binary indicator of SST front position in the valid SST clear-sky domain: 1 - SST front present, 0 - no front present</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Binary SST front position indicator</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>1</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="279965699" nBytes="73642" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="280039341" nBytes="109585" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="280148926" nBytes="112089" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="280261015" nBytes="62895" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="280323910" nBytes="272957" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="280596867" nBytes="212117" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="280808984" nBytes="175586" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="280984570" nBytes="223187" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="281207757" nBytes="198911" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="281406668" nBytes="209619" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="281616287" nBytes="298885" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="281915172" nBytes="203224" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="282118396" nBytes="58380" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="282176776" nBytes="93848" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="282270624" nBytes="74413" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="282345037" nBytes="61925" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Int16 name="l2p_flags">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>L2P flags</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int16">
+            <Value>-32768</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int16">
+            <Value>32767</Value>
+        </Attribute>
+        <Attribute name="flag_meanings" type="String">
+            <Value>microwave land ice invalid day land glint ice probably_clear_or_cloudy_or_undefined</Value>
+        </Attribute>
+        <Attribute name="flag_masks" type="Int16">
+            <Value>1</Value>
+            <Value>2</Value>
+            <Value>4</Value>
+            <Value>256</Value>
+            <Value>512</Value>
+            <Value>1024</Value>
+            <Value>4096</Value>
+            <Value>8192</Value>
+            <Value>-16384</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>L2P common flags in bits 1-6 and data provider flags (from ACSPO mask) in bits 9-16: bit01 (0=IR: 1=microwave); bit02 (0=ocean; 1=land); bit03 (0=no ice; 1=ice); bits04-08 (reserved,set to 0); bit09 (0=radiance valid; 1=invalid); bit10 (0=night; 1=day); bit11 (0=ocean; 1=land); bit12 not used (set to 0); bit13 (0=no glint; 1=glint); bit14 (0=no snow/ice; 1=snow/ice); bits15-16 (00=clear; 01=probably clear; 10=cloudy; 11=clear-sky mask undefined)</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>thematicClassification</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-32767" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1800 3600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="190388156" nBytes="201024" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="190589180" nBytes="316300" chunkPositionInArray="[0,0,3600]"/>
+            <dmrpp:chunk offset="190905480" nBytes="312297" chunkPositionInArray="[0,0,7200]"/>
+            <dmrpp:chunk offset="191217777" nBytes="182644" chunkPositionInArray="[0,0,10800]"/>
+            <dmrpp:chunk offset="191400421" nBytes="148312" chunkPositionInArray="[0,0,14400]"/>
+            <dmrpp:chunk offset="191548733" nBytes="375268" chunkPositionInArray="[0,1800,0]"/>
+            <dmrpp:chunk offset="191924001" nBytes="423201" chunkPositionInArray="[0,1800,3600]"/>
+            <dmrpp:chunk offset="192347202" nBytes="291947" chunkPositionInArray="[0,1800,7200]"/>
+            <dmrpp:chunk offset="192639149" nBytes="192273" chunkPositionInArray="[0,1800,10800]"/>
+            <dmrpp:chunk offset="192831422" nBytes="358996" chunkPositionInArray="[0,1800,14400]"/>
+            <dmrpp:chunk offset="193190418" nBytes="652768" chunkPositionInArray="[0,3600,0]"/>
+            <dmrpp:chunk offset="193843186" nBytes="340320" chunkPositionInArray="[0,3600,3600]"/>
+            <dmrpp:chunk offset="194183506" nBytes="394037" chunkPositionInArray="[0,3600,7200]"/>
+            <dmrpp:chunk offset="194577543" nBytes="521619" chunkPositionInArray="[0,3600,10800]"/>
+            <dmrpp:chunk offset="195099162" nBytes="665197" chunkPositionInArray="[0,3600,14400]"/>
+            <dmrpp:chunk offset="195764359" nBytes="408313" chunkPositionInArray="[0,5400,0]"/>
+            <dmrpp:chunk offset="196172672" nBytes="458110" chunkPositionInArray="[0,5400,3600]"/>
+            <dmrpp:chunk offset="196630782" nBytes="331888" chunkPositionInArray="[0,5400,7200]"/>
+            <dmrpp:chunk offset="196962670" nBytes="500723" chunkPositionInArray="[0,5400,10800]"/>
+            <dmrpp:chunk offset="197463393" nBytes="403547" chunkPositionInArray="[0,5400,14400]"/>
+            <dmrpp:chunk offset="197866940" nBytes="63955" chunkPositionInArray="[0,7200,0]"/>
+            <dmrpp:chunk offset="197930895" nBytes="170907" chunkPositionInArray="[0,7200,3600]"/>
+            <dmrpp:chunk offset="198101802" nBytes="77001" chunkPositionInArray="[0,7200,7200]"/>
+            <dmrpp:chunk offset="198178803" nBytes="76496" chunkPositionInArray="[0,7200,10800]"/>
+            <dmrpp:chunk offset="198257462" nBytes="66805" chunkPositionInArray="[0,7200,14400]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="sea_surface_temperature">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="add_offset" type="Float32">
+            <Value>273.1499939</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>SST obtained by regression with buoy measurements, sensitive to skin SST. Further information at (Petrenko et al., JGR, 2014; doi:10.1002/2013JD020637)</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>sea surface sub-skin temperature</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.009999999776</Value>
+        </Attribute>
+        <Attribute name="source" type="String">
+            <Value>NOAA</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kelvin</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int16">
+            <Value>32767</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int16">
+            <Value>-200</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>-32768</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>sea_surface_subskin_temperature</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>physicalMeasurement</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-32768" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1800 3600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="32851643" nBytes="475036" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="33326679" nBytes="351756" chunkPositionInArray="[0,0,3600]"/>
+            <dmrpp:chunk offset="33678435" nBytes="1179204" chunkPositionInArray="[0,0,7200]"/>
+            <dmrpp:chunk offset="34857639" nBytes="427298" chunkPositionInArray="[0,0,10800]"/>
+            <dmrpp:chunk offset="35284937" nBytes="229547" chunkPositionInArray="[0,0,14400]"/>
+            <dmrpp:chunk offset="35514484" nBytes="2772792" chunkPositionInArray="[0,1800,0]"/>
+            <dmrpp:chunk offset="38287276" nBytes="2182653" chunkPositionInArray="[0,1800,3600]"/>
+            <dmrpp:chunk offset="40469929" nBytes="1721287" chunkPositionInArray="[0,1800,7200]"/>
+            <dmrpp:chunk offset="42191216" nBytes="490667" chunkPositionInArray="[0,1800,10800]"/>
+            <dmrpp:chunk offset="42681883" nBytes="1989019" chunkPositionInArray="[0,1800,14400]"/>
+            <dmrpp:chunk offset="44670902" nBytes="5291443" chunkPositionInArray="[0,3600,0]"/>
+            <dmrpp:chunk offset="49962345" nBytes="1447865" chunkPositionInArray="[0,3600,3600]"/>
+            <dmrpp:chunk offset="51410210" nBytes="2151249" chunkPositionInArray="[0,3600,7200]"/>
+            <dmrpp:chunk offset="53561459" nBytes="2297758" chunkPositionInArray="[0,3600,10800]"/>
+            <dmrpp:chunk offset="55859217" nBytes="3688351" chunkPositionInArray="[0,3600,14400]"/>
+            <dmrpp:chunk offset="59547568" nBytes="2137273" chunkPositionInArray="[0,5400,0]"/>
+            <dmrpp:chunk offset="61684841" nBytes="2466535" chunkPositionInArray="[0,5400,3600]"/>
+            <dmrpp:chunk offset="64151376" nBytes="2463328" chunkPositionInArray="[0,5400,7200]"/>
+            <dmrpp:chunk offset="66614704" nBytes="3074903" chunkPositionInArray="[0,5400,10800]"/>
+            <dmrpp:chunk offset="69689607" nBytes="1794257" chunkPositionInArray="[0,5400,14400]"/>
+            <dmrpp:chunk offset="71483864" nBytes="151934" chunkPositionInArray="[0,7200,0]"/>
+            <dmrpp:chunk offset="71635798" nBytes="711044" chunkPositionInArray="[0,7200,3600]"/>
+            <dmrpp:chunk offset="72346842" nBytes="225760" chunkPositionInArray="[0,7200,7200]"/>
+            <dmrpp:chunk offset="72572602" nBytes="173389" chunkPositionInArray="[0,7200,10800]"/>
+            <dmrpp:chunk offset="72748039" nBytes="86786" chunkPositionInArray="[0,7200,14400]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int8 name="quality_level">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>quality level of SST pixel</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="flag_meanings" type="String">
+            <Value>no_data bad_data not_used not_used not_used best_quality</Value>
+        </Attribute>
+        <Attribute name="flag_values" type="Int8">
+            <Value>0</Value>
+            <Value>1</Value>
+            <Value>2</Value>
+            <Value>3</Value>
+            <Value>4</Value>
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>SST quality levels: 5 corresponds to \342\200\234clear-sky\342\200\235 pixels and is recommended for operational applications and validation.</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>qualityInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="184674827" nBytes="81042" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="184755869" nBytes="147512" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="184903381" nBytes="137398" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="185040779" nBytes="65127" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="185105906" nBytes="667256" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="185773162" nBytes="440461" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="186213623" nBytes="238704" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="186452327" nBytes="527851" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="186980178" nBytes="846296" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="187826474" nBytes="578208" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="188404682" nBytes="614209" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="189018891" nBytes="694446" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="189713337" nBytes="209744" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="189923081" nBytes="163049" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="190086130" nBytes="175832" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="190264609" nBytes="118272" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Int16 name="dt_analysis">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>deviation from SST reference</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kelvin</Value>
+        </Attribute>
+        <Attribute name="source" type="String">
+            <Value>CMC0.1deg-CMC-L4-GLOB-v2.0</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.009999999776</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int16">
+            <Value>-32767</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int16">
+            <Value>32767</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>-32768</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Deviation from reference SST, i.e., dt_analysis = SST - reference SST</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>qualityInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-32768" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1800 3600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="146671092" nBytes="460812" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="147131904" nBytes="343529" chunkPositionInArray="[0,0,3600]"/>
+            <dmrpp:chunk offset="147475433" nBytes="1154945" chunkPositionInArray="[0,0,7200]"/>
+            <dmrpp:chunk offset="148630378" nBytes="401085" chunkPositionInArray="[0,0,10800]"/>
+            <dmrpp:chunk offset="149031463" nBytes="227248" chunkPositionInArray="[0,0,14400]"/>
+            <dmrpp:chunk offset="149258711" nBytes="2626387" chunkPositionInArray="[0,1800,0]"/>
+            <dmrpp:chunk offset="151885098" nBytes="2130767" chunkPositionInArray="[0,1800,3600]"/>
+            <dmrpp:chunk offset="154015865" nBytes="1682708" chunkPositionInArray="[0,1800,7200]"/>
+            <dmrpp:chunk offset="155698573" nBytes="489285" chunkPositionInArray="[0,1800,10800]"/>
+            <dmrpp:chunk offset="156187858" nBytes="1924924" chunkPositionInArray="[0,1800,14400]"/>
+            <dmrpp:chunk offset="158112782" nBytes="4695560" chunkPositionInArray="[0,3600,0]"/>
+            <dmrpp:chunk offset="162808342" nBytes="1402831" chunkPositionInArray="[0,3600,3600]"/>
+            <dmrpp:chunk offset="164211173" nBytes="2057467" chunkPositionInArray="[0,3600,7200]"/>
+            <dmrpp:chunk offset="166268640" nBytes="2223266" chunkPositionInArray="[0,3600,10800]"/>
+            <dmrpp:chunk offset="168491906" nBytes="3541374" chunkPositionInArray="[0,3600,14400]"/>
+            <dmrpp:chunk offset="172033280" nBytes="2001395" chunkPositionInArray="[0,5400,0]"/>
+            <dmrpp:chunk offset="174034675" nBytes="2337323" chunkPositionInArray="[0,5400,3600]"/>
+            <dmrpp:chunk offset="176371998" nBytes="2397061" chunkPositionInArray="[0,5400,7200]"/>
+            <dmrpp:chunk offset="178769059" nBytes="2884246" chunkPositionInArray="[0,5400,10800]"/>
+            <dmrpp:chunk offset="181653305" nBytes="1720348" chunkPositionInArray="[0,5400,14400]"/>
+            <dmrpp:chunk offset="183373653" nBytes="152047" chunkPositionInArray="[0,7200,0]"/>
+            <dmrpp:chunk offset="183525700" nBytes="673925" chunkPositionInArray="[0,7200,3600]"/>
+            <dmrpp:chunk offset="184199625" nBytes="220835" chunkPositionInArray="[0,7200,7200]"/>
+            <dmrpp:chunk offset="184420460" nBytes="164167" chunkPositionInArray="[0,7200,10800]"/>
+            <dmrpp:chunk offset="184586767" nBytes="83873" chunkPositionInArray="[0,7200,14400]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="satellite_zenith_angle">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>satellite zenith angle</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degrees</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>-32768</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.009999999776</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int16">
+            <Value>-32767</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int16">
+            <Value>32767</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Satellite zenith angle corresponding to L3U SST measurement with highest weight.</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>referenceInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-32768" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1800 3600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="215722804" nBytes="582625" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="216305429" nBytes="440278" chunkPositionInArray="[0,0,3600]"/>
+            <dmrpp:chunk offset="216745707" nBytes="1449351" chunkPositionInArray="[0,0,7200]"/>
+            <dmrpp:chunk offset="218195058" nBytes="578908" chunkPositionInArray="[0,0,10800]"/>
+            <dmrpp:chunk offset="218773966" nBytes="260241" chunkPositionInArray="[0,0,14400]"/>
+            <dmrpp:chunk offset="219034207" nBytes="3132507" chunkPositionInArray="[0,1800,0]"/>
+            <dmrpp:chunk offset="222166714" nBytes="2502968" chunkPositionInArray="[0,1800,3600]"/>
+            <dmrpp:chunk offset="224669682" nBytes="1919698" chunkPositionInArray="[0,1800,7200]"/>
+            <dmrpp:chunk offset="226589380" nBytes="537130" chunkPositionInArray="[0,1800,10800]"/>
+            <dmrpp:chunk offset="227126510" nBytes="2231944" chunkPositionInArray="[0,1800,14400]"/>
+            <dmrpp:chunk offset="229358454" nBytes="6267472" chunkPositionInArray="[0,3600,0]"/>
+            <dmrpp:chunk offset="235625926" nBytes="1641146" chunkPositionInArray="[0,3600,3600]"/>
+            <dmrpp:chunk offset="237267072" nBytes="2438076" chunkPositionInArray="[0,3600,7200]"/>
+            <dmrpp:chunk offset="239705148" nBytes="2586829" chunkPositionInArray="[0,3600,10800]"/>
+            <dmrpp:chunk offset="242291977" nBytes="4234709" chunkPositionInArray="[0,3600,14400]"/>
+            <dmrpp:chunk offset="246526686" nBytes="2416939" chunkPositionInArray="[0,5400,0]"/>
+            <dmrpp:chunk offset="248943625" nBytes="2786611" chunkPositionInArray="[0,5400,3600]"/>
+            <dmrpp:chunk offset="251730236" nBytes="2739645" chunkPositionInArray="[0,5400,7200]"/>
+            <dmrpp:chunk offset="254469881" nBytes="3467344" chunkPositionInArray="[0,5400,10800]"/>
+            <dmrpp:chunk offset="257937225" nBytes="2019797" chunkPositionInArray="[0,5400,14400]"/>
+            <dmrpp:chunk offset="259957022" nBytes="161406" chunkPositionInArray="[0,7200,0]"/>
+            <dmrpp:chunk offset="260118428" nBytes="795217" chunkPositionInArray="[0,7200,3600]"/>
+            <dmrpp:chunk offset="260913645" nBytes="283720" chunkPositionInArray="[0,7200,7200]"/>
+            <dmrpp:chunk offset="261197365" nBytes="194709" chunkPositionInArray="[0,7200,10800]"/>
+            <dmrpp:chunk offset="261394195" nBytes="90563" chunkPositionInArray="[0,7200,14400]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Float32 name="lat">
+        <Dim name="/lat"/>
+        <Attribute name="long_name" type="String">
+            <Value>latitude</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Latitudes for locating data</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degrees_north</Value>
+        </Attribute>
+        <Attribute name="axis" type="String">
+            <Value>Y</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Float32">
+            <Value>-90.</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Float32">
+            <Value>90.</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>latitude</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>coordinate</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>9000</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="32837304" nBytes="3960" chunkPositionInArray="[0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Int16 name="sst_gradient_magnitude">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>-32768</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int16">
+            <Value>-32767</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int16">
+            <Value>32767</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>SST gradient magnitude value</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Gradient magnitude calculated from SST field in all grids with valid SST</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.001000000047</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kelvin/km</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="-32768" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 1800 3600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="274219103" nBytes="125338" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="274344441" nBytes="104470" chunkPositionInArray="[0,0,3600]"/>
+            <dmrpp:chunk offset="274448911" nBytes="232006" chunkPositionInArray="[0,0,7200]"/>
+            <dmrpp:chunk offset="274680917" nBytes="125975" chunkPositionInArray="[0,0,10800]"/>
+            <dmrpp:chunk offset="274806892" nBytes="81394" chunkPositionInArray="[0,0,14400]"/>
+            <dmrpp:chunk offset="274888286" nBytes="440088" chunkPositionInArray="[0,1800,0]"/>
+            <dmrpp:chunk offset="275328374" nBytes="387184" chunkPositionInArray="[0,1800,3600]"/>
+            <dmrpp:chunk offset="275715558" nBytes="368661" chunkPositionInArray="[0,1800,7200]"/>
+            <dmrpp:chunk offset="276084219" nBytes="134778" chunkPositionInArray="[0,1800,10800]"/>
+            <dmrpp:chunk offset="276218997" nBytes="355359" chunkPositionInArray="[0,1800,14400]"/>
+            <dmrpp:chunk offset="276574356" nBytes="334310" chunkPositionInArray="[0,3600,0]"/>
+            <dmrpp:chunk offset="276908666" nBytes="176533" chunkPositionInArray="[0,3600,3600]"/>
+            <dmrpp:chunk offset="277085199" nBytes="257594" chunkPositionInArray="[0,3600,7200]"/>
+            <dmrpp:chunk offset="277342793" nBytes="247404" chunkPositionInArray="[0,3600,10800]"/>
+            <dmrpp:chunk offset="277590197" nBytes="357666" chunkPositionInArray="[0,3600,14400]"/>
+            <dmrpp:chunk offset="277947863" nBytes="211099" chunkPositionInArray="[0,5400,0]"/>
+            <dmrpp:chunk offset="278158962" nBytes="353064" chunkPositionInArray="[0,5400,3600]"/>
+            <dmrpp:chunk offset="278512026" nBytes="431323" chunkPositionInArray="[0,5400,7200]"/>
+            <dmrpp:chunk offset="278943349" nBytes="391725" chunkPositionInArray="[0,5400,10800]"/>
+            <dmrpp:chunk offset="279335074" nBytes="232138" chunkPositionInArray="[0,5400,14400]"/>
+            <dmrpp:chunk offset="279567212" nBytes="60086" chunkPositionInArray="[0,7200,0]"/>
+            <dmrpp:chunk offset="279627298" nBytes="141778" chunkPositionInArray="[0,7200,3600]"/>
+            <dmrpp:chunk offset="279769076" nBytes="73622" chunkPositionInArray="[0,7200,7200]"/>
+            <dmrpp:chunk offset="279842698" nBytes="64394" chunkPositionInArray="[0,7200,10800]"/>
+            <dmrpp:chunk offset="279909308" nBytes="52204" chunkPositionInArray="[0,7200,14400]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int8 name="sses_bias">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="long_name" type="String">
+            <Value>SSES bias estimate</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>kelvin</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int8">
+            <Value>-128</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>0.01600000076</Value>
+        </Attribute>
+        <Attribute name="valid_min" type="Int8">
+            <Value>-127</Value>
+        </Attribute>
+        <Attribute name="valid_max" type="Int8">
+            <Value>127</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lon lat</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>crs</Value>
+        </Attribute>
+        <Attribute name="comment" type="String">
+            <Value>Bias is derived against Piecewise Regression SST produced by local regressions with buoys. Subtracting sses_bias from sea_surface_temperature produces more accurate estimate of SST at the depth of buoys. Further information at (Petrenko et al., JTECH, 2016; doi:10.1175/JTECH-D-15-0166.1)</Value>
+        </Attribute>
+        <Attribute name="coverage_content_type" type="String">
+            <Value>qualityInformation</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate deflate" fillValue="-128" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2250 4500</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="72840009" nBytes="377652" chunkPositionInArray="[0,0,0]"/>
+            <dmrpp:chunk offset="73217661" nBytes="634387" chunkPositionInArray="[0,0,4500]"/>
+            <dmrpp:chunk offset="73852048" nBytes="633397" chunkPositionInArray="[0,0,9000]"/>
+            <dmrpp:chunk offset="74485445" nBytes="247508" chunkPositionInArray="[0,0,13500]"/>
+            <dmrpp:chunk offset="74732953" nBytes="2669201" chunkPositionInArray="[0,2250,0]"/>
+            <dmrpp:chunk offset="77402154" nBytes="1750694" chunkPositionInArray="[0,2250,4500]"/>
+            <dmrpp:chunk offset="79152848" nBytes="1053215" chunkPositionInArray="[0,2250,9000]"/>
+            <dmrpp:chunk offset="80206063" nBytes="2120707" chunkPositionInArray="[0,2250,13500]"/>
+            <dmrpp:chunk offset="82326770" nBytes="2781206" chunkPositionInArray="[0,4500,0]"/>
+            <dmrpp:chunk offset="85107976" nBytes="1914398" chunkPositionInArray="[0,4500,4500]"/>
+            <dmrpp:chunk offset="87022374" nBytes="2334640" chunkPositionInArray="[0,4500,9000]"/>
+            <dmrpp:chunk offset="89357014" nBytes="2149893" chunkPositionInArray="[0,4500,13500]"/>
+            <dmrpp:chunk offset="91506907" nBytes="476460" chunkPositionInArray="[0,6750,0]"/>
+            <dmrpp:chunk offset="91983367" nBytes="502927" chunkPositionInArray="[0,6750,4500]"/>
+            <dmrpp:chunk offset="92486294" nBytes="477836" chunkPositionInArray="[0,6750,9000]"/>
+            <dmrpp:chunk offset="92966178" nBytes="276208" chunkPositionInArray="[0,6750,13500]"/>
+        </dmrpp:chunks>
+    </Int8>
+    <Int32 name="crs">
+        <Attribute name="grid_mapping_name" type="String">
+            <Value>latitude_longitude</Value>
+        </Attribute>
+        <Attribute name="horizontal_datum_name" type="String">
+            <Value>World Geodetic System 1984</Value>
+        </Attribute>
+        <Attribute name="reference_ellipsoid_name" type="String">
+            <Value>WGS84</Value>
+        </Attribute>
+        <Attribute name="prime_meridian_name" type="String">
+            <Value>Greenwich</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>coordinate reference system</Value>
+        </Attribute>
+        <dmrpp:chunks fillValue="-2147483647" byteOrder="LE">
+            <dmrpp:chunk offset="274212143" nBytes="4"/>
+        </dmrpp:chunks>
+    </Int32>
+    <Attribute name="collation_version" type="String">
+        <Value>2.2.8</Value>
+    </Attribute>
+    <Attribute name="collation_input" type="String">
+        <Value>20220607000000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607000000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607001000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607001000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607002000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607002000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607003000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607003000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607004000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607004000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607005000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607005000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607010000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607010000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607011000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607011000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607012000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607012000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607013000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607013000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607014000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607014000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607015000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607015000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607020000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607020000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607021000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607021000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607022000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607022000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607023000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607023000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607024000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607024000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607025000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607025000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607030000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607030000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607031000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607031000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607032000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607032000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607033000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607033000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607034000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607034000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607035000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607035000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607040000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607040000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607041000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607041000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607042000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607042000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607043000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607043000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607044000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607044000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607045000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607045000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607050000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607050000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607051000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607051000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607052000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607052000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607053000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607053000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607054000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607054000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607055000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607055000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607060000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607060000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607061000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607061000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607062000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607062000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607063000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607063000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607064000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607064000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607065000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607065000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607070000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607070000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607071000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607071000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607072000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607072000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607073000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607073000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607074000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607074000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607075000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607075000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607080000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607080000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607081000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607081000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607082000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607082000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607083000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607083000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607084000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607084000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607085000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607085000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607090000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607090000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607091000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607091000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607092000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607092000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607093000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607093000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607094000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607094000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607095000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607095000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607100000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607100000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607101000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607101000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607102000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607102000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607103000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607103000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607104000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607104000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607105000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607105000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607110000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607110000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607111000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607111000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607112000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607112000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607113000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607113000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607114000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607114000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607115000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607115000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607120000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607120000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607121000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607121000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607122000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607122000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607123000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607123000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607124000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607124000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607125000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607125000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607130000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607130000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607131000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607131000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607132000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607132000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607133000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607133000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607134000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607134000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607135000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607135000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607140000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607140000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607141000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607141000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607142000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607142000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607143000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607143000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607144000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607144000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607145000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607145000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607150000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607150000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607151000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607151000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607152000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607152000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607153000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607153000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607154000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607154000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607155000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607155000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607160000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607160000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607161000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607161000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607162000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607162000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607163000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607163000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607164000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607164000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607165000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607165000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607170000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607170000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607171000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607171000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607172000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607172000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607173000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607173000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607174000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607174000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607175000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607175000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607180000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607180000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607181000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607181000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607182000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607182000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607183000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607183000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607184000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607184000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607185000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607185000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607190000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607190000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607191000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607191000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607192000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607192000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607193000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607193000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607194000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607194000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607195000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607195000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607200000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607200000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607201000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607201000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607202000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607202000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607203000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607203000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607204000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607204000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607205000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607205000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607210000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607210000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607211000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607211000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607212000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607212000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607213000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607213000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607214000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607214000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607215000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607215000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607220000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607220000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607221000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607221000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607222000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607222000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607223000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607223000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607224000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607224000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607225000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607225000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607230000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607230000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607231000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607231000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607232000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607232000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607233000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607233000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607234000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607234000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607235000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_N20-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+        <Value>20220607235000-STAR-L3U_GHRSST-SSTsubskin-VIIRS_NPP-ACSPO_V2.80-v02.0-fv01.0.nc</Value>
+    </Attribute>
+    <Attribute name="source" type="String">
+        <Value>See list of L3U files in collation_input global attribute</Value>
+    </Attribute>
+    <Attribute name="acknowledgement" type="String">
+        <Value>Please acknowledge the use of these data with the following statement: These data were provided by Group for High Resolution Sea Surface Temperature (GHRSST) and the National Oceanic and Atmospheric Administration (NOAA).</Value>
+    </Attribute>
+    <Attribute name="aggregator_version" type="String">
+        <Value>V1.00</Value>
+    </Attribute>
+    <Attribute name="cdm_data_type" type="String">
+        <Value>grid</Value>
+    </Attribute>
+    <Attribute name="comment" type="String">
+        <Value>SSTs are a weighted average of the SSTs of contributing pixels. WARNING: some applications are unable to properly handle signed byte values. If byte values &gt; 127 are encountered, subtract 256 from this reported value.</Value>
+    </Attribute>
+    <Attribute name="creator_email" type="String">
+        <Value>Alex.Ignatov@noaa.gov</Value>
+    </Attribute>
+    <Attribute name="creator_name" type="String">
+        <Value>Alex Ignatov</Value>
+    </Attribute>
+    <Attribute name="creator_url" type="String">
+        <Value>http://www.star.nesdis.noaa.gov</Value>
+    </Attribute>
+    <Attribute name="gds_version_id" type="String">
+        <Value>02.0</Value>
+    </Attribute>
+    <Attribute name="geospatial_lat_resolution" type="Float32">
+        <Value>0.01999999955</Value>
+    </Attribute>
+    <Attribute name="geospatial_lat_units" type="String">
+        <Value>degrees_north</Value>
+    </Attribute>
+    <Attribute name="geospatial_lon_resolution" type="Float32">
+        <Value>0.01999999955</Value>
+    </Attribute>
+    <Attribute name="geospatial_lon_units" type="String">
+        <Value>degrees_east</Value>
+    </Attribute>
+    <Attribute name="history" type="String">
+        <Value>Created by the L2-to-L3 conversion tool,  which was developed and provided by NOAA/NESDIS/STAR and CCNY. The version is 4.6.9</Value>
+    </Attribute>
+    <Attribute name="institution" type="String">
+        <Value>NOAA/NESDIS/STAR</Value>
+    </Attribute>
+    <Attribute name="keywords" type="String">
+        <Value>Oceans &gt; Ocean Temperature &gt; Sea Surface Temperature</Value>
+    </Attribute>
+    <Attribute name="keywords_vocabulary" type="String">
+        <Value>NASA Global Change Master Directory (GCMD) Science Keywords</Value>
+    </Attribute>
+    <Attribute name="license" type="String">
+        <Value>GHRSST protocol describes data use as free and open</Value>
+    </Attribute>
+    <Attribute name="naming_authority" type="String">
+        <Value>org.ghrsst</Value>
+    </Attribute>
+    <Attribute name="preprocessor_version" type="String">
+        <Value>1.15.0</Value>
+    </Attribute>
+    <Attribute name="product_version" type="String">
+        <Value>L2 algorithm V2.80; L3 algorithm V4.6.9</Value>
+    </Attribute>
+    <Attribute name="project" type="String">
+        <Value>Group for High Resolution Sea Surface Temperature</Value>
+    </Attribute>
+    <Attribute name="publisher_email" type="String">
+        <Value>ghrsst-po@nceo.ac.uk</Value>
+    </Attribute>
+    <Attribute name="publisher_name" type="String">
+        <Value>The GHRSST Project Office</Value>
+    </Attribute>
+    <Attribute name="publisher_url" type="String">
+        <Value>http://www.ghrsst.org</Value>
+    </Attribute>
+    <Attribute name="references" type="String">
+        <Value>Data convention: GHRSST Data Specification (GDS) v2.0. Algorithms: ACSPO-VIIRS ATBD (NOAA/NESDIS/STAR)</Value>
+    </Attribute>
+    <Attribute name="spatial_resolution" type="String">
+        <Value>0.02 deg</Value>
+    </Attribute>
+    <Attribute name="standard_name_vocabulary" type="String">
+        <Value>CF Standard Name Table (v26, 08 November 2013)</Value>
+    </Attribute>
+    <Attribute name="Conventions" type="String">
+        <Value>CF-1.7, ACDD-1.3</Value>
+    </Attribute>
+    <Attribute name="file_quality_level" type="Int32">
+        <Value>3</Value>
+    </Attribute>
+    <Attribute name="metadata_link" type="String">
+        <Value>TBD</Value>
+    </Attribute>
+    <Attribute name="processing_level" type="String">
+        <Value>L3S</Value>
+    </Attribute>
+    <Attribute name="program" type="String">
+        <Value>GHRSST</Value>
+    </Attribute>
+    <Attribute name="summary" type="String">
+        <Value>Sea surface temperature retrievals produced by NOAA/NESDIS/STAR office</Value>
+    </Attribute>
+    <Attribute name="start_time" type="String">
+        <Value>20220607T000000Z</Value>
+    </Attribute>
+    <Attribute name="time_coverage_start" type="String">
+        <Value>20220607T000000Z</Value>
+    </Attribute>
+    <Attribute name="stop_time" type="String">
+        <Value>20220607T235959Z</Value>
+    </Attribute>
+    <Attribute name="time_coverage_end" type="String">
+        <Value>20220607T235959Z</Value>
+    </Attribute>
+    <Attribute name="date_created" type="String">
+        <Value>20220608T033910Z</Value>
+    </Attribute>
+    <Attribute name="col_start" type="Int32">
+        <Value>0</Value>
+    </Attribute>
+    <Attribute name="col_count" type="Int32">
+        <Value>18000</Value>
+    </Attribute>
+    <Attribute name="row_start" type="Int32">
+        <Value>0</Value>
+    </Attribute>
+    <Attribute name="row_count" type="Int32">
+        <Value>9000</Value>
+    </Attribute>
+    <Attribute name="westernmost_longitude" type="Float32">
+        <Value>-179.9900055</Value>
+    </Attribute>
+    <Attribute name="easternmost_longitude" type="Float32">
+        <Value>179.9900055</Value>
+    </Attribute>
+    <Attribute name="southernmost_latitude" type="Float32">
+        <Value>-89.98999786</Value>
+    </Attribute>
+    <Attribute name="northernmost_latitude" type="Float32">
+        <Value>89.98999786</Value>
+    </Attribute>
+    <Attribute name="geospatial_lon_min" type="Float32">
+        <Value>-179.9900055</Value>
+    </Attribute>
+    <Attribute name="geospatial_lon_max" type="Float32">
+        <Value>179.9900055</Value>
+    </Attribute>
+    <Attribute name="geospatial_lat_min" type="Float32">
+        <Value>-89.98999786</Value>
+    </Attribute>
+    <Attribute name="geospatial_lat_max" type="Float32">
+        <Value>89.98999786</Value>
+    </Attribute>
+    <Attribute name="title" type="String">
+        <Value>ACSPO L3S LEO-PM SST</Value>
+    </Attribute>
+    <Attribute name="id" type="String">
+        <Value>ACSPO-L3S-LEO-PM-v2.80</Value>
+    </Attribute>
+    <Attribute name="sensor" type="String">
+        <Value>VIIRS</Value>
+    </Attribute>
+    <Attribute name="instrument" type="String">
+        <Value>VIIRS</Value>
+    </Attribute>
+    <Attribute name="platform" type="String">
+        <Value>NPP,N20</Value>
+    </Attribute>
+    <Attribute name="netcdf_version_id" type="String">
+        <Value>4.7.4</Value>
+    </Attribute>
+    <Attribute name="day_or_night" type="String">
+        <Value>day</Value>
+    </Attribute>
+    <Attribute name="uuid" type="String">
+        <Value>5ea49053-8061-4413-a567-5f0c239670ea</Value>
+    </Attribute>
+    <Attribute name="build_dmrpp_metadata" type="Container">
+        <Attribute name="build_dmrpp" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="bes" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="libdap" type="String">
+            <Value>libdap-3.20.11-74</Value>
+        </Attribute>
+        <Attribute name="configuration" type="String">
+            <Value>
+# TheBESKeys::get_as_config()
+AllowedHosts=^https?:\/\/
+BES.Catalog.catalog.FollowSymLinks=Yes
+BES.Catalog.catalog.RootDirectory=/usr/share/hyrax
+BES.Catalog.catalog.TypeMatch=dmrpp:.*\.(dmrpp)$;
+BES.Catalog.catalog.TypeMatch+=h5:.*(\.bz2|\.gz|\.Z)?$;
+BES.Data.RootDirectory=/dev/null
+BES.LogName=./bes.log
+BES.UncompressCache.dir=/tmp/hyrax_ux
+BES.UncompressCache.prefix=ux_
+BES.UncompressCache.size=500
+BES.module.cmd=/usr/lib64/bes/libdap_xml_module.so
+BES.module.dap=/usr/lib64/bes/libdap_module.so
+BES.module.dmrpp=/usr/lib64/bes/libdmrpp_module.so
+BES.module.fonc=/usr/lib64/bes/libfonc_module.so
+BES.module.h5=/usr/lib64/bes/libhdf5_module.so
+BES.module.nc=/usr/lib64/bes/libnc_module.so
+BES.modules=dap,cmd,h5,dmrpp,nc,fonc
+FONc.ClassicModel=false
+FONc.NoGlobalAttrs=true
+H5.EnableCF=false
+H5.EnableCheckNameClashing=true
+</Value>
+        </Attribute>
+        <Attribute name="invocation" type="String">
+            <Value>build_dmrpp -c /tmp/bes_conf_xgFj -f /usr/share/hyrax/20220607120000-STAR-L3S_GHRSST-SSTsubskin-LEO_PM_D-ACSPO_V2.80-v02.0-fv01.0.nc.h5 -r /tmp/dmr__pTsVnZ -u file:///usr/share/hyrax/20220607120000-STAR-L3S_GHRSST-SSTsubskin-LEO_PM_D-ACSPO_V2.80-v02.0-fv01.0.nc.h5 -M</Value>
+        </Attribute>
+    </Attribute>
+</Dataset>

@@ -1,0 +1,2427 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dataset xmlns="http://xml.opendap.org/ns/DAP/4.0#" xmlns:dmrpp="http://xml.opendap.org/dap/dmrpp/1.0.0#" dapVersion="4.0" dmrVersion="1.0" name="SWOT_L2_HR_PIXC_007_483_235R_20220821T102608_20220821T102618_Dx0000_01.nc.h5" dmrpp:href="file:///usr/share/hyrax/SWOT_L2_HR_PIXC_007_483_235R_20220821T102608_20220821T102618_Dx0000_01.nc.h5" dmrpp:version="3.20.13-240">
+    <Attribute name="Conventions" type="String">
+        <Value>CF-1.7</Value>
+    </Attribute>
+    <Attribute name="title" type="String">
+        <Value>Level 2 KaRIn High Rate Water Mask Pixel Clould Data Product</Value>
+    </Attribute>
+    <Attribute name="institution" type="String">
+        <Value>CNES</Value>
+    </Attribute>
+    <Attribute name="source" type="String">
+        <Value>Large scale simulator</Value>
+    </Attribute>
+    <Attribute name="history" type="String">
+        <Value>2021-03-02 00:49:14 : Creation</Value>
+    </Attribute>
+    <Attribute name="platform" type="String">
+        <Value>SWOT</Value>
+    </Attribute>
+    <Attribute name="references" type="String">
+        <Value>https://github.com/CNES/swot-hydrology-toolbox</Value>
+    </Attribute>
+    <Attribute name="reference_document" type="String">
+        <Value>JPL D-56411 - Initial release - February 11, 2019</Value>
+    </Attribute>
+    <Attribute name="contact" type="String">
+        <Value>damien.desroches[at]cnes.fr ; claire.pottier[at]cnes.fr</Value>
+    </Attribute>
+    <Attribute name="cycle_number" type="Int16">
+        <Value>7</Value>
+    </Attribute>
+    <Attribute name="pass_number" type="Int16">
+        <Value>483</Value>
+    </Attribute>
+    <Attribute name="tile_number" type="Int16">
+        <Value>235</Value>
+    </Attribute>
+    <Attribute name="swath_side" type="String">
+        <Value>R</Value>
+    </Attribute>
+    <Attribute name="tile_name" type="String">
+        <Value>483_235R</Value>
+    </Attribute>
+    <Attribute name="time_coverage_start" type="String">
+        <Value>2022-08-21 10:26:08.804533Z</Value>
+    </Attribute>
+    <Attribute name="time_coverage_end" type="String">
+        <Value>2022-08-21 10:26:18.799435Z</Value>
+    </Attribute>
+    <Attribute name="geospatial_lon_min" type="Float64">
+        <Value>-109.87819728522156</Value>
+    </Attribute>
+    <Attribute name="geospatial_lon_max" type="Float64">
+        <Value>-108.80587624522489</Value>
+    </Attribute>
+    <Attribute name="geospatial_lat_min" type="Float64">
+        <Value>45.265486333154321</Value>
+    </Attribute>
+    <Attribute name="geospatial_lat_max" type="Float64">
+        <Value>45.984153984412323</Value>
+    </Attribute>
+    <Attribute name="inner_first_longitude" type="Float64">
+        <Value>-109.87819728522156</Value>
+    </Attribute>
+    <Attribute name="inner_first_latitude" type="Float64">
+        <Value>45.42898820094792</Value>
+    </Attribute>
+    <Attribute name="inner_last_longitude" type="Float64">
+        <Value>-109.66245293543054</Value>
+    </Attribute>
+    <Attribute name="inner_last_latitude" type="Float64">
+        <Value>45.984153984412323</Value>
+    </Attribute>
+    <Attribute name="outer_first_longitude" type="Float64">
+        <Value>-109.02919728191006</Value>
+    </Attribute>
+    <Attribute name="outer_first_latitude" type="Float64">
+        <Value>45.265486333154321</Value>
+    </Attribute>
+    <Attribute name="outer_last_longitude" type="Float64">
+        <Value>-108.80587624522489</Value>
+    </Attribute>
+    <Attribute name="outer_last_latitude" type="Float64">
+        <Value>45.818344806034297</Value>
+    </Attribute>
+    <Attribute name="wavelength" type="Float64">
+        <Value>0.0083858030209790005</Value>
+    </Attribute>
+    <Attribute name="near_range" type="Float64">
+        <Value>898531.16275670845</Value>
+    </Attribute>
+    <Attribute name="nominal_slant_range_spacing" type="Float64">
+        <Value>0.75</Value>
+    </Attribute>
+    <Attribute name="polarization" type="String">
+        <Value>V</Value>
+    </Attribute>
+    <Attribute name="transmit_antenna" type="String">
+        <Value>plus_y</Value>
+    </Attribute>
+    <Attribute name="processing_beamwidth" type="Float64">
+        <Value>0.00087299999999999997</Value>
+    </Attribute>
+    <Attribute name="slc_along_track_resolution" type="Float64">
+        <Value>5.46875</Value>
+    </Attribute>
+    <Attribute name="slc_range_resolution" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="slc_first_line_index_in_tvp" type="Int64">
+        <Value>0</Value>
+    </Attribute>
+    <Attribute name="slc_last_line_index_in_tvp" type="Int64">
+        <Value>2924</Value>
+    </Attribute>
+    <Attribute name="xref_input_l1b_hr_slc_file" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="xref_input_static_karin_cal_file" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="xref_input_ref_dem_file" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="xref_input_water_mask_file" type="String">
+        <Value>/work/ALT/swot/swothr/users/cazalsc/cas_test_NA/NA.shp</Value>
+    </Attribute>
+    <Attribute name="xref_input_static_geophys_files" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="xref_input_dynamic_geophys_files" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="xref_input_int_lr_xover_cal_file" type="String">
+        <Value>None</Value>
+    </Attribute>
+    <Attribute name="xref_l2_hr_pixc_config_parameters_file" type="String">
+        <Value>rdf/parameter_sisimp.rdf</Value>
+    </Attribute>
+    <Attribute name="ellipsoid_semi_major_axis" type="Float64">
+        <Value>6371008.7714166669</Value>
+    </Attribute>
+    <Attribute name="ellipsoid_flattening" type="Float64">
+        <Value>0.</Value>
+    </Attribute>
+    <Attribute name="build_dmrpp_metadata" type="Container">
+        <Attribute name="build_dmrpp" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="bes" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="libdap" type="String">
+            <Value>libdap-3.20.11-74</Value>
+        </Attribute>
+        <Attribute name="configuration" type="String">
+            <Value>
+# TheBESKeys::get_as_config()
+AllowedHosts=^https?:\/\/
+BES.Catalog.catalog.FollowSymLinks=Yes
+BES.Catalog.catalog.RootDirectory=/usr/share/hyrax
+BES.Catalog.catalog.TypeMatch=dmrpp:.*\.(dmrpp)$;
+BES.Catalog.catalog.TypeMatch+=h5:.*(\.bz2|\.gz|\.Z)?$;
+BES.Data.RootDirectory=/dev/null
+BES.LogName=./bes.log
+BES.UncompressCache.dir=/tmp/hyrax_ux
+BES.UncompressCache.prefix=ux_
+BES.UncompressCache.size=500
+BES.module.cmd=/usr/lib64/bes/libdap_xml_module.so
+BES.module.dap=/usr/lib64/bes/libdap_module.so
+BES.module.dmrpp=/usr/lib64/bes/libdmrpp_module.so
+BES.module.fonc=/usr/lib64/bes/libfonc_module.so
+BES.module.h5=/usr/lib64/bes/libhdf5_module.so
+BES.module.nc=/usr/lib64/bes/libnc_module.so
+BES.modules=dap,cmd,h5,dmrpp,nc,fonc
+FONc.ClassicModel=false
+FONc.NoGlobalAttrs=true
+H5.EnableCF=false
+H5.EnableCheckNameClashing=true
+</Value>
+        </Attribute>
+        <Attribute name="invocation" type="String">
+            <Value>build_dmrpp -c /tmp/bes_conf_B7NC -f /usr/share/hyrax/SWOT_L2_HR_PIXC_007_483_235R_20220821T102608_20220821T102618_Dx0000_01.nc.h5 -r /tmp/dmr__tPwo0K -u file:///usr/share/hyrax/SWOT_L2_HR_PIXC_007_483_235R_20220821T102608_20220821T102618_Dx0000_01.nc.h5 -M</Value>
+        </Attribute>
+    </Attribute>
+    <Group name="pixel_cloud">
+        <Dimension name="points" size="97851"/>
+        <Dimension name="complex_depth" size="2"/>
+        <Float32 name="instrument_attitude_cor">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>instrument attitude correction</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Term that incorporates all calibration corrections applied to attitude before geolocation.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3685836" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="instrument_baseline_cor">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>instrument baseline correction</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Term that incorporates all calibration corrections applied to baseline before geolocation.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3679962" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="iono_cor_gim_ka">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>ionosphere vertical correction</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>Global Ionosphere Maps</Value>
+            </Attribute>
+            <Attribute name="institution" type="String">
+                <Value>JPL</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-0.5</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Equivalent vertical correction due to ionosphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3709834" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="height_cor_xover">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>height correction from KaRIn crossovers</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-10.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>10.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Height correction from KaRIn crossover calibration. The correction is applied before geolocation but reported as an equivalent height correction.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3715732" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="instrument_range_cor">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>instrument range correction</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Term that incorporates all calibration corrections applied to range before geolocation.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3670262" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="dheight_dphase">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of height estimate to interferogram phase</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/radian</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the height estimate to the interferogram phase.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3084189" nBytes="149924" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="x_factor_plus_y">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>X factor for plus_y channel power</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>X factor for the plus_y channel power in linear units (arbitrary units to normalize noise-subtracted power to sigma0).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="687216" nBytes="1736" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="power_plus_y">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>power for plus_y channel</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Power for the plus_y channel (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="671624" nBytes="1736" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="pole_tide">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>geocentric pole tide height</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>Wahr (1985) and Desai et al. (2015)</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-0.200000003</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>0.200000003</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Geocentric pole tide height. The total of the contribution from the solid-Earth (body) pole tide height and the load pole tide height (i.e., the effect of the ocean pole tide loading of the Earth's crust).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3880606" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="model_dry_tropo_cor">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>dry troposphere vertical correction</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>European Centre for Medium-Range Weather Forecasts</Value>
+            </Attribute>
+            <Attribute name="institution" type="String">
+                <Value>ECMWF</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-3.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>-1.5</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Equivalent vertical correction due to dry troposphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3692816" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float64 name="illumination_time_tai">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>time of illumination of each pixel (TAI)</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>time</Value>
+            </Attribute>
+            <Attribute name="calendar" type="String">
+                <Value>gregorian</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>seconds since 2000-01-01 00:00:00.000</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Time of measurement in seconds in the TAI time scale since 1 Jan 2000 00:00:00 TAI. This time scale contains no leap seconds. The difference (in seconds) with time in UTC is given by the attribute [illumination_time:tai_utc_difference].</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3300435" nBytes="37776" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float32 name="water_frac_uncert">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>water fraction uncertainty</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Uncertainty estimate of the water fraction estimate (width of noisy water frac estimate distribution).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="721281" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="coherent_power">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>coherent power combination of minus_y and plus_y channels</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Power computed by combining the plus_y and minus_y channels coherently by co-aligning the phases (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="683384" nBytes="1736" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="dheight_droll">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of height estimate to spacecraft roll</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the height estimate to the spacecraft roll.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3236209" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float64 name="illumination_time">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>time of illumination of each pixel (UTC)</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>time</Value>
+            </Attribute>
+            <Attribute name="calendar" type="String">
+                <Value>gregorian</Value>
+            </Attribute>
+            <Attribute name="tai_utc_difference" type="String">
+                <Value>[Value of TAI-UTC at time of first record]</Value>
+            </Attribute>
+            <Attribute name="leap_second" type="String">
+                <Value>YYYY-MM-DD hh:mm:ss</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>seconds since 2000-01-01 00:00:00.000</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Time of measurement in seconds in the UTC time scale since 1 Jan 2000 00:00:00 UTC. [tai_utc_difference] is the difference between TAI and UTC reference time (seconds) for the first measurement of the data set. If a leap second occurs within the data set, the attribute leap_second is set to the UTC time at which the leap second occurs.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3258516" nBytes="37775" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float32 name="dlongitude_dphase">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of longitude estimate to interferogram phase</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees/radian</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the longitude estimate to the interferogram phase.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="2816842" nBytes="263203" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float64 name="longitude">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>longitude (degrees East)</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>longitude</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees_east</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-180.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>180.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Longitude [-180,180) (east of the Greenwich meridian) of the pixel.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="1253131" nBytes="486868" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="latitude">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>latitude (positive N, negative S)</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>latitude</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees_north</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-80.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>80.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Geodetic latitude [-80,80] (degrees north of equator) of the pixel.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="774521" nBytes="476514" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float32 name="x_factor_minus_y">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>X factor for minus_y channel power</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>X factor for the minus_y channel power in linear units (arbitrary units to normalize noise-subtracted power to sigma0).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="693096" nBytes="1736" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Int8 name="classification">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Int8">
+                <Value>127</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>classification</Value>
+            </Attribute>
+            <Attribute name="flag_meanings" type="String">
+                <Value>land land_near_water water_near_land open_water land_near_dark_water dark_water_edge dark_water</Value>
+            </Attribute>
+            <Attribute name="flag_values" type="Int8">
+                <Value>1</Value>
+                <Value>2</Value>
+                <Value>3</Value>
+                <Value>4</Value>
+                <Value>22</Value>
+                <Value>23</Value>
+                <Value>24</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int8">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int8">
+                <Value>24</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Flags indicating water detection results.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="127" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="726505" nBytes="13758" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int8>
+        <Int8 name="bright_land_flag">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Int8">
+                <Value>127</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>bright land flag</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>status_flag</Value>
+            </Attribute>
+            <Attribute name="flag_meanings" type="String">
+                <Value>not_bright_land bright_land bright_land_or_water</Value>
+            </Attribute>
+            <Attribute name="flag_values" type="Int8">
+                <Value>0</Value>
+                <Value>1</Value>
+                <Value>2</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int8">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int8">
+                <Value>2</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Flag indicating areas that are not typically water but are expected to be bright (e.g., urban areas, ice). Flag value 2 indicates cases where prior data indicate land, but where prior_water_prob indicates possible water.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="127" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="759340" nBytes="450" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int8>
+        <Float32 name="instrument_phase_cor">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>instrument phase correction</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>radians</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Term that incorporates all calibration corrections applied to phase before geolocation.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3676136" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="solid_earth_tide">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>solid Earth tide height</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>Cartwright and Taylor (1971) and Cartwright and Edden (1973)</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-1.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>1.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Solid-Earth (body) tide height. The zero-frequency permanent tide component is not included.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3857296" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Byte name="ancillary_surface_classification_flag">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Byte">
+                <Value>255</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>surface classification</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>status_flag</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>MODIS/GlobCover</Value>
+            </Attribute>
+            <Attribute name="institution" type="String">
+                <Value>European Space Agency</Value>
+            </Attribute>
+            <Attribute name="flag_meanings" type="String">
+                <Value>open_ocean land continental_water aquatic_vegetation continental_ice_snow floating_ice salted_basin</Value>
+            </Attribute>
+            <Attribute name="flag_values" type="Byte">
+                <Value>0</Value>
+                <Value>1</Value>
+                <Value>2</Value>
+                <Value>3</Value>
+                <Value>4</Value>
+                <Value>5</Value>
+                <Value>6</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Byte">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Byte">
+                <Value>6</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>7-state surface type classification computed from a mask built with MODIS and GlobCover data.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="255">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+            </dmrpp:chunks>
+        </Byte>
+        <Float32 name="load_tide_got">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>geocentric load tide height (GOT)</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>GOT4.10c (Ray, 2013)</Value>
+            </Attribute>
+            <Attribute name="institution" type="String">
+                <Value>GSFC</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-0.200000003</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>0.200000003</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Geocentric load tide height. The effect of the ocean tide loading of the Earth's crust. This value is reported for reference but is not applied to the reported height.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3871502" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="eff_num_medium_looks">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>effective number of medium looks</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Effective number of independent looks taken in forming the medium interferogram (after adaptive averaging).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3340307" nBytes="1737" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="missed_detection_rate">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>missed detection rate</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>1.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Probability of falsely detecting no water when there is water.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="750281" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="layover_impact">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>layover impact</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Estimate of the height error caused by layover, which may not be reliable on a pixel by pixel basis, but may be useful to augment aggregated height uncertainties.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="762766" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="model_wet_tropo_cor">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>wet troposphere vertical correction</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>European Centre for Medium-Range Weather Forecasts</Value>
+            </Attribute>
+            <Attribute name="institution" type="String">
+                <Value>ECMWF</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-1.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Equivalent vertical correction due to wet troposphere delay. The reported pixel height, latitude and longitude are computed after adding negative media corrections to uncorrected range along slant-range paths, accounting for the differential delay between the two KaRIn antennas. The equivalent vertical correction is computed by applying obliquity factors to the slant-path correction. Adding the reported correction to the reported pixel height results in the uncorrected pixel height.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3701851" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="power_minus_y">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>power for minus_y channel</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Power for the minus_y channel (arbitrary units that give sigma0 when noise subtracted and normalized by the X factor).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="677504" nBytes="1736" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="darea_dheight">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of pixel area to reference height</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m^2/m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the pixel area to the reference height.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3252491" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="geoid">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>geoid height</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>geoid_height_above_reference_ellipsoid</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>EGM2008 (Pavlis et al., 2012)</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-150.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>150.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Geoid height above the reference ellipsoid with a correction to refer the value to the mean tide system, i.e. includes the permanent tide (zero frequency).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3722833" nBytes="129303" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="prior_water_prob">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>prior water probability</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>1.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Prior probability of water occurring.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="754107" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="dlatitude_dphase">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of latitude estimate to interferogram phase</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees/radian</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the latitude estimate to the interferogram phase.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="2554659" nBytes="260087" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="cross_track">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>approximate cross-track location</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-75000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>75000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Approximate cross-track location of the pixel.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="2053263" nBytes="149605" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="load_tide_fes">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>geocentric load tide height (FES)</Value>
+            </Attribute>
+            <Attribute name="source" type="String">
+                <Value>FES2014b (Carrere et al., 2016)</Value>
+            </Attribute>
+            <Attribute name="institution" type="String">
+                <Value>LEGOS/CNES</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-0.200000003</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>0.200000003</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Geocentric load tide height. The effect of the ocean tide loading of the Earth's crust. This value is reported for reference but is not applied to the reported height.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3864266" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="height">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>height above reference ellipsoid</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-1500.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>15000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Height of the pixel above the reference ellipsoid.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="1744143" nBytes="307024" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Int32 name="range_index">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Int32">
+                <Value>2147483647</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>rare interferogram range index</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int32">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int32">
+                <Value>999999</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Rare interferogram range index (indexed from 0).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="2147483647" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="37714" nBytes="11212" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int32>
+        <Float32 name="water_frac">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>water fraction</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-1000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>10000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Noisy estimate of the fraction of the pixel that is water.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="696928" nBytes="20209" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Int32 name="azimuth_index">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Int32">
+                <Value>2147483647</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>rare interferogram azimuth index</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int32">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int32">
+                <Value>999999</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Rare interferogram azimuth index (indexed from 0).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="2147483647" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="17756" nBytes="15814" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int32>
+        <Float32 name="sig0">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sigma0</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Normalized radar cross section (sigma0) in real, linear units (not decibels). The value may be negative due to noise subtraction.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3346188" nBytes="318152" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="dheight_drange">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of height estimate to range (delay)</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the height estimate to the range (delay).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3245909" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="eff_num_rare_looks">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>effective number of rare looks</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Effective number of independent looks taken to form the rare interferogram.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="768640" nBytes="1737" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="pixel_area">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>pixel area</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m^2</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Pixel area.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="2204964" nBytes="151111" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Int8 name="pixc_qual">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Int8">
+                <Value>127</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>status_flag</Value>
+            </Attribute>
+            <Attribute name="flag_meanings" type="String">
+                <Value>good bad</Value>
+            </Attribute>
+            <Attribute name="flag_values" type="Int8">
+                <Value>0</Value>
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int8">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int8">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Quality flag for pixel cloud data</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="127" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3888466" nBytes="450" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int8>
+        <Float32 name="interferogram">
+            <Dim name="/pixel_cloud/points"/>
+            <Dim name="/pixel_cloud/complex_depth"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>rare interferogram</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Complex unflattened rare interferogram.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851 2</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="53590" nBytes="615938" chunkPositionInArray="[0,0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="false_detection_rate">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>false detection rate</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>1.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Probability of falsely detecting water when there is none.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="744407" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="dheight_dbaseline">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>sensitivity of height estimate to interferometric baseline</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Sensitivity of the height estimate to the interferometric baseline.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3242083" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Int32 name="phase_unwrapping_region">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Int32">
+                <Value>2147483647</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>phase unwrapping region index</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int32">
+                <Value>-1</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int32">
+                <Value>99999999</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Phase unwrapping region index.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="2147483647" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3666436" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int32>
+        <Float32 name="phase_noise_std">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>phase noise standard deviation</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>radians</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>-999999.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Estimate of the phase noise standard deviation.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="2364045" nBytes="186470" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="inc">
+            <Dim name="/pixel_cloud/points"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>incidence angle</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>999999.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Incidence angle.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>97851</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="2360219" nBytes="1730" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Attribute name="description" type="String">
+            <Value>cloud of geolocated interferogram pixels</Value>
+        </Attribute>
+        <Attribute name="interferogram_size_azimuth" type="Int64">
+            <Value>2924</Value>
+        </Attribute>
+        <Attribute name="interferogram_size_range" type="Int64">
+            <Value>4575</Value>
+        </Attribute>
+        <Attribute name="looks_to_efflooks" type="Float64">
+            <Value>1.75</Value>
+        </Attribute>
+    </Group>
+    <Group name="tvp">
+        <Dimension name="num_tvps" size="2924"/>
+        <Float64 name="vx">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>x component of the spacecraft velocity in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/s</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>KMSF velocity component in x direction in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4023478" nBytes="13710" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="pitch">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>pitch of the spacecraft</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-180.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>180.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>KMSF attitude pitch angle; positive values move the KMSF +x axis up.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3955394" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="y">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>y coordinate of the spacecraft in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>y coordinate of the KMSF origin in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3992049" nBytes="12335" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Int32 name="record_counter">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Int32">
+                <Value>2147483647</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>record counter</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int32">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int32">
+                <Value>999999999</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Index of the TVP record used to align data samples across granules.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="2147483647" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4094015" nBytes="75" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int32>
+        <Float64 name="vy">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>y component of the spacecraft velocity in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/s</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>KMSF velocity component in y direction in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4041332" nBytes="13714" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="vz">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>z component of the spacecraft velocity in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m/s</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>KMSF velocity component in z direction in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4057142" nBytes="13259" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="z">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>z coordinate of the spacecraft in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>z coordinate of the KMSF origin in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4008528" nBytes="12854" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="minus_y_antenna_y">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>y coordinate of the minus_y antenna phase center in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>y coordinate of the minus_y antenna phase center in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4087525" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="velocity_heading">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>heading of the spacecraft Earth-relative velocity vector</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>360.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Angle with respect to true north of the horizontal component of the spacecraft Earth-relative velocity vector. A value of 90 deg indicates that the spacecraft velocity vector pointed due east. Values between 0 and 90 deg indicate that the velocity vector has a northward component, and values between 90 and 180 deg indicate that the velocity vector has a southward component.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3961884" nBytes="13269" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="yaw">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>yaw of the spacecraft</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-180.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>180.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>KMSF attitude yaw angle relative to the nadir track. The yaw angle is a right-handed rotation about the nadir (downward) direction. A yaw value of 0 deg indicates that the KMSF +x axis is aligned with the horizontal component of the Earth-relative velocity vector. A yaw value of 180 deg indicates that the spacecraft is in a yaw-flipped state, with the KMSF -x axis aligned with the horizontal component of the Earth-relative velocity vector.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3957615" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="time">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>time in UTC</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>time</Value>
+            </Attribute>
+            <Attribute name="calendar" type="String">
+                <Value>gregorian</Value>
+            </Attribute>
+            <Attribute name="tai_utc_difference" type="String">
+                <Value>[Value of TAI-UTC at time of first record]</Value>
+            </Attribute>
+            <Attribute name="leap_second" type="String">
+                <Value>YYYY-MM-DD hh:mm:ss</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>seconds since 2000-01-01 00:00:00.000</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Time of measurement in seconds in the UTC time scale since 1 Jan 2000 00:00:00 UTC. [tai_utc_difference] is the difference between TAI and UTC reference time (seconds) for the first measurement of the data set. If a leap second occurs within the data set, the attribute leap_second is set to the UTC time at which the leap second occurs.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3892888" nBytes="2530" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="longitude">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>longitude (degrees East) of the spacecraft</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>longitude</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees_east</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-180.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>180.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Longitude of the KMSF origin, with positive values indicating longitudes east of the Greenwich meridian.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3920286" nBytes="12499" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="minus_y_antenna_x">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>x coordinate of the minus_y antenna phase center in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>x coordinate of the minus_y antenna phase center in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4083256" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="latitude">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>latitude (positive N, negative S) of the spacecraft</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>latitude</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees_north</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-80.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>80.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Geodetic latitude of the KMSF origin with respect to the reference ellipsoid.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3906233" nBytes="11957" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="plus_y_antenna_y">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>y coordinate of the plus_y antenna phase center in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>y coordinate of the plus_y antenna phase center in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4076766" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="minus_y_antenna_z">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>z coordinate of the minus_y antenna phase center in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>z coordinate of the minus_y antenna phase center in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4089746" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Int8 name="sc_event_flag">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Int8">
+                <Value>127</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>status_flag</Value>
+            </Attribute>
+            <Attribute name="flag_meanings" type="String">
+                <Value>nominal not_nominal</Value>
+            </Attribute>
+            <Attribute name="flag_values" type="Int8">
+                <Value>0</Value>
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int8">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int8">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Spacecraft event flag</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="127" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4098824" nBytes="36" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int8>
+        <Int8 name="tvp_qual">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Int8">
+                <Value>127</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>status_flag</Value>
+            </Attribute>
+            <Attribute name="flag_meanings" type="String">
+                <Value>good bad</Value>
+            </Attribute>
+            <Attribute name="flag_values" type="Int8">
+                <Value>0</Value>
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Int8">
+                <Value>0</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Int8">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Quality flag for TVP data</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="127" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4102504" nBytes="36" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Int8>
+        <Float64 name="time_tai">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>time in TAI</Value>
+            </Attribute>
+            <Attribute name="standard_name" type="String">
+                <Value>time</Value>
+            </Attribute>
+            <Attribute name="calendar" type="String">
+                <Value>gregorian</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>seconds since 2000-01-01 00:00:00.000</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Time of measurement in seconds in the TAI time scale since 1 Jan 2000 00:00:00 TAI. This time scale contains no leap seconds. The difference (in seconds) with time in UTC is given by the attribute [time:tai_utc_difference].</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3899562" nBytes="2527" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="altitude">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>altitude of the spacecraft</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>1000000.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Altitude above the reference ellipsoid of the KMSF origin.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3934881" nBytes="10052" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="plus_y_antenna_x">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>x coordinate of the plus_y antenna phase center in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>x coordinate of the plus_y antenna phase center in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4074545" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="roll">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>roll of the spacecraft</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>degrees</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-180.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>180.</Value>
+            </Attribute>
+            <Attribute name="coordinates" type="String">
+                <Value>longitude latitude</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>KMSF attitude roll angle; positive values move the +y antenna down.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3949077" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="plus_y_antenna_z">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>z coordinate of the plus_y antenna phase center in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>z coordinate of the plus_y antenna phase center in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4081035" nBytes="125" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Float64 name="x">
+            <Dim name="/tvp/num_tvps"/>
+            <Attribute name="_FillValue" type="Float64">
+                <Value>9.969209968386869e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>x coordinate of the spacecraft in the ECEF frame</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>m</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float64">
+                <Value>-10000000.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float64">
+                <Value>10000000.</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>x coordinate of the KMSF origin in the ECEF frame.</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="3977249" nBytes="12704" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float64>
+        <Attribute name="description" type="String">
+            <Value>Time varying parameters group including spacecraft attitude, position, velocity, and antenna position information</Value>
+        </Attribute>
+    </Group>
+    <Group name="noise">
+        <Dimension name="num_lines" size="2924"/>
+        <Float32 name="noise_plus_y">
+            <Dim name="/noise/num_lines"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>Noise estimate for the plus_y channel</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>1.00000002e+20</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Noise power for the plus_y channel expressed in linear units (arbitrary units that give noise-equivalent sigma0 when normalized by the X factor).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4108732" nBytes="83" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Float32 name="noise_minus_y">
+            <Dim name="/noise/num_lines"/>
+            <Attribute name="_FillValue" type="Float32">
+                <Value>9.969209968e+36</Value>
+            </Attribute>
+            <Attribute name="long_name" type="String">
+                <Value>Noise estimate for the minus_y channel</Value>
+            </Attribute>
+            <Attribute name="units" type="String">
+                <Value>1</Value>
+            </Attribute>
+            <Attribute name="valid_min" type="Float32">
+                <Value>0.</Value>
+            </Attribute>
+            <Attribute name="valid_max" type="Float32">
+                <Value>1.00000002e+20</Value>
+            </Attribute>
+            <Attribute name="comment" type="String">
+                <Value>Noise power for the minus_y channel expressed in linear units (arbitrary units that give noise-equivalent sigma0 when normalized by the X factor).</Value>
+            </Attribute>
+            <dmrpp:chunks compressionType="shuffle deflate" fillValue="9.96921e+36" byteOrder="LE">
+                <dmrpp:chunkDimensionSizes>2924</dmrpp:chunkDimensionSizes>
+                <dmrpp:chunk offset="4108815" nBytes="83" chunkPositionInArray="[0]"/>
+            </dmrpp:chunks>
+        </Float32>
+        <Attribute name="description" type="String">
+            <Value>Measured noise power for each receive echo of the plus_y and minus_y SLC channels</Value>
+        </Attribute>
+    </Group>
+</Dataset>

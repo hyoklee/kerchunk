@@ -1,0 +1,1600 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dataset xmlns="http://xml.opendap.org/ns/DAP/4.0#" xmlns:dmrpp="http://xml.opendap.org/dap/dmrpp/1.0.0#" dapVersion="4.0" dmrVersion="1.0" name="GLDAS_NOAH025_3H.A20210101.0000.021.nc4.h5" dmrpp:href="file:///usr/share/hyrax/GLDAS_NOAH025_3H.A20210101.0000.021.nc4.h5" dmrpp:version="3.20.13-240">
+    <Dimension name="time" size="1"/>
+    <Dimension name="lat" size="600"/>
+    <Dimension name="lon" size="1440"/>
+    <Dimension name="bnds" size="2"/>
+    <Float32 name="Tair_f_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>K</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>air_temperature</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Temperature</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>228.4556885</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>310.535675</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="16400265" nBytes="539471" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Albedo_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>%</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_albedo</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Albedo</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>5.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>82.5</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="5959389" nBytes="546509" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilMoi0_10cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_moisture_content</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil moisture</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>2.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>100.</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="7370260" nBytes="732188" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilMoi10_40cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_moisture_content</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil moisture</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>6.747625351</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>299.9996338</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="8102448" nBytes="737106" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Tveg_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>transpiration_flux_from_veg</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Transpiration</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>437.0599976</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="13532270" nBytes="272585" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SWE_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_snow_amount</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Snow depth water equivalent</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>115547.4062</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="6505898" nBytes="396359" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Qh_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_upward_sensible_heat_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Sensible heat net flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-216.2797241</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>592.340271</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="2026590" nBytes="732699" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="ECanop_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>evaporation_flux_from_canopy</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Canopy water evaporation</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>599.1599731</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="13227583" nBytes="304687" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilTMP10_40cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>K</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_temperature</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil temperature</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>244.4482574</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>311.2982483</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="10875410" nBytes="526415" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="lon">
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>degrees_east</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>longitude</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>longitude</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-179.875</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>179.875</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="254717" nBytes="1377" chunkPositionInArray="[0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Lwnet_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_net_downward_longwave_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Net long-wave radiation flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-148.6496429</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>38.87034988</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="547381" nBytes="694670" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Snowf_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2 s-1</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>snowfall_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Snow precipitation rate</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>0.003107999917</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="3460412" nBytes="175047" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float64 name="time">
+        <Dim name="/time"/>
+        <Attribute name="units" type="String">
+            <Value>minutes since 2000-01-01 03:00:00</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>time</Value>
+        </Attribute>
+        <Attribute name="time_increment" type="String">
+            <Value>180</Value>
+        </Attribute>
+        <Attribute name="begin_date" type="String">
+            <Value>20210101</Value>
+        </Attribute>
+        <Attribute name="begin_time" type="String">
+            <Value>000000</Value>
+        </Attribute>
+        <Attribute name="bounds" type="String">
+            <Value>time_bnds</Value>
+        </Attribute>
+        <dmrpp:chunks fillValue="9.96921e+36" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>512</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="256094" nBytes="4096" chunkPositionInArray="[0]"/>
+        </dmrpp:chunks>
+    </Float64>
+    <Float32 name="SoilMoi40_100cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_moisture_content</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil moisture</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>12.00002384</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>600.</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="8839554" nBytes="764836" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Qair_f_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg kg-1</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>specific_humidity</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Specific humidity</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>2.45558258e-05</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>0.02377455495</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="16939736" nBytes="708849" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Wind_f_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>m s-1</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>wind_speed</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Wind speed</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.001666663797</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>23.1016674</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="15547473" nBytes="540269" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Swnet_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_net_downward_shortwave_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Net short wave radiation flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>934.9000244</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="260206" nBytes="287175" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SWdown_f_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_downwelling_shortwave_flux_in_air</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Downward short-wave radiation flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>994.3499756</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="18238965" nBytes="283773" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Qs_acc">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_runoff_amount</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Storm surface runoff</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: sum</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>22.11667061</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="4440831" nBytes="191205" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="RootMoist_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>root_zone_soil_moisture</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Root zone soil moisture</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>2.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>898.5150146</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="14305529" nBytes="762942" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilTMP100_200cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>K</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_temperature</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil temperature</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>247.2725067</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>307.7525024</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="11917384" nBytes="510514" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SnowDepth_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>m</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_snow_thickness</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Snow depth</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>468.7885132</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="6902257" nBytes="468003" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilTMP0_10cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>K</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_temperature</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil temperature</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>239.2617035</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>311.7817078</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="10339536" nBytes="535874" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Rainf_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2 s-1</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>rainfall_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Rain precipitation rate</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>0.003469000105</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="3635459" nBytes="216779" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="lat">
+        <Dim name="/lat"/>
+        <Attribute name="units" type="String">
+            <Value>degrees_north</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>latitude</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>latitude</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-59.875</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>89.875</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>600</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="254031" nBytes="686" chunkPositionInArray="[0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Psurf_f_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>Pa</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_air_pressure</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Pressure</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>47742.11719</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>104890.1172</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="17648585" nBytes="590380" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Evap_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2 s-1</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>water_evaporation_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Evapotranspiration</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-1.196490575e-05</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>0.0002581350855</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="3852238" nBytes="588593" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="AvgSurfT_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>K</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_temperature</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Average Surface Skin temperature</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>216.2500763</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>320.4200745</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="5410403" nBytes="548986" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="LWdown_f_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_downwelling_longwave_flux_in_air</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Downward long-wave radiation flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>100.8295517</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>477.1595459</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="18522738" nBytes="650827" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Qle_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_upward_latent_heat_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Latent heat net flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-29.92422676</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>645.6257935</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="1242051" nBytes="784539" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Rainf_f_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2 s-1</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>precipitation_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Total precipitation rate</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>0.003469000105</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="16087742" nBytes="312523" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float64 name="time_bnds">
+        <Dim name="/time"/>
+        <Dim name="/bnds"/>
+        <dmrpp:chunks fillValue="9.96921e+36" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 2</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="260190" nBytes="16" chunkPositionInArray="[0,0]"/>
+        </dmrpp:chunks>
+    </Float64>
+    <Float32 name="Qg_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>downward_heat_flux_in_soil</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Heat flux</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-137.4073792</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>195.7526245</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="2759289" nBytes="701123" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilMoi100_200cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_moisture_content</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil moisture</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>20.04669952</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>999.9996948</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="9604390" nBytes="735146" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Qsm_acc">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>surface_snow_melt_amount</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Snow melt</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: sum</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>5.34800005</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="5302430" nBytes="107973" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="PotEvap_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>potential_evaporation_flux</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Potential evaporation rate</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>-29.92422676</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>835.1757812</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="12427898" nBytes="799685" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="Qsb_acc">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>subsurface_runoff_amount</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Baseflow-groundwater runoff</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: sum</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>2.753679991</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="4632036" nBytes="670394" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="SoilTMP40_100cm_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>K</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>soil_temperature</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Soil temperature</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>246.3125</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>310.082489</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="11401825" nBytes="515559" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="CanopInt_inst">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>kg m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>canopy_water_amount</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Plant canopy surface water</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: point</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>0.5</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="15068471" nBytes="479002" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Float32 name="ESoil_tavg">
+        <Dim name="/time"/>
+        <Dim name="/lat"/>
+        <Dim name="/lon"/>
+        <Attribute name="units" type="String">
+            <Value>W m-2</Value>
+        </Attribute>
+        <Attribute name="standard_name" type="String">
+            <Value>evaporation_flux_from_soil</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Direct Evaporation from Bare Soil</Value>
+        </Attribute>
+        <Attribute name="cell_methods" type="String">
+            <Value>time: mean</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float32">
+            <Value>1.</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="missing_value" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Float32">
+            <Value>-9999.</Value>
+        </Attribute>
+        <Attribute name="vmin" type="Float32">
+            <Value>0.</Value>
+        </Attribute>
+        <Attribute name="vmax" type="Float32">
+            <Value>271.1000061</Value>
+        </Attribute>
+        <dmrpp:chunks compressionType="shuffle deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>1 600 1440</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="13804855" nBytes="500674" chunkPositionInArray="[0,0,0]"/>
+        </dmrpp:chunks>
+    </Float32>
+    <Attribute name="missing_value" type="Float32">
+        <Value>-9999.</Value>
+    </Attribute>
+    <Attribute name="tavg definition:" type="String">
+        <Value>past 3-hour average</Value>
+    </Attribute>
+    <Attribute name="acc definition:" type="String">
+        <Value>past 3-hour accumulation</Value>
+    </Attribute>
+    <Attribute name="inst definition:" type="String">
+        <Value>instantaneous</Value>
+    </Attribute>
+    <Attribute name="title" type="String">
+        <Value>GLDAS2.1 LIS land surface model output</Value>
+    </Attribute>
+    <Attribute name="institution" type="String">
+        <Value>NASA GSFC</Value>
+    </Attribute>
+    <Attribute name="source" type="String">
+        <Value>Noah_v3.6 forced with GDAS-AGRMET-GPCPv13rA1_202101</Value>
+    </Attribute>
+    <Attribute name="history" type="String">
+        <Value>created on date: 2021-04-23T12:02:15.080</Value>
+    </Attribute>
+    <Attribute name="references" type="String">
+        <Value>Rodell_etal_BAMS_2004, Kumar_etal_EMS_2006, Peters-Lidard_etal_ISSE_2007</Value>
+    </Attribute>
+    <Attribute name="conventions" type="String">
+        <Value>CF-1.6</Value>
+    </Attribute>
+    <Attribute name="comment" type="String">
+        <Value>website: https://ldas.gsfc.nasa.gov/gldas, https://lis.gsfc.nasa.gov/</Value>
+    </Attribute>
+    <Attribute name="MAP_PROJECTION" type="String">
+        <Value>EQUIDISTANT CYLINDRICAL</Value>
+    </Attribute>
+    <Attribute name="SOUTH_WEST_CORNER_LAT" type="Float32">
+        <Value>-59.875</Value>
+    </Attribute>
+    <Attribute name="SOUTH_WEST_CORNER_LON" type="Float32">
+        <Value>-179.875</Value>
+    </Attribute>
+    <Attribute name="DX" type="Float32">
+        <Value>0.25</Value>
+    </Attribute>
+    <Attribute name="DY" type="Float32">
+        <Value>0.25</Value>
+    </Attribute>
+    <Attribute name="build_dmrpp_metadata" type="Container">
+        <Attribute name="build_dmrpp" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="bes" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="libdap" type="String">
+            <Value>libdap-3.20.11-74</Value>
+        </Attribute>
+        <Attribute name="configuration" type="String">
+            <Value>
+# TheBESKeys::get_as_config()
+AllowedHosts=^https?:\/\/
+BES.Catalog.catalog.FollowSymLinks=Yes
+BES.Catalog.catalog.RootDirectory=/usr/share/hyrax
+BES.Catalog.catalog.TypeMatch=dmrpp:.*\.(dmrpp)$;
+BES.Catalog.catalog.TypeMatch+=h5:.*(\.bz2|\.gz|\.Z)?$;
+BES.Data.RootDirectory=/dev/null
+BES.LogName=./bes.log
+BES.UncompressCache.dir=/tmp/hyrax_ux
+BES.UncompressCache.prefix=ux_
+BES.UncompressCache.size=500
+BES.module.cmd=/usr/lib64/bes/libdap_xml_module.so
+BES.module.dap=/usr/lib64/bes/libdap_module.so
+BES.module.dmrpp=/usr/lib64/bes/libdmrpp_module.so
+BES.module.fonc=/usr/lib64/bes/libfonc_module.so
+BES.module.h5=/usr/lib64/bes/libhdf5_module.so
+BES.module.nc=/usr/lib64/bes/libnc_module.so
+BES.modules=dap,cmd,h5,dmrpp,nc,fonc
+FONc.ClassicModel=false
+FONc.NoGlobalAttrs=true
+H5.EnableCF=false
+H5.EnableCheckNameClashing=true
+</Value>
+        </Attribute>
+        <Attribute name="invocation" type="String">
+            <Value>build_dmrpp -c /tmp/bes_conf_rvma -f /usr/share/hyrax/GLDAS_NOAH025_3H.A20210101.0000.021.nc4.h5 -r /tmp/dmr__L0pwBB -u file:///usr/share/hyrax/GLDAS_NOAH025_3H.A20210101.0000.021.nc4.h5 -M</Value>
+        </Attribute>
+    </Attribute>
+</Dataset>
