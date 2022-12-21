@@ -21,7 +21,6 @@ import unittest
 import lxml.etree as etree
 import numpy as np
 
-
 class DMRParser(object):
 
     """DMR parser class"""
@@ -63,7 +62,7 @@ class DMRParser(object):
             self.tree = etree.parse(self.xml_file).getroot()
                 
         except etree.XMLSyntaxError as err:
-            print('The DMR DMR file is not valid:')
+            print('The DMR file is not valid:')
             print(self.xml_file)
             print(err)
             return None
@@ -226,12 +225,7 @@ class DMRParser(object):
     def create_dataset_dap4_array(self, node, key):
         """Create simple dataset for DAP 4.0."""
         self.select_group()
-        # Check if dset is already created by Dimension tag.
         dname = node.attrib['name']
-        path = self.get_path()
-        fname = path+dname
-        if fname in self.dimscales.keys():
-            print('Variable '+fname+' already exists.')
         return dname
 
     def get_orig_gname(self, g):
@@ -281,21 +275,12 @@ class DMRParser(object):
                 name = node.attrib['name']
                 self.select_group()
                 if dtype == 'container':
-                    # item = self.hpd.create_group(name, True)
                     # print('Attribute Container:'+name)
                     self.attr_stack.append(name)
                     self.last = 'acon'
                 else:
                     val = self.get_value(node)
-                    # if dtype != 'string':
                     value = self.get_value_str(val)
-                    #else:
-                    #    value = val
-                    #cdtype, cvalue = self.get_unsigned_attr(node, dtype,
-                    #                                        value)
-                    # astring = self.get_ascii_string(cvalue)
-                    
-                    # m = node.attrib['name']+'='+astring
                     m = node.attrib['name']+'='+value
                     lg = len(self.group_stack)
                     if self.depth > lg:
@@ -318,15 +303,12 @@ class DMRParser(object):
                     gname = 'noname'
                     
                 gname = self.get_orig_gname(gname)
-                    
                 # print(gname)
-                # if self.last != 'group':
                 self.select_group()
                     
                 self.attr_stack = []
                 self.dset_stack = []
                 
-                # item = self.hpd.create_group(gname, True)
                 self.group_stack.append(gname)
                 self.last = 'group'
                 
