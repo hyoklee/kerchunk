@@ -5,31 +5,41 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2022/12/13
+# Last Update: 2022/12/19
 ###########################################################################
 
 """
-Read an attribute from Kerchunk using Zarr.
-
-Zarr/DataTree fails to write this attribute.
+Read all attribute from Kerchunk using Zarr.
 """
 
-import kerchunk.hdf
 import fsspec
-import time
-import ujson
-import xarray as xr
+import sys
 import zarr
 
-backend_args = {"consolidated": False, "storage_options": {"fo":'ATL08.json'}}
+# print(za['ancillary_data/land/night_thresh/'].attrs['description'])
+def print_visitor(obj):
+    # for a in obj.attrs:
+    #    print(a)
+    if type(obj) == zarr.hierarchy.Group or type(obj) == zarr.hierarchy.Array:
+        a = obj.name
+        if obj.attrs.keys():
+            for k in obj.attrs.keys():
+                if k != "_ARRAY_DIMENSIONS":
+                    print(a+':'+k+'='+str(obj.attrs[k]))
+                
+if __name__ == '__main__':
+    f = sys.argv[1]
+    # print(f)
+    mapper = fsspec.get_mapper(
+        'reference://',
+        fo=f,
+        target_protocol='file',
+        remote_protocol='file',
+    )
+    za = zarr.open(mapper, mode='r')
+    # Print global attributes
+    # print(za.attrs.keys())
+    for k in za.attrs.keys():
+        print(':'+k+'='+str(za.attrs[k]))
+    za.visitvalues(print_visitor)
 
-mapper = fsspec.get_mapper(
-    'reference://',
-    fo='ATL08.json',
-    target_protocol='file',
-    remote_protocol='file',
-)
-
-za = zarr.open(mapper, mode='r')
-
-print(za['ancillary_data/land/night_thresh/'].attrs['description'])
