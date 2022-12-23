@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Dataset xmlns="http://xml.opendap.org/ns/DAP/4.0#" xmlns:dmrpp="http://xml.opendap.org/dap/dmrpp/1.0.0#" dapVersion="4.0" dmrVersion="1.0" name="VNP09A1.A2015257.h29v11.001.2016221164845.h5" dmrpp:href="file:///usr/share/hyrax/VNP09A1.A2015257.h29v11.001.2016221164845.h5" dmrpp:version="3.20.13-240">
+    <Dimension name="YDim" size="1200"/>
+    <Dimension name="XDim" size="1200"/>
+    <Float64 name="lon">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="units" type="String">
+            <Value>degrees_east</Value>
+        </Attribute>
+    </Float64>
+    <Float64 name="lat">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="units" type="String">
+            <Value>degrees_north</Value>
+        </Attribute>
+    </Float64>
+    <Int16 name="RelativeAzimuth">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Relative_azimuth</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degree</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-18000</Value>
+            <Value>18000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>RelativeAzimuth</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/RelativeAzimuth</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="12856" nBytes="429931" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="442787" nBytes="392265" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="837620" nBytes="281455" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SensorZenith">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>View_zenith</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degree</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>0</Value>
+            <Value>18000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SensorZenith</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SensorZenith</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="1121691" nBytes="304704" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="1426395" nBytes="292477" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="1718872" nBytes="218899" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SolarZenith">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Solar_zenith</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>degree</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>0</Value>
+            <Value>18000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SolarZenith</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SolarZenith</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="32767" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="1940387" nBytes="231698" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="2172085" nBytes="246001" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="2418086" nBytes="177446" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <UInt16 name="SurfReflect_Day_Of_Year">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="UInt16">
+            <Value>65535</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_day_of_year</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>Julian day</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="UInt16">
+            <Value>1</Value>
+            <Value>366</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_Day_Of_Year</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_Day_Of_Year</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="65535" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="2598420" nBytes="1083" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="2599503" nBytes="1076" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="2602755" nBytes="1176" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </UInt16>
+    <Int16 name="SurfReflect_M1">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M1</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M1</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M1</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="2607419" nBytes="697567" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="3304986" nBytes="687037" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="3992023" nBytes="541010" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M10">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M10</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M10</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M10</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="4535649" nBytes="817681" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="5353330" nBytes="808705" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="6162035" nBytes="599723" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M11">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M11</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M11</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M11</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="6764646" nBytes="820270" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="7584916" nBytes="806280" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="8393644" nBytes="595493" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M2">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M2</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M2</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M2</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="8991753" nBytes="690223" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="9681976" nBytes="680923" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="10362899" nBytes="540670" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M3">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M3</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M3</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M3</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="10906185" nBytes="700218" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="11606403" nBytes="687217" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="12295748" nBytes="542971" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M4">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M4</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M4</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M4</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="12841335" nBytes="729578" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="13570913" nBytes="712996" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="14283909" nBytes="558446" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M5">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M5</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M5</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M5</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="14844971" nBytes="791371" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="15636342" nBytes="773480" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="16409822" nBytes="586212" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M7">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M7</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M7</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M7</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="16998922" nBytes="809777" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="17808699" nBytes="789572" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="18600847" nBytes="595572" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <Int16 name="SurfReflect_M8">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="Int16">
+            <Value>0</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_for_band_M8</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>reflectance</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="Int16">
+            <Value>-100</Value>
+            <Value>16000</Value>
+        </Attribute>
+        <Attribute name="scale_factor" type="Float64">
+            <Value>0.00010000000000000000</Value>
+        </Attribute>
+        <Attribute name="scale_factor_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="add_offset_err" type="Float64">
+            <Value>0.0000000000000000</Value>
+        </Attribute>
+        <Attribute name="calibrated_nt" type="Int32">
+            <Value>5</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_M8</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_M8</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="19199035" nBytes="817400" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="20016435" nBytes="803524" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="20819959" nBytes="599200" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </Int16>
+    <UInt32 name="SurfReflect_QC">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="UInt32">
+            <Value>1073741824</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_500m_quality_control_flags</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>bit field</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="UInt32">
+            <Value>0</Value>
+            <Value>4294966531</Value>
+        </Attribute>
+        <Attribute name="QA_bitmap_index" type="String">
+            <Value>
+	Bits are listed from the MSB (bit 31) to the LSB (bit 0):
+	Bit    Description
+	31     adjacency correction performed; 
+	       1 -- yes
+	       0 -- no
+	30     atmospheric correction performed; 
+	       1 -- yes
+	       0 -- no
+	26-29  band 7 data quality four bit range;
+	       0000 -- highest quality
+	       0111 -- noisy detector
+	       1000 -- dead detector, data interpolated in L1B
+	       1001 -- solar zenith &gt;= 86 degrees
+	       1010 -- solar zenith &gt;= 85 and &lt; 86 degrees
+	       1011 -- missing input
+	       1100 -- internal constant used in place of climatological data 
+	               for at least one atmospheric constant
+	       1101 -- correction out of bounds pixel constrained to extreme 
+	               allowable value
+	       1110 -- L1B data faulty
+	       1111 -- not processed due to deep ocean or clouds
+	22-25  band 6 data quality four bit range;
+	       SAME AS ABOVE
+	18-21  band 5 data quality four bit range;
+	       SAME AS ABOVE
+	14-17  band 4 data quality four bit range;
+	       SAME AS ABOVE
+	10-13  band 3 data quality four bit range;
+	       SAME AS ABOVE
+	6-9    band 2 data quality four bit range;
+	       SAME AS ABOVE
+	2-5    band 1 data quality four bit range;
+	       SAME AS ABOVE
+	0-1    MODLAND QA bits; 
+	       corrected product produced at
+	       00 -- ideal quality all bands 
+	       01 -- less than ideal quality some or all bands
+	       corrected product not produced due to
+	       10 -- cloud effects all bands 
+	       11 -- other reasons some or all bands may be fill value
+	       [Note that a value of (11) overrides a value of (01)].
+</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_QC</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_QC</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>218 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="21421775" nBytes="1040" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="21422815" nBytes="1040" chunkPositionInArray="[218,0]"/>
+            <dmrpp:chunk offset="21423855" nBytes="1040" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="21424895" nBytes="1040" chunkPositionInArray="[654,0]"/>
+            <dmrpp:chunk offset="21425935" nBytes="1040" chunkPositionInArray="[872,0]"/>
+            <dmrpp:chunk offset="21429023" nBytes="1042" chunkPositionInArray="[1090,0]"/>
+        </dmrpp:chunks>
+    </UInt32>
+    <UInt16 name="SurfReflect_State">
+        <Dim name="/YDim"/>
+        <Dim name="/XDim"/>
+        <Attribute name="_FillValue" type="UInt16">
+            <Value>65535</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>Surface_reflectance_500m_state_flags</Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>bit field</Value>
+        </Attribute>
+        <Attribute name="valid_range" type="UInt16">
+            <Value>0</Value>
+            <Value>57343</Value>
+        </Attribute>
+        <Attribute name="QA_bitmap_index" type="String">
+            <Value>
+	Bits are listed from the MSB (bit 15) to the LSB (bit 0):
+	Bit    Description
+	15     internal snow algorithm flag; 
+	       1 -- yes
+	       0 -- no
+	14     BRDF correction performed;
+	       1 -- yes
+	       0 -- no
+	13     Pixel is adjacent to cloud;
+	       1 -- yes
+	       0 -- no
+	12     MOD35 snow/ice flag;
+	       1 -- yes
+	       0 -- no
+	11     internal fire algorithm flag;
+	       1 -- fire
+	       0 -- no fire
+	10    internal cloud algorithm flag;
+	       1 -- cloud
+	       0 -- no cloud
+	8-9    cirrus detected;
+	       00 -- none
+	       01 -- small
+	       10 -- average
+	       11 -- high
+	6-7    aerosol quantity;
+	       00 -- climatology
+	       01 -- low
+	       10 -- average
+	       11 -- high
+	3-5    land/water flag;
+	       000 -- shallow ocean
+	       001 -- land
+	       010 -- ocean coastlines and lake shorelines
+	       011 -- shallow inland water
+	       100 -- ephemeral water
+	       101 -- deep inland water
+	       110 -- continental/moderate ocean
+	       111 -- deep ocean
+	2      cloud shadow;
+	       1 -- yes
+	       0 -- no
+	0-1    cloud state;
+	       00 -- clear
+	       01 -- cloudy
+	       10 -- mixed
+	       11 -- not set, assumed clear
+</Value>
+        </Attribute>
+        <Attribute name="origname" type="String">
+            <Value>SurfReflect_State</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS/VNP_Grid_1km_L3_2d/Data Fields/SurfReflect_State</Value>
+        </Attribute>
+        <Attribute name="coordinates" type="String">
+            <Value>lat lon</Value>
+        </Attribute>
+        <Attribute name="grid_mapping" type="String">
+            <Value>eos_cf_projection</Value>
+        </Attribute>
+        <Map name="/lat"/>
+        <Map name="/lon"/>
+        <dmrpp:chunks compressionType="deflate" fillValue="0" byteOrder="LE">
+            <dmrpp:chunkDimensionSizes>436 1200</dmrpp:chunkDimensionSizes>
+            <dmrpp:chunk offset="21433687" nBytes="108778" chunkPositionInArray="[0,0]"/>
+            <dmrpp:chunk offset="21542465" nBytes="111606" chunkPositionInArray="[436,0]"/>
+            <dmrpp:chunk offset="21656119" nBytes="106992" chunkPositionInArray="[872,0]"/>
+        </dmrpp:chunks>
+    </UInt16>
+    <String name="StructMetadata_0">
+        <Attribute name="origname" type="String">
+            <Value>StructMetadata.0</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS INFORMATION/StructMetadata.0</Value>
+        </Attribute>
+        <dmrpp:chunks fillValue="unsupported-string">
+            <dmrpp:chunk offset="21765159" nBytes="32000"/>
+        </dmrpp:chunks>
+    </String>
+    <Byte name="eos_cf_projection">
+        <Attribute name="grid_mapping_name" type="String">
+            <Value>sinusoidal</Value>
+        </Attribute>
+        <Attribute name="longitude_of_central_meridian" type="Float64">
+            <Value>0.0</Value>
+        </Attribute>
+        <Attribute name="earth_radius" type="Float64">
+            <Value>6371007.181</Value>
+        </Attribute>
+        <Attribute name="_CoordinateAxisTypes" type="String">
+            <Value>GeoX GeoY</Value>
+        </Attribute>
+    </Byte>
+    <Float64 name="YDim">
+        <Dim name="/YDim"/>
+        <Attribute name="standard_name" type="String">
+            <Value>projection_y_coordinate</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>y coordinate of projection </Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>meter</Value>
+        </Attribute>
+        <Attribute name="_CoordinateAxisType" type="String">
+            <Value>GeoY</Value>
+        </Attribute>
+    </Float64>
+    <Float64 name="XDim">
+        <Dim name="/XDim"/>
+        <Attribute name="standard_name" type="String">
+            <Value>projection_x_coordinate</Value>
+        </Attribute>
+        <Attribute name="long_name" type="String">
+            <Value>x coordinate of projection </Value>
+        </Attribute>
+        <Attribute name="units" type="String">
+            <Value>meter</Value>
+        </Attribute>
+        <Attribute name="_CoordinateAxisType" type="String">
+            <Value>GeoX</Value>
+        </Attribute>
+    </Float64>
+    <Attribute name="GRingLatitude" type="Float64">
+        <Value>-30.060828000000001</Value>
+        <Value>-19.942433000000001</Value>
+        <Value>-19.883099000000001</Value>
+        <Value>-30.000000000000000</Value>
+    </Attribute>
+    <Attribute name="GRingLongitude" type="Float64">
+        <Value>126.62759000000000</Value>
+        <Value>116.68638000000000</Value>
+        <Value>127.67430000000000</Value>
+        <Value>138.56406000000001</Value>
+    </Attribute>
+    <Attribute name="PGE_StartTime" type="String">
+        <Value>2015-09-14 00:00:00.000</Value>
+    </Attribute>
+    <Attribute name="ProductionTime" type="String">
+        <Value>2016-08-08 16:48:45.000</Value>
+    </Attribute>
+    <Attribute name="ProcessingEnvironment" type="String">
+        <Value>Linux minion5580 2.6.18-410.el5 #1 SMP Wed May 11 06:00:14 EDT 2016 x86_64 x86_64 x86_64 GNU/Linux</Value>
+    </Attribute>
+    <Attribute name="PGE_EndTime" type="String">
+        <Value>2015-09-22 00:00:00.000</Value>
+    </Attribute>
+    <Attribute name="DataResolution" type="String">
+        <Value>Moderate</Value>
+    </Attribute>
+    <Attribute name="DayNumbers" type="String">
+        <Value>262</Value>
+    </Attribute>
+    <Attribute name="LongName" type="String">
+        <Value>VIIRS/NPP Surface Reflectance 8-Day L3 Global 1km SIN Grid</Value>
+    </Attribute>
+    <Attribute name="PGEVersion" type="String">
+        <Value>1.0.3</Value>
+    </Attribute>
+    <Attribute name="InputPointer" type="String">
+        <Value>/MODAPSlp1/archive/f5580/running/VNP_L10mc/26821592/VNP09GA.A2015262.h29v11.001.2016112235056.h5</Value>
+    </Attribute>
+    <Attribute name="RangeBeginningDate" type="String">
+        <Value>2015-09-14</Value>
+    </Attribute>
+    <Attribute name="StartTime" type="String">
+        <Value>2015-09-14 00:00:00</Value>
+    </Attribute>
+    <Attribute name="AlgorithmType" type="String">
+        <Value>OPS</Value>
+    </Attribute>
+    <Attribute name="LSIPS_AlgorithmVersion" type="String">
+        <Value>NPP_PR09A 1.0.2</Value>
+    </Attribute>
+    <Attribute name="TileID" type="String">
+        <Value>51029011</Value>
+    </Attribute>
+    <Attribute name="Product_authority" type="String">
+        <Value>http://dx.doi.org</Value>
+    </Attribute>
+    <Attribute name="HorizontalTileNumber" type="String">
+        <Value>29</Value>
+    </Attribute>
+    <Attribute name="ProcessVersion" type="String">
+        <Value>001</Value>
+    </Attribute>
+    <Attribute name="SatelliteInstrument" type="String">
+        <Value>NPP_OPS</Value>
+    </Attribute>
+    <Attribute name="ShortName" type="String">
+        <Value>VNP09A1</Value>
+    </Attribute>
+    <Attribute name="ProcessingCenter" type="String">
+        <Value>MODAPS, NASA GSFC</Value>
+    </Attribute>
+    <Attribute name="RangeEndingDate" type="String">
+        <Value>2015-09-22</Value>
+    </Attribute>
+    <Attribute name="RangeEndingTime" type="String">
+        <Value>00:00:00.000</Value>
+    </Attribute>
+    <Attribute name="PlatformShortName" type="String">
+        <Value>NPP</Value>
+    </Attribute>
+    <Attribute name="RangeBeginningTime" type="String">
+        <Value>00:00:00.000</Value>
+    </Attribute>
+    <Attribute name="PGENumber" type="String">
+        <Value>521</Value>
+    </Attribute>
+    <Attribute name="Product_doi" type="String">
+        <Value>10.5067/VIIRS/VNP09A1.001</Value>
+    </Attribute>
+    <Attribute name="VerticalTileNumber" type="String">
+        <Value>11</Value>
+    </Attribute>
+    <Attribute name="EndTime" type="String">
+        <Value>2015-09-22 00:00:00</Value>
+    </Attribute>
+    <Attribute name="LocalGranuleID" type="String">
+        <Value>VNP09A1.A2015257.h29v11.001.2016221164845.h5</Value>
+    </Attribute>
+    <Attribute name="SensorShortname" type="String">
+        <Value>VIIRS</Value>
+    </Attribute>
+    <Attribute name="Conventions" type="String">
+        <Value>CF-1.7</Value>
+    </Attribute>
+    <Attribute name="HDFEOS" type="Container"/>
+    <Attribute name="HDFEOS_ADDITIONAL" type="Container"/>
+    <Attribute name="HDFEOS_ADDITIONAL_FILE_ATTRIBUTES" type="Container"/>
+    <Attribute name="HDFEOS_GRIDS" type="Container">
+        <Attribute name="PercentLand" type="Float32">
+            <Value>98.38358307</Value>
+        </Attribute>
+        <Attribute name="PercentWater" type="Float32">
+            <Value>1.616416931</Value>
+        </Attribute>
+        <Attribute name="PercentCloud" type="Float32">
+            <Value>8.157571793</Value>
+        </Attribute>
+        <Attribute name="QAPercentGoodQuality" type="Float32">
+            <Value>100.0000000</Value>
+        </Attribute>
+        <Attribute name="QAPercentOtherQuality" type="Float32">
+            <Value>0.000000000</Value>
+        </Attribute>
+        <Attribute name="QAPercentNotProduced" type="Float32">
+            <Value>0.003472283017</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS/GRIDS</Value>
+        </Attribute>
+    </Attribute>
+    <Attribute name="HDFEOS_GRIDS_VNP_Grid_1km_L3_2d" type="Container"/>
+    <Attribute name="HDFEOS_GRIDS_VNP_Grid_1km_L3_2d_Data_Fields" type="Container"/>
+    <Attribute name="HDFEOS_INFORMATION" type="Container">
+        <Attribute name="HDFEOSVersion" type="String">
+            <Value>HDFEOS_5.1.13</Value>
+        </Attribute>
+        <Attribute name="fullnamepath" type="String">
+            <Value>/HDFEOS INFORMATION</Value>
+        </Attribute>
+    </Attribute>
+    <Attribute name="build_dmrpp_metadata" type="Container">
+        <Attribute name="build_dmrpp" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="bes" type="String">
+            <Value>3.20.13-240</Value>
+        </Attribute>
+        <Attribute name="libdap" type="String">
+            <Value>libdap-3.20.11-74</Value>
+        </Attribute>
+        <Attribute name="configuration" type="String">
+            <Value>
+# TheBESKeys::get_as_config()
+AllowedHosts=^https?:\/\/
+BES.Catalog.catalog.FollowSymLinks=Yes
+BES.Catalog.catalog.RootDirectory=/usr/share/hyrax
+BES.Catalog.catalog.TypeMatch=dmrpp:.*\.(dmrpp)$;
+BES.Catalog.catalog.TypeMatch+=h5:.*(\.bz2|\.gz|\.Z)?$;
+BES.Data.RootDirectory=/dev/null
+BES.LogName=./bes.log
+BES.UncompressCache.dir=/tmp/hyrax_ux
+BES.UncompressCache.prefix=ux_
+BES.UncompressCache.size=500
+BES.module.cmd=/usr/lib64/bes/libdap_xml_module.so
+BES.module.dap=/usr/lib64/bes/libdap_module.so
+BES.module.dmrpp=/usr/lib64/bes/libdmrpp_module.so
+BES.module.fonc=/usr/lib64/bes/libfonc_module.so
+BES.module.h5=/usr/lib64/bes/libhdf5_module.so
+BES.module.nc=/usr/lib64/bes/libnc_module.so
+BES.modules=dap,cmd,h5,dmrpp,nc,fonc
+FONc.ClassicModel=false
+FONc.NoGlobalAttrs=true
+H5.EnableCF=true
+H5.EnableCheckNameClashing=true
+</Value>
+        </Attribute>
+        <Attribute name="invocation" type="String">
+            <Value>build_dmrpp -c /tmp/bes_conf_CzHD -f /usr/share/hyrax/VNP09A1.A2015257.h29v11.001.2016221164845.h5 -r /tmp/dmr__bArIR3 -u file:///usr/share/hyrax/VNP09A1.A2015257.h29v11.001.2016221164845.h5 -M</Value>
+        </Attribute>
+    </Attribute>
+</Dataset>
