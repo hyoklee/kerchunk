@@ -24,7 +24,7 @@ for f in glob.glob('*.h*5'):
     print(f)
     with fsspec.open(f, **so) as inf:
         start = time.time()
-        h5chunks = kerchunk.hdf.SingleHdf5ToZarr(inf, f, inline_threshold=100)
+        h5chunks = kerchunk.hdf.SingleHdf5ToZarr(inf, f, inline_threshold=0)
         end = time.time()
         outf = f+'.json'
         with fs.open(outf, 'wb') as fo:
