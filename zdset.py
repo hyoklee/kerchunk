@@ -38,7 +38,7 @@ def print_visitor(obj):
             print(a)
             print(za[a][:])
                 
-for f in sorted(glob.glob('*.h*5.m.json')):
+for f in sorted(glob.glob('*.h*5.json')):
     print(f)
     mapper = fsspec.get_mapper(
         'reference://',
