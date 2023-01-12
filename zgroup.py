@@ -1,18 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###########################################################################
-# Copyright (C) 2022 The HDF Group
+# Copyright (C) 2022-2023 The HDF Group
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2022/12/16
+# Last Update: 2023/01/12
 ###########################################################################
 
 """
 Compare trees from two Zarr files.
 
-1. Kerchunk reference JSON
-2. DataTree generated Zarr from HDF5 (h2z.py)
+  1. Kerchunk reference JSON
+  2. DataTree-generated Zarr from HDF5 (h2z.py)
 
 """
 
@@ -22,8 +22,9 @@ import glob
 import zarr
 
 # DataTree gives errors during conversion for this HDF5 file.
-skip = ['ATL08_20181014084920_02400109_003_01.h5',
-        'SMAP_L3_SM_P_20150406_R14010_001.h5.json']
+skip = ['ATL08_20181014084920_02400109_003_01.h5.json',
+        'SMAP_L3_SM_P_20150406_R14010_001.h5.json',
+        'no_dset.h5.json']
 
 # Use the following command's output for the problematic files.
 #

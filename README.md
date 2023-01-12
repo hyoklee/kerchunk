@@ -14,3 +14,4 @@
 * [oz.py](oz.py): Compare DMR++ & Kerchunk datasets from HDF5.
 * [wo.sh](wo.sh): Write CF-enabled DMR++ from HDF5.
 * [zdset.py](zdset.py): Read all Kerchunk datasets from HDF5.
+* [zgroup.py](zgroup.py): Compare Kerchunk & DataTree-generated Zarr groups.
