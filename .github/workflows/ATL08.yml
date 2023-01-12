@@ -27,6 +27,7 @@ jobs:
           h5ls -l ./data/ATL08*.h5
           python ATL08.py
           ls -lh ATL08.json
+          cat ATL08.json
           which nc-config
           nc-config --has-nczarr
           echo $PWD
