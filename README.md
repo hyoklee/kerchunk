@@ -1,6 +1,6 @@
 # Kerchunk Study
 
-  Test Kerchunk against real NASA HDF5 data products.
+  Test Kerchunk using real NASA HDF5 [data](data) products.
   Compare it to DMR++.
 
 ## Study Report
