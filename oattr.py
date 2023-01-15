@@ -239,7 +239,7 @@ class DMRParser(object):
         
     def recursive_walk(self, root_node, depth):
         """ This recursive function traverse the XML document using the
-        ElementTree API; all the nodess are stored in a tree-like structure.
+        ElementTree API; all nodes are stored in a tree-like structure.
 
         If a 'Group' tag is found, the attribute 'ID' is inserted in a stack;
         its node will have this value as prefix for the file name.
