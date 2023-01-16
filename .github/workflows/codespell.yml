@@ -9,5 +9,5 @@ jobs:
       - uses: codespell-project/actions-codespell@master
         with:
           skip: ./data
-          ignore_words_list: DMR++
+          ignore_words_list: fo,DMR++
           
