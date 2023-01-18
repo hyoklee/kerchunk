@@ -25,21 +25,21 @@ def print_visitor(obj):
         if obj.attrs.keys():
             for k in obj.attrs.keys():
                 if k != "_ARRAY_DIMENSIONS":
-                    print(a+':'+k+'='+str(obj.attrs[k]))
-                
-if __name__ == '__main__':
+                    print(a + ":" + k + "=" + str(obj.attrs[k]))
+
+
+if __name__ == "__main__":
     f = sys.argv[1]
     # print(f)
     mapper = fsspec.get_mapper(
-        'reference://',
+        "reference://",
         fo=f,
-        target_protocol='file',
-        remote_protocol='file',
+        target_protocol="file",
+        remote_protocol="file",
     )
-    za = zarr.open(mapper, mode='r')
+    za = zarr.open(mapper, mode="r")
     # Print global attributes
     # print(za.attrs.keys())
     for k in za.attrs.keys():
-        print(':'+k+'='+str(za.attrs[k]))
+        print(":" + k + "=" + str(za.attrs[k]))
     za.visitvalues(print_visitor)
-

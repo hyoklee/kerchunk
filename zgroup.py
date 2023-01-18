@@ -22,9 +22,11 @@ import glob
 import zarr
 
 # DataTree gives errors during conversion for this HDF5 file.
-skip = ['ATL08_20181014084920_02400109_003_01.h5.json',
-        'SMAP_L3_SM_P_20150406_R14010_001.h5.json',
-        'no_dset.h5.json']
+skip = [
+    "ATL08_20181014084920_02400109_003_01.h5.json",
+    "SMAP_L3_SM_P_20150406_R14010_001.h5.json",
+    "no_dset.h5.json",
+]
 
 # Use the following command's output for the problematic files.
 #
@@ -35,28 +37,31 @@ def print_visitor(obj):
         a = obj.name
         print(a)
 
-for f in sorted(glob.glob('*5.json')):
+
+for f in sorted(glob.glob("*5.json")):
     print(f)
     mapper = fsspec.get_mapper(
-        'reference://',
+        "reference://",
         fo=f,
-        target_protocol='file',
-        remote_protocol='file',
+        target_protocol="file",
+        remote_protocol="file",
     )
-    za = zarr.open(mapper, mode='r')
+    za = zarr.open(mapper, mode="r")
     if f in skip:
         za.visitvalues(print_visitor)
         continue
 
-    fb = f[:-5]+'.zarr'
+    fb = f[:-5] + ".zarr"
     print(fb)
-    zb = zarr.open(fb, mode='r')
+    zb = zarr.open(fb, mode="r")
 
     if str(za.tree()) == str(zb.tree()):
-        print('Y')
+        print("Y")
     else:
-        print('N')
+        print("N")
         # print(za.tree())
         # print(zb.tree())
-        diff = '\n' + '\n'.join(difflib.ndiff(str(za.tree()).split('\n'), str(zb.tree()).split('\n')))
+        diff = "\n" + "\n".join(
+            difflib.ndiff(str(za.tree()).split("\n"), str(zb.tree()).split("\n"))
+        )
         print(diff)

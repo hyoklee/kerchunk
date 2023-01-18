@@ -23,15 +23,17 @@ import zarr
 import fsspec
 import lxml.etree as etree
 
-etree.register_namespace('dmrpp', 'http://xml.opendap.org/dap/dmrpp/1.0.0#')
+etree.register_namespace("dmrpp", "http://xml.opendap.org/dap/dmrpp/1.0.0#")
 
-root = etree.Element('Dataset')
-root.set('xmlns', 'http://xml.opendap.org/ns/DAP/4.0#')
-root.set('dapVersion', '4.0')
-root.set('dmrVersion', '1.0')
-root.set('name', 'output.xml')
-root.set('{http://xml.opendap.org/dap/dmrpp/1.0.0#}href', 'file:///usr/share/hyrax/20020602090000-JPL-L4_GHRSST-SSTfnd-MUR-GLOB-v02.0-fv04.1.h5')
-root.set('{http://xml.opendap.org/dap/dmrpp/1.0.0#}version', '3.20.13-240')
+root = etree.Element("Dataset")
+root.set("xmlns", "http://xml.opendap.org/ns/DAP/4.0#")
+root.set("dapVersion", "4.0")
+root.set("dmrVersion", "1.0")
+root.set("name", "output.xml")
+root.set(
+    "{http://xml.opendap.org/dap/dmrpp/1.0.0#}href",
+    "file:///usr/share/hyrax/20020602090000-JPL-L4_GHRSST-SSTfnd-MUR-GLOB-v02.0-fv04.1.h5",
+)
+root.set("{http://xml.opendap.org/dap/dmrpp/1.0.0#}version", "3.20.13-240")
 et = etree.ElementTree(root)
-et.write('output.xml', encoding='ISO-8859-1',
-         pretty_print=True, xml_declaration=True)
+et.write("output.xml", encoding="ISO-8859-1", pretty_print=True, xml_declaration=True)

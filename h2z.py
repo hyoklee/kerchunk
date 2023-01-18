@@ -15,12 +15,14 @@ import glob
 from datatree import DataTree
 from datatree.io import open_datatree
 
-skip = ['ATL08_20181014084920_02400109_003_01.h5',
-        'SMAP_L3_SM_P_20150406_R14010_001.h5']
+skip = [
+    "ATL08_20181014084920_02400109_003_01.h5",
+    "SMAP_L3_SM_P_20150406_R14010_001.h5",
+]
 
-for f in sorted(glob.glob('*.h*5')):
+for f in sorted(glob.glob("*.h*5")):
     print(f)
     if f in skip:
-        continue    
+        continue
     dt = open_datatree(f)
-    dt.to_zarr(f+'.zarr')
+    dt.to_zarr(f + ".zarr")

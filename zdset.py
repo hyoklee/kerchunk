@@ -17,36 +17,48 @@ import fsspec
 import glob
 import zarr
 
-skip_STARL2P = ['/geostationary', '/crs', '/dt_analysis', '/l2p_flags',
-                '/quality_level',
-                '/satellite_zenith_angle', '/sea_surface_temperature',
-                '/sses_bias', '/sses_standard_deviation', '/sst_count',
-                '/sst_dtime']
-skip_STARL3S = ['/l3s_sst_reference', '/sst_source', '/wind_speed']
-skip_AMSR = ['/HDFEOS INFORMATION/CoreMetadata.0',
-             '/HDFEOS INFORMATION/StructMetadata.0']
-skip_ATL08 = ['/ancillary_data/release', '/ancillary_data/version']
-skip_OMI = ['/HDFEOS INFORMATION/ArchivedMetadata.0']
-skip =  skip_STARL2P + skip_STARL3S + skip_AMSR + skip_ATL08 + skip_OMI
+skip_STARL2P = [
+    "/geostationary",
+    "/crs",
+    "/dt_analysis",
+    "/l2p_flags",
+    "/quality_level",
+    "/satellite_zenith_angle",
+    "/sea_surface_temperature",
+    "/sses_bias",
+    "/sses_standard_deviation",
+    "/sst_count",
+    "/sst_dtime",
+]
+skip_STARL3S = ["/l3s_sst_reference", "/sst_source", "/wind_speed"]
+skip_AMSR = [
+    "/HDFEOS INFORMATION/CoreMetadata.0",
+    "/HDFEOS INFORMATION/StructMetadata.0",
+]
+skip_ATL08 = ["/ancillary_data/release", "/ancillary_data/version"]
+skip_OMI = ["/HDFEOS INFORMATION/ArchivedMetadata.0"]
+skip = skip_STARL2P + skip_STARL3S + skip_AMSR + skip_ATL08 + skip_OMI
+
 
 def print_visitor(obj):
     if type(obj) != zarr.hierarchy.Group:
         a = obj.name
         if a in skip:
-            print('Skipping '+a)
+            print("Skipping " + a)
         else:
             print(a)
             print(za[a][:])
-                
-for f in sorted(glob.glob('*.h*5.json')):
+
+
+for f in sorted(glob.glob("*.h*5.json")):
     print(f)
     mapper = fsspec.get_mapper(
-        'reference://',
+        "reference://",
         fo=f,
-        target_protocol='file',
-        remote_protocol='file',
+        target_protocol="file",
+        remote_protocol="file",
     )
-    za = zarr.open(mapper, mode='r')
+    za = zarr.open(mapper, mode="r")
     """
     def print_visitor(obj):
         if type(obj) != zarr.hierarchy.Group:

@@ -21,28 +21,25 @@ import ujson
 import xarray as xr
 
 # An input file from Hyrax fileout_netcdf
-f = 'ATL08_20210114234518_03361001_004_01.h5.nc4' 
-outf = f+'.json'
-     
-so = dict(anon=True, default_fill_cache=False, default_cache_type='first')
+f = "ATL08_20210114234518_03361001_004_01.h5.nc4"
+outf = f + ".json"
 
-fs2 = fsspec.filesystem('')  # local file system to save Kerchunk JSON
+so = dict(anon=True, default_fill_cache=False, default_cache_type="first")
+
+fs2 = fsspec.filesystem("")  # local file system to save Kerchunk JSON
 
 with fsspec.open(f, **so) as inf:
-     start = time.time()
-     h5chunks = kerchunk.hdf.SingleHdf5ToZarr(inf, f, inline_threshold=100)
-     end = time.time()
-     with fs2.open(outf, 'wb') as fout:
-         fout.write(ujson.dumps(h5chunks.translate()).encode());     
-     print(end - start)
+    start = time.time()
+    h5chunks = kerchunk.hdf.SingleHdf5ToZarr(inf, f, inline_threshold=100)
+    end = time.time()
+    with fs2.open(outf, "wb") as fout:
+        fout.write(ujson.dumps(h5chunks.translate()).encode())
+    print(end - start)
 
-# Read Kerchunk back.     
-backend_args = {"consolidated": False, "storage_options": {"fo":outf}}
-ds = xr.open_dataset(
-    "reference://", engine="zarr",
-    backend_kwargs=backend_args
-)
+# Read Kerchunk back.
+backend_args = {"consolidated": False, "storage_options": {"fo": outf}}
+ds = xr.open_dataset("reference://", engine="zarr", backend_kwargs=backend_args)
 print(ds)
 
 # Write Zarr.
-ds.to_zarr(f+'.zarr')
+ds.to_zarr(f + ".zarr")

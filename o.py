@@ -17,15 +17,15 @@ import glob
 from pydap.client import open_url
 
 # These large datasets will make program hang.
-skip = ['analysed_sst', 'analysis_error', 'mask', 'sea_ice_fraction']
+skip = ["analysed_sst", "analysis_error", "mask", "sea_ice_fraction"]
 
 # Docker mounts /tmp/dmrpp and generates DMR++ there.
-for f in sorted(glob.glob('/tmp/dmrpp/*.dmrpp')):
+for f in sorted(glob.glob("/tmp/dmrpp/*.dmrpp")):
     ## DAP2
     # url = 'http://localhost:8080/opendap/' + os.path.basename(f)
-    
+
     ## DAP4
-    url = 'dap4://localhost:8080/opendap/' + os.path.basename(f)
+    url = "dap4://localhost:8080/opendap/" + os.path.basename(f)
 
     print(url)
     dataset = open_url(url)
@@ -36,4 +36,4 @@ for f in sorted(glob.glob('/tmp/dmrpp/*.dmrpp')):
             d = dataset[i][:]
             print(d)
         else:
-            print('Skipping '+i)
+            print("Skipping " + i)

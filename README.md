@@ -1,4 +1,10 @@
+
+
 # Kerchunk Study
+
+[![test](https://github.com/hyoklee/kerchunk/actions/workflows/ATL08.yml/badge.svg)](https://github.com/hyoklee/kerchunk/actions/workflows/ATL08.yml)
+[![codespell](https://github.com/hyoklee/kerchunk/actions/workflows/codespell.yml/badge.svg)](https://github.com/hyoklee/kerchunk/actions/workflows/codespell.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
   Test Kerchunk using real NASA HDF5 [data](data) products.
   Compare it to DMR++.
