@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/17
+# Last Update: 2023/01/18
 ###########################################################################
 
 """
@@ -19,11 +19,11 @@ Implementation Idea
 
 """
 
-import kerchunk
-import fsspec
 import sys
-import ujson
 import zarr
+import ujson
+import fsspec
+import kerchunk
 
 import lxml.etree as etree
 
