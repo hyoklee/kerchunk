@@ -18,22 +18,45 @@ Implementation Idea
 3. Build XML using etree.
 
 """
+import os
 import sys
 import zarr
 import fsspec
 import lxml.etree as etree
 
-etree.register_namespace("dmrpp", "http://xml.opendap.org/dap/dmrpp/1.0.0#")
 
-root = etree.Element("Dataset")
-root.set("xmlns", "http://xml.opendap.org/ns/DAP/4.0#")
-root.set("dapVersion", "4.0")
-root.set("dmrVersion", "1.0")
-root.set("name", "output.xml")
-root.set(
-    "{http://xml.opendap.org/dap/dmrpp/1.0.0#}href",
-    "file:///usr/share/hyrax/20020602090000-JPL-L4_GHRSST-SSTfnd-MUR-GLOB-v02.0-fv04.1.h5",
-)
-root.set("{http://xml.opendap.org/dap/dmrpp/1.0.0#}version", "3.20.13-240")
-et = etree.ElementTree(root)
-et.write("output.xml", encoding="ISO-8859-1", pretty_print=True, xml_declaration=True)
+class DMR:
+    """Build XML tree from Zarr metadata."""
+
+    def __init__(self, z):
+        self.ns = "http://xml.opendap.org/dap/dmrpp/1.0.0#"
+        self.root = etree.Element("Dataset")
+        self.z = z
+        self.h5 = os.path.splitext(z)[0]  # Remove .json.
+        etree.register_namespace("dmrpp", self.ns)
+
+    def set_root(self):
+        self.root.set("xmlns", "http://xml.opendap.org/ns/DAP/4.0#")
+        self.root.set("dapVersion", "4.0")
+        self.root.set("dmrVersion", "1.0")
+        self.root.set("name", "output.xml")
+        self.root.set(
+            "{http://xml.opendap.org/dap/dmrpp/1.0.0#}href", "file:///" + self.h5
+        )
+        self.root.set("{" + self.ns + "}version", "3.20.13-240")
+
+    def write(self):
+        et = etree.ElementTree(self.root)
+        et.write(
+            self.h5 + ".dmrpp",
+            encoding="ISO-8859-1",
+            pretty_print=True,
+            xml_declaration=True,
+        )
+
+
+if __name__ == "__main__":
+
+    d = DMR(sys.argv[1])
+    d.set_root()
+    d.write()
