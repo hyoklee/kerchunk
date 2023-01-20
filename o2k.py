@@ -40,8 +40,10 @@ class SingleDMRToZarr:
         self._dmr = dmr
 
     def translate(self):
+        # zgrp = self._zroot.create_group("test")        
         self._transfer_attrs(self._dmr, self._zroot)
         store = _encode_for_JSON(self.store)
+        # self._transfer_attrs(h5obj, zgrp)
         return {"version": 1, "refs": store}
 
     def _transfer_attrs(
@@ -61,11 +63,12 @@ class DMRParser(object):
 
         @param DMR_file: OPeNDAP Hyrax DMR++ file name
         """
-
+        
         self.xml_file = DMR_file
         self.depth = 0
         self.tree = None
         self.last = "group"
+        self.z = None
         # See [1] for type map.
         # UByte is from legacy DAP4 schema and example.
         self.type_hash_map = {
@@ -200,14 +203,15 @@ class DMRParser(object):
                 str_value = str(value[0])
         return str_value
 
-    def parse_content(self, conv=[]):
+    def parse_content(self, z):
         """Parses the DMR."""
-
+        self.z = z._zroot
         self.depth = 1
         # DMR's schema can vary from 3.2, 3.3 to 4.0.
         # Determine it from XML file.
         self.schema = self.tree.tag.split("}")[0] + "}"
         self.recursive_walk(self.tree, self.depth)
+
 
     def select_group(self):
         """Determine the right level of group."""
@@ -329,6 +333,7 @@ class DMRParser(object):
             if node.tag == self.schema + "Group":
                 if "name" in node.keys():
                     gname = node.attrib["name"]
+                    self.z.create_group(self.get_path()+'/'+gname)
                 else:
                     print("WARNING:Group tag has no name.")
                     gname = "noname"
@@ -377,10 +382,12 @@ if __name__ == "__main__":
     # unittest.main()
 
     parser = DMRParser(sys.argv[1])
-    parser.parse_content()
-    dmr = SingleDMRToZarr(parser.xml_file)
+    dmr = SingleDMRToZarr(parser.xml_file)    
+    parser.parse_content(dmr)
 
-    fs = fsspec.filesystem("")  # local file system to save final jsons to
+
+    # Save Kerchunk to local file system.
+    fs = fsspec.filesystem("")
     outf = parser.xml_file + ".json"
     with fs.open(outf, "wb") as fo:
         fo.write(ujson.dumps(dmr.translate()).encode())
