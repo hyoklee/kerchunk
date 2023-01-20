@@ -40,8 +40,8 @@ class SingleDMRToZarr:
         self._dmr = dmr
 
     def translate(self):
-        # zgrp = self._zroot.create_group("test")        
-        self._transfer_attrs(self._dmr, self._zroot)
+        # zgrp = self._zroot.create_group("test")
+        # self._transfer_attrs(self._dmr, self._zroot)
         store = _encode_for_JSON(self.store)
         # self._transfer_attrs(h5obj, zgrp)
         return {"version": 1, "refs": store}
@@ -63,7 +63,7 @@ class DMRParser(object):
 
         @param DMR_file: OPeNDAP Hyrax DMR++ file name
         """
-        
+
         self.xml_file = DMR_file
         self.depth = 0
         self.tree = None
@@ -212,7 +212,6 @@ class DMRParser(object):
         self.schema = self.tree.tag.split("}")[0] + "}"
         self.recursive_walk(self.tree, self.depth)
 
-
     def select_group(self):
         """Determine the right level of group."""
         i = len(self.group_stack) - self.depth
@@ -333,7 +332,7 @@ class DMRParser(object):
             if node.tag == self.schema + "Group":
                 if "name" in node.keys():
                     gname = node.attrib["name"]
-                    self.z.create_group(self.get_path()+'/'+gname)
+                    self.z.create_group(self.get_path() + "/" + gname)
                 else:
                     print("WARNING:Group tag has no name.")
                     gname = "noname"
@@ -382,9 +381,8 @@ if __name__ == "__main__":
     # unittest.main()
 
     parser = DMRParser(sys.argv[1])
-    dmr = SingleDMRToZarr(parser.xml_file)    
+    dmr = SingleDMRToZarr(parser.xml_file)
     parser.parse_content(dmr)
-
 
     # Save Kerchunk to local file system.
     fs = fsspec.filesystem("")
