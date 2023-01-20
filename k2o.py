@@ -38,6 +38,33 @@ class DMR:
         self.out = self.z + ".dmrpp"
         etree.register_namespace("dmrpp", self.ns)
 
+    def get_obj(self, obj):
+        if type(obj) == zarr.hierarchy.Group:
+            p = obj.name
+            path = os.path.normpath(p)
+            l = path.split(os.sep)
+            l.pop(0)
+
+            i = 0
+            c = None
+            for n in l:
+                if i == 0:
+                    c = self.write_group(self.root, n)
+                else:
+                    g = self.write_group(c, n)
+                    c = g
+                i = i + 1
+
+    def write_group(self, e, n):
+        f = e.find("Group[@name='" + n + "']")
+        if f is not None:
+            return f
+        else:
+            g = etree.SubElement(e, "Group")
+            _n = n.replace(" ", "_")
+            g.set("name", _n)
+            return g
+
     def read_zarr(self):
         mapper = fsspec.get_mapper(
             "reference://",
@@ -46,18 +73,11 @@ class DMR:
             remote_protocol="file",
         )
         za = zarr.open(mapper, mode="r")
-        # Print global attributes
-        for k in za.attrs.keys():
-            a = etree.SubElement(self.root, "Attribute")
-            a.set("name", k)
-            b = etree.SubElement(a, "Value")
-            if isinstance(za.attrs[k], str):
-                a.set("type", "String")  # See [1].
-            elif isinstance(za.attrs[k], int):
-                a.set("type", "Int64")  # No Uint64 in NASA samples
-            else:
-                a.set("type", "Float64")
-            b.text = str(za.attrs[k])
+        # Write global attributes.
+        self.write_attrs(za, self.root)
+
+        # Visit Zarr items.
+        za.visitvalues(self.get_obj)
 
     def set_root(self):
         self.root.set("xmlns", "http://xml.opendap.org/ns/DAP/4.0#")
@@ -75,6 +95,19 @@ class DMR:
             pretty_print=True,
             xml_declaration=True,
         )
+
+    def write_attrs(self, za, g):
+        for k in za.attrs.keys():
+            a = etree.SubElement(self.root, "Attribute")
+            a.set("name", k)
+            v = etree.SubElement(a, "Value")
+            if isinstance(za.attrs[k], str):
+                a.set("type", "String")  # See [1].
+            elif isinstance(za.attrs[k], int):
+                a.set("type", "Int64")  # No Uint64 in NASA samples
+            else:
+                a.set("type", "Float64")
+            v.text = str(za.attrs[k])
 
 
 if __name__ == "__main__":
