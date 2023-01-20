@@ -62,7 +62,7 @@ class DMR:
         self.root.set("xmlns", "http://xml.opendap.org/ns/DAP/4.0#")
         self.root.set("dapVersion", "4.0")
         self.root.set("dmrVersion", "1.0")
-        self.root.set("name", "output.xml")
+        self.root.set("name", self.h5)
         self.root.set("{" + self.ns + "}href", "file:///" + self.h5)
         self.root.set("{" + self.ns + "}version", "3.20.13-240")
 
