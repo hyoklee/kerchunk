@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/18
+# Last Update: 2023/01/22
 ###########################################################################
 
 """
@@ -54,6 +54,14 @@ class DMR:
                     g = self.write_group(c, n)
                     c = g
                 i = i + 1
+        else:
+            d = obj.name
+            self.write_dset(d)
+
+    def write_dset(self, n):
+        d = etree.SubElement(self.root, "Int32")
+        d.set("name", n)
+        return d
 
     def write_group(self, e, n):
         f = e.find("Group[@name='" + n + "']")
