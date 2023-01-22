@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/18
+# Last Update: 2023/01/21
 ###########################################################################
 
 """
@@ -25,6 +25,7 @@ import ujson
 import fsspec
 import kerchunk
 
+import numpy as np
 import lxml.etree as etree
 
 from typing import Union
@@ -32,7 +33,7 @@ from kerchunk.utils import _encode_for_JSON
 
 
 class SingleDMRToZarr:
-    """Translate the content of DMR++ into Zarr metadata."""
+    """Translate DMR++ into Zarr."""
 
     def __init__(self, dmr):
         self.store = {}
@@ -352,6 +353,9 @@ class DMRParser(object):
                 if node.tag == self.schema + key:
                     dset = self.create_dataset_dap4_array(node, key)
                     if dset:
+                        y = np.zeros((2, 3, 4))
+                        self.z.create_dataset(dset, shape=y.shape, dtype=y.dtype,
+                                              fill_value=0, compression='gzip')
                         self.dset_stack.append(dset)
                         self.last = "variable"
 
