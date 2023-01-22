@@ -354,8 +354,13 @@ class DMRParser(object):
                     dset = self.create_dataset_dap4_array(node, key)
                     if dset:
                         y = np.zeros((2, 3, 4))
-                        self.z.create_dataset(dset, shape=y.shape, dtype=y.dtype,
-                                              fill_value=0, compression='gzip')
+                        self.z.create_dataset(
+                            dset,
+                            shape=y.shape,
+                            dtype=y.dtype,
+                            fill_value=0,
+                            compression="gzip",
+                        )
                         self.dset_stack.append(dset)
                         self.last = "variable"
 
