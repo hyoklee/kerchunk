@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/22
+# Last Update: 2023/01/24
 ###########################################################################
 
 """
@@ -15,11 +15,13 @@ Implementation Idea
 
 1. Read Kerchunk file using fsspec+zarr.
 2. Iterate using za.visitvalues()
+2.1 Parse offset/length using a generic json parser.
 3. Build XML using etree.
 
 """
 import os
 import sys
+import json
 import zarr
 import fsspec
 
@@ -37,6 +39,7 @@ class DMR:
         self.h5n = os.path.split(self.h5)[1]  # Remove .json.
         self.out = self.z + ".dmrpp"
         etree.register_namespace("dmrpp", self.ns)
+        self.json = None
 
     def get_obj(self, obj):
         if type(obj) == zarr.hierarchy.Group:
@@ -54,14 +57,33 @@ class DMR:
                     g = self.write_group(c, n)
                     c = g
                 i = i + 1
-        else:
-            d = obj.name
-            self.write_dset(d)
+        else:  # Dataset
+            n = obj.name
+            print(n)
+            d = self.write_dset(n)
+            for key in self.json["refs"].keys():
+                if key.startswith(obj.path):
+                    if not (key.endswith(".zarray") or key.endswith(".zattrs")):
+                        print(key)
+                        v = self.json["refs"][key]
+                        print(v)
+                        offset = v[1]
+                        nbytes = v[2]
+                        pos = "[0,0]"  # Parse /0.0 from key later.
+                        self.write_chunks(d, offset, nbytes, pos)
 
     def write_dset(self, n):
         d = etree.SubElement(self.root, "Int32")
         d.set("name", n)
         return d
+
+    def write_chunks(self, p, offset, nbytes, pos):
+        c = etree.SubElement(p, "{" + self.ns + "}chunks")
+        c.set("byteOrder", "LE")
+        s = etree.SubElement(c, "{" + self.ns + "}chunk")
+        s.set("offset", str(offset))
+        s.set("nBytes", str(nbytes))
+        s.set("chunkPositionInArray", pos)
 
     def write_group(self, e, n):
         f = e.find("Group[@name='" + n + "']")
@@ -74,6 +96,12 @@ class DMR:
             return g
 
     def read_zarr(self):
+        with open(self.z) as json_file:
+            try:
+                self.json = json.load(json_file)
+            except ValueError:
+                print("ERROR:Invalid json file " + self.z)
+
         mapper = fsspec.get_mapper(
             "reference://",
             fo=self.z,
@@ -81,6 +109,7 @@ class DMR:
             remote_protocol="file",
         )
         za = zarr.open(mapper, mode="r")
+        print(za)
         # Write global attributes.
         self.write_attrs(za, self.root)
 
