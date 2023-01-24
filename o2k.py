@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/21
+# Last Update: 2023/01/24
 ###########################################################################
 
 """
@@ -353,6 +353,7 @@ class DMRParser(object):
                 if node.tag == self.schema + key:
                     dset = self.create_dataset_dap4_array(node, key)
                     if dset:
+                        # TODO: parse shape, fill value, chunks.
                         y = np.zeros((2, 3, 4))
                         self.z.create_dataset(
                             dset,
