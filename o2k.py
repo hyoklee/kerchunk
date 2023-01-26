@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/24
+# Last Update: 2023/01/26
 ###########################################################################
 
 """
@@ -24,6 +24,7 @@ import zarr
 import ujson
 import fsspec
 import kerchunk
+import numcodecs
 
 import numpy as np
 import lxml.etree as etree
@@ -211,6 +212,7 @@ class DMRParser(object):
         # DMR's schema can vary from 3.2, 3.3 to 4.0.
         # Determine it from XML file.
         self.schema = self.tree.tag.split("}")[0] + "}"
+        self.sdmrpp = "{http://xml.opendap.org/dap/dmrpp/1.0.0#}"
         self.recursive_walk(self.tree, self.depth)
 
     def select_group(self):
@@ -258,7 +260,25 @@ class DMRParser(object):
         """Create simple dataset for DAP 4.0."""
         self.select_group()
         dname = node.attrib["name"]
-        return dname
+        cinfo = dict()
+        for c in node.getchildren():
+            if c.tag == self.sdmrpp + "chunks":
+                cinfo = self.get_chunks(c)
+        return dname, cinfo
+
+    def get_chunks(self, node):
+        stinfo = dict()
+        for c in node.getchildren():
+            if c.tag == self.sdmrpp + "chunk":
+                print(c.tag)
+                print(c.attrib)
+                key = (0,)
+                if "chunkPositionInArray" in c.attrib.keys():
+                    key = c.attrib["chunkPositionInArray"]
+                offset = c.attrib["offset"]
+                size = c.attrib["nBytes"]
+                stinfo[key] = {"offset": int(offset), "size": int(size)}
+        return stinfo
 
     def get_orig_gname(self, g):
         """Replace _ with white space."""
@@ -351,17 +371,20 @@ class DMRParser(object):
             # Array in DAP 4.0
             for key in self.type_hash_map:
                 if node.tag == self.schema + key:
-                    dset = self.create_dataset_dap4_array(node, key)
+                    dset, cinfo = self.create_dataset_dap4_array(node, key)
                     if dset:
                         # TODO: parse shape, fill value, chunks.
                         y = np.zeros((2, 3, 4))
-                        self.z.create_dataset(
+                        za = self.z.create_dataset(
                             dset,
                             shape=y.shape,
                             dtype=y.dtype,
+                            chunks=(1, 1, 1),
                             fill_value=0,
+                            filters=[],
                             compression="gzip",
                         )
+                        self.write_chunk_info(za, y, cinfo)
                         self.dset_stack.append(dset)
                         self.last = "variable"
 
@@ -385,6 +408,15 @@ class DMRParser(object):
             if len(node) > 0:
                 self.recursive_walk(node, self.depth + 1)
                 self.depth = self.depth - 1
+
+    def write_chunk_info(self, za, y, cinfo):
+        key = (0,) * (len(y.shape) or 1)
+        for k, v in cinfo.items():
+            self.z.store[za._chunk_key(k)] = [
+                self.xml_file,
+                v["offset"],
+                v["size"],
+            ]
 
 
 if __name__ == "__main__":
