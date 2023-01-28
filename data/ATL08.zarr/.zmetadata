@@ -1,0 +1,159 @@
+{
+    "metadata": {
+        ".zattrs": {
+            "Conventions": "CF-1.6",
+            "citation": "Cite these data in publications as follows: The data used in this study were produced by the ICESat-2 Science Project Office at NASA/GSFC. The data archive site is the NASA National Snow and Ice Data Center Distributed Active Archive Center.",
+            "contributor_name": "Thomas E Neumann (thomas.neumann@nasa.gov), Thorsten Markus (thorsten.markus@nasa.gov), Suneel Bhardwaj (suneel.bhardwaj@nasa.gov) David W Hancock III (david.w.hancock@nasa.gov)",
+            "contributor_role": "Instrument Engineer, Investigator, Principle Investigator, Data Producer, Data Producer",
+            "creator_name": "GSFC I-SIPS > ICESat-2 Science Investigator-led Processing System",
+            "date_created": "2020-04-01T14:03:26.000000Z",
+            "date_type": "UTC",
+            "description": "This data set (ATL08) contains along-track heights above the WGS84 ellipsoid (ITRF2014 reference frame) for the ground and canopy surfaces. The canopy and ground surfaces are processed in fixed 100 m data segments, which typically contain more than 100 sig",
+            "featureType": "trajectory",
+            "geospatial_lat_max": -33.66662009660485,
+            "geospatial_lat_min": -33.67093099161726,
+            "geospatial_lat_units": "degrees_north",
+            "geospatial_lon_max": -80.42743869273794,
+            "geospatial_lon_min": -80.42793594340235,
+            "geospatial_lon_units": "degrees_east",
+            "granule_type": "ATL08",
+            "hdfversion": "HDF5 1.10.3",
+            "history": "2020-04-01T14:03:26.000000Z;ae899cbd-cf20-3541-9952-cb5220d5467b;Created by PGE atlas_l3a_ld Version 3.3.1",
+            "identifier_file_uuid": "ae899cbd-cf20-3541-9952-cb5220d5467b",
+            "identifier_product_doi": "doi:10.5067/ATLAS/ATL08.003",
+            "identifier_product_doi_authority": "http://dx.doi.org",
+            "identifier_product_format_version": "3.3",
+            "identifier_product_type": "ATL08",
+            "institution": "National Aeronautics and Space Administration (NASA)",
+            "instrument": "ATLAS > Advanced Topographic Laser Altimeter System",
+            "keywords": "EARTH SCIENCE > BIOSPHERE > VEGETATION > NONE > NONE > NONE > NONE",
+            "keywords_vocabulary": "NASA/GCMD Science Keywords",
+            "level": "L3A",
+            "license": "Data may not be reproduced or distributed without including the citation for this product included in this metadata. Data may not be distributed in an altered form without the written permission of the ICESat-2 Science Project Office at NASA/GSFC.",
+            "naming_authority": "http://dx.doi.org",
+            "platform": "ICESat-2 > Ice, Cloud, and land Elevation Satellite-2",
+            "processing_level": "3A",
+            "project": "ICESat-2 > Ice, Cloud, and land Elevation Satellite-2",
+            "publisher_email": "nsidc@nsidc.org",
+            "publisher_name": "NSIDC DAAC > NASA National Snow and Ice Data Center Distributed Active Archive Center",
+            "publisher_url": "http://nsidc.org/daac/",
+            "references": "http://nsidc.org/data/icesat2/data.html",
+            "short_name": "ATL08",
+            "source": "Spacecraft",
+            "spatial_coverage_type": "Horizontal",
+            "standard_name_vocabulary": "CF-1.6",
+            "summary": "The purpose of ATL08 is to provide along-track land/canopy heights and associated statistics.",
+            "time_coverage_duration": 362.0,
+            "time_coverage_end": "2018-10-14T08:55:22.000000Z",
+            "time_coverage_start": "2018-10-14T08:49:20.000000Z",
+            "time_type": "CCSDS UTC-A",
+            "title": "SET_BY_META"
+        },
+        ".zgroup": {
+            "zarr_format": 2
+        },
+        "ds_geosegments/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": null,
+            "dtype": "|i1",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "ds_geosegments/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "ds_geosegments"
+            ],
+            "description": "Dimension scale for geosegments within land segments.",
+            "flag_meanings": "geosegments1 geosegments2 geosegments3 geosegments4 geosegments5",
+            "flag_values": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "long_name": "Geosegments",
+            "units": "1",
+            "valid_max": 5,
+            "valid_min": 1
+        },
+        "ds_metrics/.zarray": {
+            "chunks": [
+                9
+            ],
+            "compressor": null,
+            "dtype": "|i1",
+            "fill_value": 0,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                9
+            ],
+            "zarr_format": 2
+        },
+        "ds_metrics/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "ds_metrics"
+            ],
+            "contentType": "referenceInformation",
+            "description": "Dimension scale for metrics.",
+            "flag_meanings": "metrics1 metrics2 metrics3 metrics4 metrics5 metrics6 metrics7 metrics8 metrics9",
+            "flag_values": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ],
+            "long_name": "Metrics",
+            "units": "1",
+            "valid_max": 4,
+            "valid_min": 1
+        },
+        "ds_surf_type/.zarray": {
+            "chunks": [
+                5
+            ],
+            "compressor": null,
+            "dtype": "<i4",
+            "fill_value": null,
+            "filters": null,
+            "order": "C",
+            "shape": [
+                5
+            ],
+            "zarr_format": 2
+        },
+        "ds_surf_type/.zattrs": {
+            "_ARRAY_DIMENSIONS": [
+                "ds_surf_type"
+            ],
+            "contentType": "auxiliaryInformation",
+            "description": "Dimension scale indexing the surface type array. Index=1 corresponds to Land; index = 2 corresponds to Ocean; Index = 3 corresponds to SeaIce; Index=4 corresponds to LandIce; Index=5 corresponds to InlandWater",
+            "flag_meanings": "land ocean seaice landice inland_water",
+            "flag_values": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "long_name": "Surface Type Dimension Scale",
+            "units": "1",
+            "valid_max": 5,
+            "valid_min": 1
+        }
+    },
+    "zarr_consolidated_format": 1
+}

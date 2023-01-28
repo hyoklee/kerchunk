@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Requested start time (in UTC CCSDS-A) of this granule.",
+    "long_name": "Start UTC Time of Granule (CCSDS-A, Requested)",
+    "source": "Derived",
+    "units": "1"
+}

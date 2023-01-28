@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Geolocation segment number of the first photon in the land segment.",
+    "long_name": "begin geolocation segment bin",
+    "source": "ATL03",
+    "units": "1"
+}

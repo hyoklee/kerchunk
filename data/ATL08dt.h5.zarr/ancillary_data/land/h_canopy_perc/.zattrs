@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Percentile component of h_canopy parameter. (Default =0.95)",
+    "long_name": "h_canopy percentile",
+    "source": "ATBD section 2.2.3",
+    "units": "1"
+}

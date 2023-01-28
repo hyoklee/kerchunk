@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The approximate relief of the L-km segment uses the percentile height values, relief_htop and relief_hbot. (Default=0.95)",
+    "long_name": "Upper relief percentile",
+    "source": "ATBD (section 4.5 step 6)",
+    "units": "meters"
+}

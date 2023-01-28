@@ -1,0 +1,6 @@
+{
+    "description": "Text-based keyword=value file generated automatically within the ICESat-2 data system that specifies all of the conditions required for each individual run of the software.",
+    "fileName": "CTL_atlas_l3a_ld_003713657.ctl",
+    "shortName": "CNTL",
+    "version": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Percent of photons in land segment failing DEM test to set dem_removal_flag. (default = 20.0)",
+    "long_name": "dem_removal_flag set threshold",
+    "source": "ATBD section 2.4.11",
+    "units": "percent"
+}

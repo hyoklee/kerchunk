@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The starting product-specific region number associated with the data contained within this granule. ICESat-2 data products are separated by geographic regions. The data contained within a specific region are the same for ATL01 and ATL02. ATL03 regions differ slightly because of different geolocation segment locations caused by the irregular shape of the Earth. The region indices for other products are completely independent.",
+    "long_name": "Starting Region",
+    "source": "Derived",
+    "units": "1"
+}

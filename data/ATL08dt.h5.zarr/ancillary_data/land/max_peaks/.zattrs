@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Maximum number of Gaussian peaks to fit in the data set in DRAGANN. (Default =10)",
+    "long_name": "Maximum number of Gaussian peaks to fit in the data set",
+    "source": "ATBD section 4.2 step 9",
+    "units": "1"
+}

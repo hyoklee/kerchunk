@@ -1,0 +1,14 @@
+{
+    "ATBDDate": "01/17/2020",
+    "ATBDTitle": "Algorithm Theoretical Basis Document (ATBD) for Land - Vegetation Along-Track Products (ATL08)",
+    "ATBDVersion": "v.3",
+    "documentDate": "Feb 2020",
+    "documentation": "ATLAS Science Algorithm Software Design Description (SDD) - Volume 12 (atlas_l3a_ld)",
+    "identifier": "atlas_l3a_ld",
+    "processDescription": "Determines heights of ground and canopy surface. Where data permits, includes estimates of canopy height, relative canopy cover, canopy height distributions, surface roughness, surface slope/aspect and apparent reflectance.",
+    "runTimeParameters": "CTL_atlas_l3a_ld_003713657.ctl",
+    "softwareDate": "Mar 20 2020",
+    "softwareTitle": "ASAS L3A Land PGE",
+    "softwareVersion": "Version 3.3.1",
+    "stepDateTime": "2020-04-01T14:03:26.000000Z"
+}

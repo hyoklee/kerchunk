@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Iterations of smoothing of interpolated ground surface for refinement. (Default = 10)",
+    "long_name": "Iterations of smoothing of interpolated ground surface for ground estimate.",
+    "source": "ATBD section 4.10 step 1",
+    "units": "1"
+}

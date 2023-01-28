@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum number of photons to compute statistics upon. (Default =50)",
+    "long_name": "Threshold for land statistics",
+    "source": "ATBD section 2 intro paragraph",
+    "units": "1"
+}

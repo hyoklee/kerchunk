@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The ending cycle number associated with the data contained within this granule. The cycle number is the counter of the number of 91-day repeat cycles completed by the mission.",
+    "long_name": "Ending Cycle",
+    "source": "Derived",
+    "units": "1",
+    "valid_max": 99,
+    "valid_min": 0
+}

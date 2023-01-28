@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Overlapping long segment buffer size in 20m geosegments along ground track. (Default=10)",
+    "long_name": "Long segment buffer size",
+    "source": "ATBD section 4.1 step 2",
+    "units": "1"
+}

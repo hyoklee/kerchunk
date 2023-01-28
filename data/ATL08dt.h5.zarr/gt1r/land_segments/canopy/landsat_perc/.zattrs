@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Average percentage value of the valid (value <= 100) Landsat Tree Cover Continuous Fields product for each 100 m segment",
+    "long_name": "landsat percentage canopy",
+    "source": "Land ATBD section 2.2.24",
+    "units": "1"
+}

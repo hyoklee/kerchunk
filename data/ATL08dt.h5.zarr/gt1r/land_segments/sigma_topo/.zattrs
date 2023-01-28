@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Total uncertainty that include sigma_h plus geolocation uncertainty due to local slope (equation 1.3).  The local slope is multiplied by the geolocation uncertainty factor. This will be used to determine the total vertical geolocation error due to ranging and local slope.",
+    "long_name": "sigma atlas topo",
+    "source": "Land ATBD section 2.5.12",
+    "units": "1"
+}

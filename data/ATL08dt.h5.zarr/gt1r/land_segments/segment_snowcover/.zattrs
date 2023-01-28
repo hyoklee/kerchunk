@@ -1,0 +1,19 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Daily snow/ice cover from ATL09 at the 25 Hz rate(275m) indicating likely presence of snow and ice within each segment. 0=ice free water; 1=snow free land;  2=snow; 3=ice.",
+    "flag_meanings": "ice_free_water snow_free_land snow ice",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "long_name": "segment snowcover",
+    "source": "ATBD section 4.2.16",
+    "units": "1",
+    "valid_max": 3,
+    "valid_min": 0
+}

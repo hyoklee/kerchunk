@@ -1,0 +1,16 @@
+{
+    "VersionID": "003",
+    "abstract": "The ICESat-2 ATL08 standard data product contains along-track heights of ground and canopy surface at varying length scales. Where data permits, this includes estimates of canopy height, relative canopy cover, canopy height distributions, surface roughness, surface slope/aspect, and apparent reflectance.",
+    "characterSet": "utf8",
+    "creationDate": "2020-04-01T14:03:26.000000Z",
+    "credit": "The software that generates the ATL08 product was designed and implemented within the ICESat-2 Science Investigator-led Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.",
+    "fileName": "ATL08_20181014084920_02400109_003_01.h5",
+    "language": "eng",
+    "originatorOrganizationName": "GSFC I-SIPS > ICESat-2 Science Investigator-led Processing System",
+    "purpose": "The purpose of ATL08 is to provide along-track land/canopy heights and associated statistics.",
+    "shortName": "ATL08",
+    "spatialRepresentationType": "along-track",
+    "status": "onGoing",
+    "topicCategory": "geoscientificInformation",
+    "uuid": "ae899cbd-cf20-3541-9952-cb5220d5467b"
+}

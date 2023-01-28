@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "The standard deviation of the photon heights above the WGS84 Ellipsoid, classified as terrain within the segment.",
+    "long_name": "segment terrain roughness",
+    "source": "Land ATBD section 4.11",
+    "units": "meters"
+}

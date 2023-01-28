@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Solar elevation threshold for determining night time conditions. (Default =0.0)",
+    "long_name": "Threshold for night",
+    "source": "ATBD section 2.4.9",
+    "units": "1"
+}

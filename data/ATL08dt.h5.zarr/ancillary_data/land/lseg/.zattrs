@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Long segment size in number of 20 meter segments along ground track. (Default=500)",
+    "long_name": "Long segment size",
+    "source": "ATBD section 4.1 step 1",
+    "units": "1"
+}

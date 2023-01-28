@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Exponential coefficient of the filter window size as a function. (Default = 21.0E-06)",
+    "long_name": "Exponential coefficient for controlling the exponential decay of the filter window size as a function of number of signal photons.",
+    "source": "ATBD section 4.4 step 2",
+    "units": "1"
+}

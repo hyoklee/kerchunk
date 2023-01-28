@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Standard deviation of the relative heights of all photons classified as top of canopy within the segment",
+    "long_name": "top of canopy roughness",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

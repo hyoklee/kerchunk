@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Version number of this granule within the release. It is a sequential number corresponding to the number of times the granule has been reprocessed for the current release.",
+    "long_name": "Version",
+    "source": "Operations",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Terrain classification flag value. (Default = 1)",
+    "long_name": "Terrain class value",
+    "source": "ATBD section 4.12 step 1",
+    "units": "1"
+}

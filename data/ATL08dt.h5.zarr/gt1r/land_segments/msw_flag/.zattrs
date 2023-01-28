@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Multiple Scattering warning flag. The multiple scattering warning flag (ATL09 parameter msw_flag) has values from -1 to 5 where zero means no multiple scattering and 5 the greatest. If no layers were detected, then msw_flag = 0. If blowing snow is detected and its estimated optical depth is greater than or equal to 0.5, then msw_flag = 5. If the blowing snow optical depth is less than 0.5, then msw_flag = 4. If no blowing snow is detected but there are cloud or aerosol layers detected, the msw_flag assumes values of 1 to 3 based on the height of the bottom of the lowest layer: < 1 km, msw_flag = 3; 1-3 km, msw_flag = 2; > 3km, msw_flag = 1. A value of -1 indicates that the signal to noise of the data was too low to reliably ascertain the presence of cloud or blowing snow. We expect values of -1 to occur only during daylight.",
+    "flag_meanings": "cannot_determine no_layers layer_gt_3km layer_between_1_and_3_km layer_lt_1km blow_snow_od_lt_0.5 blow_snow_od_gt_0.5",
+    "flag_values": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "long_name": "multiple scattering warning flag",
+    "source": "ATL09",
+    "units": "1"
+}

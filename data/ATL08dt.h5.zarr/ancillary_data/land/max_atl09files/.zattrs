@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Maximum number of input ATL09 files. (Default = 200)",
+    "long_name": "Maximum number of input ATL09s",
+    "source": "Operations",
+    "units": "1"
+}

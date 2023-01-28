@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "The number of the photons classified as terrain within the segment.",
+    "long_name": "number of ground photons",
+    "source": "Land ATBD section 4.11",
+    "units": "1"
+}

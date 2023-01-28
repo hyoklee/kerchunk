@@ -1,0 +1,7 @@
+{
+    "description": "HDF5 template file that defines the organization and default content of the product metadata.",
+    "fileName": "ANC26-08_20200311154329_033_01.h5",
+    "shortName": "ANC26-08",
+    "uuid": "e5166dfd-81b7-3a4f-b993-ab68a010200d",
+    "version": "033"
+}

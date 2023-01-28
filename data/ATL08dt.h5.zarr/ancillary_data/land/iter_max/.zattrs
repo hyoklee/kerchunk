@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Maximum number of iterations for optimizing the Gaussian parameters for fitting of histogram. (Default = 10)",
+    "long_name": "Maximum number of iterations for optimizing the Gaussian parameters for fitting of histogram.",
+    "source": "ATBD section 4.2 step 7",
+    "units": "1"
+}

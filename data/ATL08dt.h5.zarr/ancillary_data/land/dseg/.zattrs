@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "DRAGANN segment length in 20m geolocated segments along ground track. (Default=170)",
+    "long_name": "DRAGANN segment size",
+    "source": "ATBD section 4.2.1 step 1",
+    "units": "1"
+}

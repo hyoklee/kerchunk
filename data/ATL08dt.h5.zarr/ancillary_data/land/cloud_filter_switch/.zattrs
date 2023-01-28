@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls entrance to the cloud_filter subroutine. (Default = 0)",
+    "long_name": "cloud_filter switch",
+    "source": "ATBD section 4.1.1",
+    "units": "1"
+}

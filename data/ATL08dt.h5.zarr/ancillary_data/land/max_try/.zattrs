@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Maximum number of tries to compute a P value in alternative DRAGANN",
+    "long_name": "Maximum try count",
+    "source": "ATBD section 4.2.1 step 17",
+    "units": "1"
+}

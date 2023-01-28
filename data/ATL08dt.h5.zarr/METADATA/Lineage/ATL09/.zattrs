@@ -1,0 +1,17 @@
+{
+    "description": "ICESat-2 ATLAS L3A atmosphere data products.",
+    "end_cycle": 1,
+    "end_geoseg": 2007117,
+    "end_orbit": 441,
+    "end_region": 14,
+    "end_rgt": 240,
+    "fileName": "ATL09_20181014075514_02400101_003_01.h5",
+    "shortName": "ATL09",
+    "start_cycle": 1,
+    "start_geoseg": 12,
+    "start_orbit": 441,
+    "start_region": 1,
+    "start_rgt": 240,
+    "uuid": "ff8cd64b-f8d7-39e2-8b7f-f593d0477827",
+    "version": "003"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Top of canopy refinement square search radius. (Default = 225.0)",
+    "long_name": "Square Radius of filter for canopy",
+    "source": "ATBD section 4.8 step 6",
+    "units": "meters^2"
+}

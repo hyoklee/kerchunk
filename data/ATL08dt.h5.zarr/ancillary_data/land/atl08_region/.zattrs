@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_7"
+    ],
+    "contentType": "modelResult",
+    "description": "ATL08 region(s) encompassed by ATL03 granule being processed",
+    "long_name": "atl08 region",
+    "source": "Land ATBD 29March2019, Table 2.4",
+    "standard_name": "atl08_region",
+    "units": "1"
+}

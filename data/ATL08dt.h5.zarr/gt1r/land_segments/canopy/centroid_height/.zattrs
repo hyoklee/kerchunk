@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Optical centroid of all photons classified as either canopy or ground points within the segment.  The heights used in this calculation are absolute heights above the reference ellipsoid. This parameter is equivalent to the centroid height produced ICESat GLA14.",
+    "long_name": "centroid height",
+    "source": "Land ATBD section 2.2.22",
+    "units": "meters"
+}

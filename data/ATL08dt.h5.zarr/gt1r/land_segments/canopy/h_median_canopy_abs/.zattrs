@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "The median of individual absolute canopy heights within segment referenced above the WGS84 Ellipsoid.",
+    "long_name": "absolute segment median canopy height",
+    "source": "Land ATBD section 2.2.6",
+    "units": "meters"
+}

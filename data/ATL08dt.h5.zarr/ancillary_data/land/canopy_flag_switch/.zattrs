@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls entrance to the canopy flag subroutine . (Default = 1)",
+    "long_name": "canopy_flag switch",
+    "source": "ATBD section 4.3",
+    "units": "1"
+}

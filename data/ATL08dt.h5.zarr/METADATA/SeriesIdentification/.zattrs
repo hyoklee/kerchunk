@@ -1,0 +1,21 @@
+{
+    "VersionID": "003",
+    "abstract": "The ICESat-2 ATL08 standard data product contains along-track heights of ground and canopy surface at varying length scales. Where data permits, this includes estimates of canopy height, relative canopy cover, canopy height distributions, surface roughness, surface slope/aspect, and apparent reflectance.",
+    "characterSet": "utf8",
+    "credit": "The software that generates the ATL08 product was designed and implemented within the ICESat-2 Science Investigator-led Processing System at the NASA Goddard Space Flight Center in Greenbelt, Maryland.",
+    "format": "HDF",
+    "formatVersion": "5",
+    "identifier_product_DOI": "doi:10.5067/ATLAS/ATL08.003",
+    "language": "eng",
+    "longName": "ATLAS/ICESat-2 L3A Land and Vegetation Height",
+    "maintenanceAndUpdateFrequency": "asNeeded",
+    "maintenanceDate": "SET_BY_META",
+    "mission": "ICESat-2 > Ice, Cloud, and land Elevation Satellite-2",
+    "pointOfContact": "NSIDC DAAC > NASA National Snow and Ice Data Center Distributed Active Archive Center",
+    "purpose": "The purpose of ATL08 is to provide along-track land/canopy heights and associated statistics.",
+    "resourceProviderOrganizationName": "National Aeronautics and Space Administration (NASA)",
+    "revisionDate": "2016-06-09",
+    "shortName": "ATL08",
+    "status": "onGoing",
+    "topicCategory": "geoscientificInformation"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Top of canopy classification flag value. (Default = 3)",
+    "long_name": "Top of canopy class value",
+    "source": "ATBD section 4.12 step 1",
+    "units": "1"
+}

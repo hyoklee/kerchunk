@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "crossing_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "crossing_time",
+    "description": "A count of the number of exact repeats of this reference orbit.",
+    "long_name": "Cycle Number",
+    "source": "Operations",
+    "units": "1",
+    "valid_max": 50,
+    "valid_min": 0
+}

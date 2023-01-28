@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The starting orbit number associated with the data contained within this granule. The orbit number increments each time the spacecraft completes a full orbit of the Earth.",
+    "long_name": "Starting Orbit Number",
+    "source": "Derived",
+    "units": "1"
+}

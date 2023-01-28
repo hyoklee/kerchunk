@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Statistics time interval for along-track QA data.",
+    "long_name": "QA Along-Track Interval",
+    "source": "control",
+    "units": "1"
+}

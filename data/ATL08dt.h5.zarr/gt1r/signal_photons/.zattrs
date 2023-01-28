@@ -1,0 +1,4 @@
+{
+    "Description": "Contains parameters related to individual photons.",
+    "data_rate": "Data are stored at the signal-photon classification rate."
+}

@@ -1,0 +1,4 @@
+{
+    "Description": "Contains information ancillary to the data product. This may include product characteristics, instrument characteristics and/or processing constants.",
+    "data_rate": "Data within this group pertain to the granule in its entirety."
+}

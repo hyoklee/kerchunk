@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Co-elevation (CE) is direction from vertical of the laser beam as seen by an observer located at the laser ground spot.",
+    "long_name": "beam co-elevation",
+    "source": "ATL03",
+    "units": "radians"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Interpolated terrain surface height above the WGS84 Ellipsoid at the midpoint of the segment.",
+    "long_name": "interpolated terrain surface height",
+    "source": "Land ATBD section 4.9",
+    "units": "meters"
+}

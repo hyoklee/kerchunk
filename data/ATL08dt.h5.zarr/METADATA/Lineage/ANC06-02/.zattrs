@@ -1,0 +1,7 @@
+{
+    "description": "ArcticDEM 32m Digital Elevation Model reformatted into HDF5.",
+    "fileName": "arcticdem32m_20190611_001_01.h5",
+    "shortName": "ANC06-02",
+    "uuid": "ce07ef72-0bf4-353b-8475-fb568b029905",
+    "version": "20190611"
+}

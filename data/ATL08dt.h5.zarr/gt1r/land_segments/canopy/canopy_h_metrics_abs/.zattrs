@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time",
+        "ds_metrics"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Height metrics based on the cumulative distribution of absolute canopy heights above the WGS84 Ellipsoid.  The height metrics are calculated at the following percentiles: 25,50,60,70,75,80,85,90,95%.",
+    "long_name": "canopy absolute height metrics",
+    "source": "Land ATBD section 2.2.3",
+    "units": "meters"
+}

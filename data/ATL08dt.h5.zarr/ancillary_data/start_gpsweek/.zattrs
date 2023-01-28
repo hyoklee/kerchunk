@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "GPS week number of the first data point in the granule.",
+    "long_name": "Start GPSWeek of Granule (Actual)",
+    "source": "Derived",
+    "units": "weeks from 1980-01-06"
+}

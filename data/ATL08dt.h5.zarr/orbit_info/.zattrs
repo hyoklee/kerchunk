@@ -1,0 +1,4 @@
+{
+    "Description": "Contains orbit information.",
+    "data_rate": "Varies. Data are only provided when one of the stored values (besides time) changes."
+}

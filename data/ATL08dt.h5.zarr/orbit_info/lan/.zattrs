@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "crossing_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "crossing_time",
+    "description": "Longitude at the ascending node crossing.",
+    "long_name": "Ascending Node Longitude",
+    "source": "POD/PPD",
+    "units": "degrees_east",
+    "valid_max": 180.0,
+    "valid_min": -180.0
+}

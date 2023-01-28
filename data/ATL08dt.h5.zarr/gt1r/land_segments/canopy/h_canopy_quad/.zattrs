@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "The quadratic mean height of individual classified relative canopy photon heights above the estimated terrain surface.",
+    "long_name": "canopy quadratic mean",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "PGE-specific control file used to generate this granule. To re-use, replace breaks (BR) with linefeeds.",
+    "long_name": "Control File",
+    "source": "Operations",
+    "units": "1"
+}

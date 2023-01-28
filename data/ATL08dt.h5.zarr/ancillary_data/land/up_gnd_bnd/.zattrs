@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Upper bound restricting the search of a ground surface in canopy cases. (Default = 1.0)",
+    "long_name": "Upper bound restricting the search of a ground surface in canopy cases.",
+    "source": "ATBD (section 4.7 step 3)",
+    "units": "meters"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Lower cutoff for top of canopy surface. (Default = 2.0)",
+    "long_name": "Lower cutoff for top of canopy",
+    "source": "ATBD section 4.8 step 10",
+    "units": "meters"
+}

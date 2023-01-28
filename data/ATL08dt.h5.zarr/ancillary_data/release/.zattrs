@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Release number of the granule. The release number is incremented when the software or ancillary data used to create the granule has been changed.",
+    "long_name": "Release Number",
+    "source": "Operations",
+    "units": "1"
+}

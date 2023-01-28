@@ -1,0 +1,17 @@
+{
+    "description": "ICESat-2 ATLAS L2A Global Geolocated Photon data products.",
+    "end_cycle": 1,
+    "end_geoseg": 1280087,
+    "end_orbit": 441,
+    "end_region": 9,
+    "end_rgt": 240,
+    "fileName": "ATL03_20181014084920_02400109_003_01.h5",
+    "shortName": "ATL03",
+    "start_cycle": 1,
+    "start_geoseg": 1151688,
+    "start_orbit": 441,
+    "start_region": 9,
+    "start_rgt": 240,
+    "uuid": "498a71af-4c55-3685-bbe3-a704a1876765",
+    "version": "003"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Size of neighbor histogram bins in number of neighbors in DRAGANN. (Default = 1)",
+    "long_name": "neighbor histogram bin size",
+    "source": "ATBD (section 4.2 step 4)",
+    "units": "1"
+}

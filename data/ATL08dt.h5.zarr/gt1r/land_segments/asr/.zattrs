@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Apparent surface reflectance",
+    "long_name": "apparent surface reflectance",
+    "source": "ATL09",
+    "units": "1"
+}

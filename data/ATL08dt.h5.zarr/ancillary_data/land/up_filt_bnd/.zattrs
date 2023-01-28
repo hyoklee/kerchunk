@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Lower bound of the filter window size function. (Default = 46)",
+    "long_name": "Proportionality coefficient for controlling the bounds of the filter window size as a function of number of signal photons.",
+    "source": "ATBD section 4.4 step 2",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Noise classification flag value. (Default = 0)",
+    "long_name": "Noise class value",
+    "source": "ATBD section 4.12 step 1",
+    "units": "1"
+}

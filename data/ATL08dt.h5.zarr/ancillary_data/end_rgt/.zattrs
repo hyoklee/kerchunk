@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "The ending reference groundtrack (RGT) number associated with the data contained within this granule. There are 1387 reference groundtrack in the ICESat-2 repeat orbit. The reference groundtrack increments each time the spacecraft completes a full orbit of the Earth and resets to 1 each time the spacecraft completes a full cycle.",
+    "long_name": "Ending Reference Groundtrack",
+    "source": "Derived",
+    "units": "1",
+    "valid_max": 1387,
+    "valid_min": 1
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Uncertainty of the relative canopy heights for the segment. Incorporates all systematic uncertainties as well as uncertainty from errors of identified photons. See section 1 and equations 1.4 and 1.5 in the Land ATBD",
+    "long_name": "segment canopy height uncertainty",
+    "source": "Land ATBD section 1.5",
+    "units": "meters"
+}

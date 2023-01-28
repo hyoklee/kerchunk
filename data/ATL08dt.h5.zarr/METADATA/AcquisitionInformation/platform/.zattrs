@@ -1,0 +1,5 @@
+{
+    "description": "Ice, Cloud, and land Elevation Satellite-2",
+    "identifier": "ICESat-2",
+    "type": "Spacecraft"
+}

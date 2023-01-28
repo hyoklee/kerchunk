@@ -1,0 +1,13 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "crossing_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "crossing_time",
+    "description": "Unique identifying number for each planned ICESat-2 orbit.",
+    "long_name": "Orbit Number",
+    "source": "Operations",
+    "units": "1",
+    "valid_max": 65000,
+    "valid_min": 1
+}

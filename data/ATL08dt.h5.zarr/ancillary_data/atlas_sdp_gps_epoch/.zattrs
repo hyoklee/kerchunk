@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "calendar": "proleptic_gregorian",
+    "contentType": "auxiliaryInformation",
+    "description": "Number of GPS seconds between the GPS epoch (1980-01-06T00:00:00.000000Z UTC) and the ATLAS Standard Data Product (SDP) epoch (2018-01-01:T00.00.00.000000 UTC). Add this value to delta time parameters to compute full gps_seconds (relative to the GPS epoch) for each data point.",
+    "long_name": "ATLAS Epoch Offset",
+    "source": "Operations",
+    "units": "seconds since 1980-01-06T00:00:00+00:00"
+}

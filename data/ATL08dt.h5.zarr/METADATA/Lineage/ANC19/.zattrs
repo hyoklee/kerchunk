@@ -1,0 +1,7 @@
+{
+    "description": "TAI to UTC leapsecond file retrieved from ftp://maia.usno.navy.mil/ser7/tai-utc.dat",
+    "fileName": "tai_utc_2017.dat",
+    "shortName": "ANC19",
+    "uuid": "7c66d365-278a-31f7-8fe4-9c80e2f012e5",
+    "version": "001"
+}

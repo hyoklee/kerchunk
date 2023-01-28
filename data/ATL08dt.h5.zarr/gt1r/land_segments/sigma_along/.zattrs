@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Total along-track uncertainty due to PPD and POD knowledge.  Read from ATL03 product gtx/geolocation/sigma_along. Sigma_atlas_x is reported on ATL08 as the uncertainty of the center-most reference photon of the 100m ATL08 segment.",
+    "long_name": "sigma atlas x",
+    "source": "ATL03",
+    "units": "1"
+}

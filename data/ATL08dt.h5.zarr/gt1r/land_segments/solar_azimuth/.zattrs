@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "The direction, eastwards from north, of the sun vector as seen by an observer at the laser ground spot.",
+    "long_name": "solar azimuth",
+    "source": "ATL03g ATBD",
+    "units": "degrees_east"
+}

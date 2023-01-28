@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Maximum of individual absolute canopy heights within segment referenced above the WGS84 ellipsoid.",
+    "long_name": "absolute maximum canopy height",
+    "source": "Land ATBD section 2.2.11",
+    "units": "meters"
+}

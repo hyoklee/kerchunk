@@ -1,0 +1,21 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Indicates source of the DEM height. Values: 0=None, 1=Arctic, 2=GMTED, 3=MSS, 4=Antarctic.",
+    "flag_meanings": "none arctic gmted mss antarctic",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "long_name": "dem source flag",
+    "source": "Atmosphere ATBD",
+    "units": "1",
+    "valid_max": 4,
+    "valid_min": 0
+}

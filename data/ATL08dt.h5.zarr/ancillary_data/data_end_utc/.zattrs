@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "UTC (in CCSDS-A format) of the last data point within the granule.",
+    "long_name": "End UTC Time of Granule (CCSDS-A, Actual)",
+    "source": "Derived",
+    "units": "1"
+}

@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "The urban flag indicates that a segment is likely located over an urban area.",
+    "flag_meanings": "not_urban urban",
+    "flag_values": [
+        0,
+        1
+    ],
+    "long_name": "segment urban flag",
+    "source": "Land ATBD section 2.4.17",
+    "units": "1"
+}

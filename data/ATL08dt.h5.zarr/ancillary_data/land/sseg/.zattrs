@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Short segment length in meters. (Default = 100.0)",
+    "long_name": "Short Segment Length",
+    "source": "ATBD section 4.13 step 1",
+    "units": "meters"
+}

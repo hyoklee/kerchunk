@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Difference between h_te_median and ref_DEM",
+    "long_name": "h dif from reference",
+    "source": "Land ATBD section 2.4",
+    "units": "meters"
+}

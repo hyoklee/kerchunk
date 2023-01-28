@@ -1,0 +1,12 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "crossing_time"
+    ],
+    "calendar": "proleptic_gregorian",
+    "contentType": "referenceInformation",
+    "description": "The time, in seconds since the ATLAS SDP GPS Epoch, at which the ascending node crosses the equator. The ATLAS Standard Data Products (SDP) epoch offset is defined within /ancillary_data/atlas_sdp_gps_epoch as the number of GPS seconds between the GPS epoch (1980-01-06T00:00:00.000000Z UTC) and the ATLAS SDP epoch. By adding the offset contained within atlas_sdp_gps_epoch to delta time parameters, the time in gps_seconds relative to the GPS epoch can be computed.",
+    "long_name": "Ascending Node Crossing Time",
+    "source": "POD/PPD",
+    "standard_name": "time",
+    "units": "seconds since 2018-01-01"
+}

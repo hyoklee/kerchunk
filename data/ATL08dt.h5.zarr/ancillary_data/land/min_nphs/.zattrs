@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum number of input photons from ATL03 to process. (default=1)",
+    "long_name": "Minimum input photons",
+    "source": "Operations",
+    "units": "1"
+}

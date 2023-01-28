@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum percentage of terrain photons to compute statistics upon. (Default =0.05)",
+    "long_name": "Threshold for terrain statistics",
+    "source": "ATBD section 4.13 step 2",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_9"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "GPS seconds-of-week of the last data point in the granule.",
+    "long_name": "Ending GPS SOW of Granule (Actual)",
+    "source": "Derived",
+    "units": "seconds"
+}

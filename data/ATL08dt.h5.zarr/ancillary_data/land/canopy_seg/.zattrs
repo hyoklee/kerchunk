@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Segment in number of signal photons for filtering sparse canopy cover. (Default = 500)",
+    "long_name": "segment size in canopy filter",
+    "source": "ATBD section 4.11 step 6",
+    "units": "1"
+}

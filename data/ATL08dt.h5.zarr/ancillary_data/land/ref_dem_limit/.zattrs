@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Reference DEM limit used to reclassify signal as noise. (default = 120.0)",
+    "long_name": "DEM threshold",
+    "source": "ATBD section 4.5 step 4",
+    "units": "meters"
+}

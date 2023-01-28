@@ -1,0 +1,19 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "ds_surf_type"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Dimension scale indexing the surface type array. Index=1 corresponds to Land; index = 2 corresponds to Ocean; Index = 3 corresponds to SeaIce; Index=4 corresponds to LandIce; Index=5 corresponds to InlandWater",
+    "flag_meanings": "land ocean seaice landice inland_water",
+    "flag_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "long_name": "Surface Type Dimension Scale",
+    "units": "1",
+    "valid_max": 5,
+    "valid_min": 1
+}

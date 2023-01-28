@@ -1,0 +1,4 @@
+{
+    "Description": "Contains terrain parameters at a 100m aggregation.",
+    "data_rate": "Data are stored as aggregates of 100 meters."
+}

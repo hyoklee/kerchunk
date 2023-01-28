@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Number of photons within each land segment.",
+    "long_name": "number of photons",
+    "source": "Derived",
+    "units": "1"
+}

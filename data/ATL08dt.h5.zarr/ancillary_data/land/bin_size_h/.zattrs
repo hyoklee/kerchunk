@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Histogram bin size for the alternative DRAGANN algorithm. (Default = 1.0)",
+    "long_name": "neighbor histogram bin size",
+    "source": "ATBD (section 4.2.1 step 3)",
+    "units": "1"
+}

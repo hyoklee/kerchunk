@@ -1,0 +1,9 @@
+{
+    "identifier": "atl08_qa_util",
+    "processDescription": "QA processing is performed by an external utility on each granule produced by SIPS. The utility reads the granule, performs both generic and product-specific quality-assessment calculations, and writes a text-based quality assessment report. The name and creation data of this report are identified within the QADatasetIdentification metadata",
+    "runTimeParameters": "CTL_atlas_l3a_ld_003713657.ctl",
+    "softwareDate": "Feb 14 2020",
+    "softwareTitle": "ATL08 QA Utility",
+    "softwareVersion": "Version 3.3",
+    "stepDateTime": "2020-04-01T14:03:34.000000Z"
+}

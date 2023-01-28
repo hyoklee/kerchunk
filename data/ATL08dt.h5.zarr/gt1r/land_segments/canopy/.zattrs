@@ -1,0 +1,4 @@
+{
+    "Description": "Contains height parameters based on the land algorithm.",
+    "data_rate": "Data are stored as aggregates of 100 meters."
+}

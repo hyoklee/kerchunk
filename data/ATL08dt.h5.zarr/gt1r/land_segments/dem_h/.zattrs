@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Best available DEM (in priority of Arctic/Antarctic/GMTED/MSS) value at the geolocation point.  Height is in meters above the WGS84 Ellipsoid.",
+    "long_name": "dem height",
+    "source": "GIMP, GMTED,MSS",
+    "units": "meters"
+}

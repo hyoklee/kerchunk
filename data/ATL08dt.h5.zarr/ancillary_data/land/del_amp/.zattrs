@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Step size for optimizing the amplitude variable of Gaussian function. (Default = 1.0)",
+    "long_name": "Step Gaussian Amplitude optimization",
+    "source": "ATBD section 4.2 step 7",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Difference between h_canopy and h_median_canopy",
+    "long_name": "canopy diff to median height",
+    "source": "Land ATBD section 4.12",
+    "units": "meters"
+}

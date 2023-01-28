@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Terrain flag quality check to indicate a deviation above a threshold from the reference DEM height reported on the product.",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "long_name": "terrain flag",
+    "source": "Land ATBD section 2.4.8",
+    "units": "1"
+}

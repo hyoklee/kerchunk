@@ -1,0 +1,17 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Water mask(i.e. flag) indicating inland water as referenced from the Global Raster Water Mask(ANC33) at 250 m spatial resolution.",
+    "flag_meanings": "no_water water",
+    "flag_values": [
+        0,
+        1
+    ],
+    "long_name": "segment watermask",
+    "source": "ATBD section 2.4.15",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": 0
+}

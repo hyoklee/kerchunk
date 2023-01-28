@@ -1,0 +1,9 @@
+{
+    "Description": "Each group contains the segments for one Ground Track. As ICESat-2 orbits the earth, sequential transmit pulses illuminate six ground tracks on the surface of the earth.  The track width is approximately 14m.  Each ground track is numbered, according to the laser spot number that generates a given ground track.  Ground tracks are numbered from the left to the right in the direction of spacecraft travel as: 1L, 1R in the left-most pair of beams; 2L, 2R for the center pair of beams; and 3L, 3R for the right-most pair of beams.",
+    "atlas_beam_type": "strong",
+    "atlas_pce": "pce3",
+    "atlas_spot_number": "5",
+    "atmosphere_profile": "profile_1",
+    "groundtrack_id": "gt1r",
+    "sc_orientation": "Forward"
+}

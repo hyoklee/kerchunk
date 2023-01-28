@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Azimuth(in radians) of the unit pointing vector for the reference photon in the local ENU frame in radians.  The angle is measured from north and positive towards East.",
+    "long_name": "beam azimuth",
+    "source": "ATL03",
+    "units": "radians"
+}

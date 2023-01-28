@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Flag indicating more than ph_removal_percent_limit (default 50.0) removed from land segment due to failing QA tests",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "long_name": "ph removal flag",
+    "source": "ATBD section 4.13",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Geosegment process interval length.  This controls the amount read from ATL03 and ATL09 at a time. (Default = 500000).",
+    "long_name": "Geosegment process interval length",
+    "source": "Operations",
+    "units": "1"
+}

@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Minimum percentage of canopy photons to compute statistics upon. (Default =0.05)",
+    "long_name": "Threshold for canopy statistics",
+    "source": "ATBD section 4.14.1 step 1",
+    "units": "1"
+}

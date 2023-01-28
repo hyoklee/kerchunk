@@ -1,0 +1,7 @@
+{
+    "description": "DTU Mean Sea Surface re-referenced to the WGS84 ellipsoid.",
+    "fileName": "dtu13_20180705_001_01.nc",
+    "shortName": "ANC28",
+    "uuid": "56f47040-a72e-3109-99c2-bc1658e6dda4",
+    "version": "20180705"
+}

@@ -1,0 +1,9 @@
+{
+    "identifier": "atlas_meta",
+    "processDescription": "Metadata information is processed by the metadata utility for each granule produced by SIPS. During PGE processing, dynamic metadata are written to the product. Additional static information is provided with the metadata template. The metadata utility reads ISO Dataset and Series metadata files and updates the product with static information from within those files. The utility then merges the static and dynamic metadata to creates output ISO19139 Dataset and Series XML files. Finally the utility reads the ISO19139 Dataset and Series XML files into memory and stores the textual representations as attributes attached  to the /METADATA group.",
+    "runTimeParameters": "CTL_atlas_l3a_ld_003713657.ctl",
+    "softwareDate": "Feb  3 2020",
+    "softwareTitle": "Creates ATLAS XML metadata files",
+    "softwareVersion": "Version 4.3",
+    "stepDateTime": "2020-04-01T14:03:36.000000Z"
+}

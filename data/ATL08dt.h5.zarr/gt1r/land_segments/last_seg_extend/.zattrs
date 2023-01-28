@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "The distance (km) that the last ATL08 processing segment in a file is either extended or overlapped with the previous ATL08 processing segment.",
+    "long_name": "last segment extended",
+    "source": "Land ATBD 13March2019, Section 2.4.20",
+    "standard_name": "last_seg_extend",
+    "units": "kilometers"
+}

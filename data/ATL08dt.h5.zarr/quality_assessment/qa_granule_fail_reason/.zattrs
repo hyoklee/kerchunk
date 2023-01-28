@@ -1,0 +1,21 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_10"
+    ],
+    "contentType": "qualityInformation",
+    "description": "Flag indicating granule failure reason. 0=no failure; 1=processing error; 2=Insufficient output data was generated; 3=TBD Failure; 4=TBD_Failure; 5=other failure.",
+    "flag_meanings": "no_failure PROCESS_ERROR INSUFFICIENT_OUTPUT failure_3 failure_4 OTHER_FAILURE",
+    "flag_values": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "long_name": "Granule Failure Reason",
+    "source": "Operations",
+    "units": "1",
+    "valid_max": 5,
+    "valid_min": 0
+}

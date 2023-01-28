@@ -1,0 +1,11 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "contentType": "referenceInformation",
+    "coordinates": "delta_time latitude longitude",
+    "description": "Off nadir pointing angle (in radians) of the satellite to increase spatial sampling in the non-polar regions. ATLAS_PA =90degs-beam_coelev.",
+    "long_name": "atlas pointing angle",
+    "source": "ATL03",
+    "units": "radians"
+}

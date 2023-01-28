@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Parameter controlling identification of photons around an interpolated surface. (Default = 0.5)",
+    "long_name": "Point Spread Function",
+    "source": "ATBD section 4.7 step 12",
+    "units": "meters"
+}

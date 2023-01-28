@@ -1,0 +1,20 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time",
+        "ds_geosegments"
+    ],
+    "contentType": "modelResult",
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "Quality flag indicating the terrain photons populating the 100 m segment statistics are derived from less than 100 m worth of photons and/or less than 5 20m ATL03 segments.",
+    "flag_meanings": "no_photon_data_within_geosegment no_terrain_photons_within_geosegment terrain_photons_present_within_geosegment",
+    "flag_values": [
+        -1,
+        0,
+        1
+    ],
+    "long_name": "subset terrain flag",
+    "source": "Land/Veg ATBD 15 Novemebr 2019, Section 2.1.15",
+    "units": "1",
+    "valid_max": 1,
+    "valid_min": -1
+}

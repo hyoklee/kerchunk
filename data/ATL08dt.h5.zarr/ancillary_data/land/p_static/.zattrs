@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Parameter for controlling the search radius in nearest neighbor search in DRAGANN. (Default = 20)",
+    "long_name": "Dragann Parameter",
+    "source": "ATBD section 4.2 step 1",
+    "units": "1"
+}

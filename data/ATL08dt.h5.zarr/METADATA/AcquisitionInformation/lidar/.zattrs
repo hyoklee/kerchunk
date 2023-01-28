@@ -1,0 +1,7 @@
+{
+    "description": "ATLAS on ICESat-2 determines the range between the satellite and the Earth's surface by measuring the two-way time delay of short pulses of laser light that it transmits in six beams.  It is different from previous operational ice-sheet altimeters in that it is a photon-counting LIDAR.  ATLAS records a set of arrival times for individual photons, which are then analyzed to derive surface, vegetation, and cloud properties.  ATLAS has six beams arranged in three pairs, so that it samples each of three reference pair tracks with a pair of beams; ATLAS transmits pulses at 10 kHz, giving approximately one pulse every 0.7 m along track; ATLAS's expected pointing control will be better than 90 m RMS.",
+    "identifier": "ATLAS",
+    "pulse_rate": "10000 pps",
+    "type": "Laser Altimeter",
+    "wavelength": "532 nm"
+}

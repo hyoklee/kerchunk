@@ -1,0 +1,15 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Flag indicating more than dem_removal_percent_limit (default 20.0) removed from land segment due to failing DEM-QA tests",
+    "flag_meanings": "below_threshold above_threshold",
+    "flag_values": [
+        0,
+        1
+    ],
+    "long_name": "dem removal flag",
+    "source": "ATBD section 2.4.11",
+    "units": "1"
+}

@@ -1,0 +1,7 @@
+{
+    "description": "HDF5 template file that defines the organization and default content of the product.",
+    "fileName": "ANC25-08_20200311154328_033_01.h5",
+    "shortName": "ANC25-08",
+    "uuid": "654d3fff-958d-3dbe-8f73-ca718a5538fd",
+    "version": "033"
+}

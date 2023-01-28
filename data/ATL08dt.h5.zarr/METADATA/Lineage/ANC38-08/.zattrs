@@ -1,0 +1,7 @@
+{
+    "description": "ISO 19139 XML file containing DataSet-level metadata information.",
+    "fileName": "ATL08.003.dataset.xml",
+    "shortName": "ANC38-08",
+    "uuid": "7ffd96d6-9c36-3ef7-80ab-606168059962",
+    "version": "003"
+}

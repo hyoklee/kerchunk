@@ -1,0 +1,4 @@
+{
+    "Description": "Contains data categorized as land at 100 meter intervals.",
+    "data_rate": "Data are stored as aggregates of 100 meters."
+}

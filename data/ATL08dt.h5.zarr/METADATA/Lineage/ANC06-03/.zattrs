@@ -1,0 +1,7 @@
+{
+    "description": "REMA Antarctica 100m Digital Elevation Model filled and reformatted into HDF5",
+    "fileName": "atl06rema100m_20190628_001_01.h5",
+    "shortName": "ANC06-03",
+    "uuid": "3e0a81bd-bbd5-35fa-b868-3254f9355b7f",
+    "version": "20190628"
+}

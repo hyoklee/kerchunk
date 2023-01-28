@@ -1,0 +1,7 @@
+{
+    "description": "GMTED 7.5 arcsec Digital Elevation Model reformatted into HDF5 and re-referenced to the WGS-84 ellipsoid.",
+    "fileName": "gmted75_20180705_001_01.h5",
+    "shortName": "ANC06-01",
+    "uuid": "a44debc8-29af-3744-860c-227b37a4da6f",
+    "version": "20180705"
+}

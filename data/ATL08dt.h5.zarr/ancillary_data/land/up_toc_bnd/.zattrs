@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Upper bound restricting the search of a top of canopy surface. (Default=1.0)",
+    "long_name": "Upper bound restricting the search of a top of canopy surface.",
+    "source": "ATBD section 4.7 step 3 entered from section 4.8",
+    "units": "meters"
+}

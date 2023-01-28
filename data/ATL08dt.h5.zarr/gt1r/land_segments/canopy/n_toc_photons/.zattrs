@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "../delta_time ../latitude ../longitude",
+    "description": "The number of photons classified as top of canopy within the segment.",
+    "long_name": "number top of canopy photons",
+    "source": "Land ATBD section 4.12",
+    "units": "1"
+}

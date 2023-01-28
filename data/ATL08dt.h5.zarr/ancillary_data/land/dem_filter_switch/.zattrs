@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "phony_dim_8"
+    ],
+    "contentType": "auxiliaryInformation",
+    "description": "Controls filtering based on DEM. (Default = 1)",
+    "long_name": "dem_filter switch",
+    "source": "ATBD section 4.5 step 5",
+    "units": "1"
+}

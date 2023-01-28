@@ -1,0 +1,9 @@
+{
+    "identifier": "atlas_brw",
+    "processDescription": "Browse processing is performed for each granule SIPS produces.  The browse utility reads data from the granule and produces browse images as defined in the respective product ATBD. The utility then embeds each browse image into the product within the /Browse group.",
+    "runTimeParameters": "CTL_atlas_l3a_ld_003713657.ctl",
+    "softwareDate": "Feb 14 2020",
+    "softwareTitle": "Creates ATLAS HDF5 browse files",
+    "softwareVersion": "Version 2.3",
+    "stepDateTime": "2020-04-01T14:03:34.000000Z"
+}

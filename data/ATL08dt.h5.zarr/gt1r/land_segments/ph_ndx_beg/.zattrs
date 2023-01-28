@@ -1,0 +1,10 @@
+{
+    "_ARRAY_DIMENSIONS": [
+        "delta_time"
+    ],
+    "coordinates": "delta_time latitude longitude",
+    "description": "Index (1-based) within the photon-rate data (/land_segments/photons) of the first photon within this each land segment.",
+    "long_name": "photon index begin",
+    "source": "Derived",
+    "units": "1"
+}
