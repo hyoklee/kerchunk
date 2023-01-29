@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/26
+# Last Update: 2023/01/27
 ###########################################################################
 
 """
@@ -58,7 +58,7 @@ class SingleDMRToZarr:
 
 class DMRParser(object):
 
-    """DMR parser class"""
+    """DMR++ parser class"""
 
     def __init__(self, DMR_file):
         """Constructor
@@ -129,7 +129,7 @@ class DMRParser(object):
             return _str
 
     def get_shape_str(self, shape):
-        """Format shape. DMR shape can be empty."""
+        """Format shape. DMR++ shape can be empty."""
         str_shape = ""
         if shape == "":
             # Scalar is now fine.
@@ -206,10 +206,10 @@ class DMRParser(object):
         return str_value
 
     def parse_content(self, z):
-        """Parses the DMR."""
+        """Parses the DMR++."""
         self.z = z._zroot
         self.depth = 1
-        # DMR's schema can vary from 3.2, 3.3 to 4.0.
+        # DMR++'s schema can vary from 3.2, 3.3 to 4.0.
         # Determine it from XML file.
         self.schema = self.tree.tag.split("}")[0] + "}"
         self.sdmrpp = "{http://xml.opendap.org/dap/dmrpp/1.0.0#}"
@@ -259,14 +259,29 @@ class DMRParser(object):
     def create_dataset_dap4_array(self, node, key):
         """Create simple dataset for DAP 4.0."""
         self.select_group()
+        print(self.dims)
         dname = node.attrib["name"]
+        # Resolve each Dim to get shape.
         cinfo = dict()
         for c in node.getchildren():
+            if c.tag == self.schema + "Dim":
+                print(c.attrib["name"])
             if c.tag == self.sdmrpp + "chunks":
-                cinfo = self.get_chunks(c)
+                ainfo, cinfo = self.get_chunks(c)
         return dname, cinfo
 
     def get_chunks(self, node):
+        dsinfo = dict()
+        if "compressionType" in node.attrib.keys():
+            node.attrib["compressionType"]
+        if "fillValue" in node.attrib.keys():
+            node.attrib["fillValue"]
+        if "byteOrder" in node.attrib.keys():
+            node.attrib["byteOrder"]
+        stinfo = self.get_chunk(node)
+        return dsinfo, stinfo
+
+    def get_chunk(self, node):
         stinfo = dict()
         for c in node.getchildren():
             if c.tag == self.sdmrpp + "chunk":
