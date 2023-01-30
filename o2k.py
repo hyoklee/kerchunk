@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/27
+# Last Update: 2023/01/30
 ###########################################################################
 
 """
@@ -19,6 +19,7 @@ Implementation Idea
 
 """
 
+import ast
 import sys
 import zarr
 import ujson
@@ -259,16 +260,18 @@ class DMRParser(object):
     def create_dataset_dap4_array(self, node, key):
         """Create simple dataset for DAP 4.0."""
         self.select_group()
-        print(self.dims)
+        # print(self.dims)
         dname = node.attrib["name"]
         # Resolve each Dim to get shape.
         cinfo = dict()
+        shape = []
         for c in node.getchildren():
             if c.tag == self.schema + "Dim":
-                print(c.attrib["name"])
+                d = c.attrib["name"]
+                shape.append(int(self.get_dim(d)))
             if c.tag == self.sdmrpp + "chunks":
-                ainfo, cinfo = self.get_chunks(c)
-        return dname, cinfo
+                ainfo, cshape, cinfo = self.get_chunks(c)
+        return dname, shape, cshape, cinfo
 
     def get_chunks(self, node):
         dsinfo = dict()
@@ -278,22 +281,30 @@ class DMRParser(object):
             node.attrib["fillValue"]
         if "byteOrder" in node.attrib.keys():
             node.attrib["byteOrder"]
-        stinfo = self.get_chunk(node)
-        return dsinfo, stinfo
+        cshape, stinfo = self.get_chunk(node)
+        return dsinfo, cshape, stinfo
 
     def get_chunk(self, node):
         stinfo = dict()
+        numbers_list = []
         for c in node.getchildren():
+            if c.tag == self.sdmrpp + "chunkDimensionSizes":
+                numbers_str = c.text
+                for num_str in numbers_str.split():
+                    num_int = int(num_str)
+                    numbers_list.append(num_int)
             if c.tag == self.sdmrpp + "chunk":
-                print(c.tag)
-                print(c.attrib)
+                # print(c.tag)
+                # print(c.attrib)
                 key = (0,)
                 if "chunkPositionInArray" in c.attrib.keys():
-                    key = c.attrib["chunkPositionInArray"]
+                    # Parse it.
+                    value = c.attrib["chunkPositionInArray"]
+                    key = tuple(ast.literal_eval(value))
                 offset = c.attrib["offset"]
                 size = c.attrib["nBytes"]
                 stinfo[key] = {"offset": int(offset), "size": int(size)}
-        return stinfo
+        return numbers_list, stinfo
 
     def get_orig_gname(self, g):
         """Replace _ with white space."""
@@ -308,6 +319,12 @@ class DMRParser(object):
         if g in l:
             h = g.replace("_", " ")
         return h
+
+    def get_dim(self, str):
+        """Get matching dimension size."""
+        for i in self.dims.keys():
+            str.endswith(i)
+            return self.dims[i]
 
     def recursive_walk(self, root_node, depth):
         """This recursive function traverse the XML document using the
@@ -386,15 +403,17 @@ class DMRParser(object):
             # Array in DAP 4.0
             for key in self.type_hash_map:
                 if node.tag == self.schema + key:
-                    dset, cinfo = self.create_dataset_dap4_array(node, key)
+                    dset, shape, cshape, cinfo = self.create_dataset_dap4_array(
+                        node, key
+                    )
                     if dset:
                         # TODO: parse shape, fill value, chunks.
-                        y = np.zeros((2, 3, 4))
+                        y = np.zeros(tuple(shape))
                         za = self.z.create_dataset(
                             dset,
                             shape=y.shape,
                             dtype=y.dtype,
-                            chunks=(1, 1, 1),
+                            chunks=tuple(cshape),
                             fill_value=0,
                             filters=[],
                             compression="gzip",
