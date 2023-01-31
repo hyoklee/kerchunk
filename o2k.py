@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/30
+# Last Update: 2023/01/31
 ###########################################################################
 
 """
@@ -320,11 +320,14 @@ class DMRParser(object):
             h = g.replace("_", " ")
         return h
 
-    def get_dim(self, str):
+    def get_dim(self, s):
         """Get matching dimension size."""
         for i in self.dims.keys():
-            str.endswith(i)
-            return self.dims[i]
+            print(i)
+            print(s)
+            if s.endswith(i):
+                return self.dims[i]
+        return -1
 
     def recursive_walk(self, root_node, depth):
         """This recursive function traverse the XML document using the
@@ -418,7 +421,7 @@ class DMRParser(object):
                             filters=[],
                             compression="gzip",
                         )
-                        self.write_chunk_info(za, y, cinfo)
+                        self.write_chunk_info(za, tuple(cshape), cinfo)
                         self.dset_stack.append(dset)
                         self.last = "variable"
 
@@ -443,8 +446,12 @@ class DMRParser(object):
                 self.recursive_walk(node, self.depth + 1)
                 self.depth = self.depth - 1
 
-    def write_chunk_info(self, za, y, cinfo):
-        key = (0,) * (len(y.shape) or 1)
+    def write_chunk_info(self, za, cshape, cinfo):
+        # For contiguous dataset only
+        key = (0,) * (len(cshape) or 1)
+        # TODO: Use this for non-contiguous.
+        # key = tuple([a // b for a, b in zip(blob.chunk_offset, cshape)])
+
         for k, v in cinfo.items():
             self.z.store[za._chunk_key(k)] = [
                 self.xml_file,
