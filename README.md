@@ -18,6 +18,7 @@
 * [h2k.py](h2k.py): Generate Kerchunk from HDF5.
 * [h2z.py](h2z.py): Generate Zarr from HDF5 using DataTree.
 * [o.py](o.py): Read all DMR++ datasets from HDF5.
+* [o2k.py](o2k.py): Generate Kerchunk from DMR++.
 * [oz.py](oz.py): Compare DMR++ & Kerchunk datasets from HDF5.
 * [wo.sh](wo.sh): Write CF-enabled DMR++ from HDF5.
 * [zdset.py](zdset.py): Read all Kerchunk datasets from HDF5.

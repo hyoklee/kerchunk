@@ -96,7 +96,7 @@ ds = xr.open_dataset("reference://", engine="zarr", backend_kwargs=backend_args)
 # print(g)
 
 
-dt = open_datatree("data/ATL08_20181014084920_02400109_003_01.h5")
+dt = open_datatree("ATL08_20181014084920_02400109_003_01.h5")
 # print(dt.keys())
 dt.to_zarr("ATL08dt.h5.zarr")
 
