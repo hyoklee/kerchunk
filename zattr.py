@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 ###########################################################################
-# Copyright (C) 2022 The HDF Group
+# Copyright (C) 2022-2023 The HDF Group
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2022/12/19
+# Last Update: 2023/02/05
 ###########################################################################
 
 """
@@ -16,7 +16,7 @@ import fsspec
 import sys
 import zarr
 
-# print(za['ancillary_data/land/night_thresh/'].attrs['description'])
+
 def print_visitor(obj):
     # for a in obj.attrs:
     #    print(a)

@@ -5,7 +5,7 @@
 #
 # Author: Hyo-Kyung Lee (hyoklee@hdfgroup.org)
 #
-# Last Update: 2023/01/24
+# Last Update: 2023/02/05
 ###########################################################################
 
 """
@@ -148,7 +148,6 @@ class DMR:
 
 
 if __name__ == "__main__":
-
     d = DMR(sys.argv[1])
     d.set_root()
     d.read_zarr()
