@@ -12,6 +12,7 @@
 
 ## Study Report
 * Read [Wiki](https://github.com/hyoklee/kerchunk/wiki/).
+* Read [summary](https://github.com/hyoklee/kerchunk/files/12446131/DMRPP_Kerchunk_Study.pdf).
 
 ## Source Codes
 * [attr.sh](attr.sh): Compare attributes between DMR++ and Kerchunk.
